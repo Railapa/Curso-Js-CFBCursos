@@ -1,6 +1,4 @@
-let contador = 10
-while (contador >= 0){
-    console.log(contador)
-    contador--
+let frutas = ['Maça', 'Banana', 'Uva', 'Morango']
+for(n of frutas){
+    console.log(n)
 }
-console.log('Fogo!')

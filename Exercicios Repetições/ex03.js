@@ -1,8 +1,6 @@
-
-for (let c = 0; c <= 20; c++){
-    if (c%2==0){
-        console.log(`${c} é Par`)
-    } else{
-        console.log(`${c} é Impar`)
-    }
+let soma = 0
+for(let c = 0; c <= 5; c++){
+    soma = soma = + c
+    console.log(`No passo ${c}, a soma atual é: ${soma}`)
 }
+console.log(`Resultado ${soma}`)

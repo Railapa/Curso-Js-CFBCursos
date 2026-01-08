@@ -1,6 +1,4 @@
-let soma = 0
-for(let c = 0; c <= 5; c++){
-    soma = soma = + c
-    console.log(`No passo ${c}, a soma atual é: ${soma}`)
+let rep = 4
+for(let c = 0; c <= 4; c++){
+    console.log(`Esta é a repetição número ${c} de 4`)
 }
-console.log(`Resultado ${soma}`)
