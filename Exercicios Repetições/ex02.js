@@ -1,4 +1,4 @@
-let frutas = ['Maça', 'Banana', 'Uva', 'Morango']
-for(n of frutas){
-    console.log(n)
+let n = 9
+for(let c = 0; c <= 10; c++){
+    console.log(c * n)
 }

@@ -1,8 +1,4 @@
-
-for (let c = 0; c <= 20; c++){
-    if (c%2==0){
-        console.log(`${c} é Par`)
-    } else{
-        console.log(`${c} é Impar`)
-    }
+for(let c = 20; c >= 0; c--){
+    console.log(`Lançamento em ${c}`)
 }
+console.log('Foguete Lançado')
