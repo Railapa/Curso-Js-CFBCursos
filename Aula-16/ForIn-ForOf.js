@@ -21,15 +21,19 @@ O for of permite alterar o conteúdo das divs (usando .innerHTML) de forma diret
 O for in, ao percorrer elementos do DOM, acaba retornando também propriedades internas do objeto (como length, item e namedItem), o que pode gerar valores undefined se você tentar acessar o .innerHTML de tudo [08:29].
 */
 
-let num = [10,20,30,40,50]
-for(let i = 0; i<num.length; i++){
-    console.log(num[i])
+
+
+//let num = [10,20,30,40,50]
+// for(let i = 0; i<num.length; i++){
+//     console.log(num[i])
+// }
+
+const objs = document.getElementsByTagName("div")
+
+for(n in objs){
+    console.log(objs[n].innerHTML="curso")
 }
 
-for(n in num){
-    console.log(n)
-}
-
-for (c of num){
-    console.log(c)
+for (c of objs){
+    console.log(c.innerHTML="curso")
 }

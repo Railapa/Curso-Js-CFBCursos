@@ -20,6 +20,7 @@ Mesmo que a função não utilize parâmetros, os parênteses vazios são obriga
 
 4. Exemplos Práticos
 Loop For: O professor demonstra como chamar uma função repetidamente dentro de um loop for [05:07].
+
 Operações Lógicas: Criação de uma função de soma simples para ilustrar como organizar cálculos dentro de blocos funcionais [05:44].
 Manipulação do DOM: Ele mostra como uma função pode ser usada para alterar textos de elementos HTML (divs) na página [07:31].
 Eventos: Demonstra o uso prático de uma função sendo disparada apenas quando um usuário clica em um botão (onclick), reforçando que a função aguarda um estímulo para agir [11:03].
