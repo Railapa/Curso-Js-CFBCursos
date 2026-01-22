@@ -25,6 +25,6 @@ const cursoC1 = [...document.getElementsByClassName('c1')]
 const cursoC2 = [...document.getElementsByClassName('c2')]
 const cursoEspecial = document.getElementsByClassName('curso')[0]
 
-cursoC2.map((el) =>{
+cursoC2.map((el) => {
     el.classList.add('destaque')
 })
