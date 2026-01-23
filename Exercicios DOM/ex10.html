@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .caixa { border: 2px solid #333; padding: 10px; margin-bottom: 20px; }
+        .curso {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        /* Classe para o Exercício 69 e 72 */
+        .selecionado {
+            background-color: #2196F3 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lista de Cursos</h3>
+    <div id="container" class="caixa">
+        <div id="c1" class="curso">JavaScript</div>
+        <div id="c2" class="curso">HTML</div>
+        <div id="c3" class="curso">CSS</div>
+        <div id="c4" class="curso">React</div>
+    </div>
+
+    <div class="caixa">
+        <a href="https://google.com" id="meuLink">Ir para o Google (Ex 70)</a>
+        <br><br>
+        <button id="btnContar">Cliques: 0 (Ex 73)</button>
+    </div>
+    <script src="./ex10.js"></script>
+</body>
+</html>

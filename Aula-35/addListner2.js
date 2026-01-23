@@ -1,23 +1,18 @@
 const caixa1 = document.querySelector('#caixa1')
 const caixa2 = document.querySelector('#caixa2')
 const btn = document.querySelector('#btn_transferir')
-const todosCursos = [...document.querySelectorAll('.curso')]
+const cursos = [...document.querySelectorAll('.curso')]
 
-for(el of todosCursos){
+cursos.map((el) => {
     el.addEventListener('click', (evt) => {
         const curso = evt.target
         curso.classList.toggle('selecionado')
     })
-}
+})
 
 btn.addEventListener('click', () => {
     const selecionados = [...document.querySelectorAll('.selecionado')]
-    const naoSelecionados = [...document.querySelectorAll('.curso:not(.selecionado)')]
-    for(el of selecionados){
+    selecionados.map((el) => {
         caixa2.appendChild(el)
-    }
-
-    for(nao of naoSelecionados){
-        caixa1.appendChild(nao)
-    }
+    })
 })

@@ -47,6 +47,7 @@ O evt.target é o "dedo-duro": ele aponta exatamente para o elemento HTML que fo
 
 const c1 = document.querySelector('#c1')
 const cursos = [...document.querySelectorAll('.curso')]
+const c2 = document.querySelector('#c2')
 
 c1.addEventListener('click', () => {
     c1.innerHTML = 'Java'
@@ -55,6 +56,12 @@ c1.addEventListener('click', () => {
 for (el of cursos) {
     el.addEventListener('click', (evt) => {
         const el = evt.target
-        el.classList.add('destaque')
+        el.classList.toggle('destaque')
     })
 }
+
+const msg = () => {
+    alert('Mensagem')
+}
+
+//c2.addEventListener('click', msg)
