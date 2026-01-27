@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.controles {
+    margin-bottom: 20px;
+}
+
+#btn_limpar {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#btn_limpar:hover {
+    background-color: #d32f2f;
+}
+
+.curso {
+    width: 250px;
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+/* Esta classe será controlada pelo JavaScript */
+.selecionado {
+    background-color: #2196F3 !important;
+    color: white !important;
+    border-color: #0d47a1 !important;
+    transform: scale(1.03); /* Dá um leve aumento no item selecionado */
+}

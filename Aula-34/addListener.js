@@ -49,19 +49,10 @@ const c1 = document.querySelector('#c1')
 const cursos = [...document.querySelectorAll('.curso')]
 const c2 = document.querySelector('#c2')
 
-c1.addEventListener('click', () => {
-    c1.innerHTML = 'Java'
-})
-
-for (el of cursos) {
-    el.addEventListener('click', (evt) => {
-        const el = evt.target
-        el.classList.toggle('destaque')
+cursos.map((el) => {
+        el.addEventListener('click', (evt) => {
+        const tar = evt.target
+        tar.classList.toggle('destaque')
+        console.log(`${el.id} e ${el.innerHTML} foram clicados`)
     })
-}
-
-const msg = () => {
-    alert('Mensagem')
-}
-
-//c2.addEventListener('click', msg)
+})

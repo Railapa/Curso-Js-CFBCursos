@@ -1,7 +1,5 @@
-const caixa1 = document.querySelector('#caixa1')
-const caixa2 = document.querySelector('#caixa2')
-const btn = document.querySelector('#btn_transferir')
 const cursos = [...document.querySelectorAll('.curso')]
+const btn = document.querySelector('#btn_limpar')
 
 cursos.map((el) => {
     el.addEventListener('click', (evt) => {
@@ -12,12 +10,7 @@ cursos.map((el) => {
 
 btn.addEventListener('click', (evt) => {
     const selecionados = [...document.querySelectorAll('.selecionado')]
-    const naoSelecionados = [...document.querySelectorAll('.curso:not(.selecionado)')]
     selecionados.map((el) => {
-        caixa2.appendChild(el)
-    })
-
-    naoSelecionados.map((el) => {
-        caixa1.appendChild(el)
+        el.classList.remove('selecionado')
     })
 })
