@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.btn-opcao {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: #eee;
+}
+
+.btn-opcao:hover{
+    background-color: #c6c6c6;
+}
+
+#caixa-descricao {
+    width: 300px;
+    height: 100px;
+    border: 2px dashed #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #fffbe6;
+}

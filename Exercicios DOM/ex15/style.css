@@ -1,0 +1,16 @@
+.caixa {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+}
+#campo-texto {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+#contador {
+    font-weight: bold;
+    color: blue;
+}
