@@ -1,0 +1,27 @@
+.avo {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    transition: 0.5s;
+}
+
+.pai {
+    border: 1px dashed #666;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.btn-destaque {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Classe que o JS vai aplicar */
+.destacado {
+    background-color: #fff3cd !important;
+    border-color: #ffc107 !important;
+    transform: scale(1.03);
+}
