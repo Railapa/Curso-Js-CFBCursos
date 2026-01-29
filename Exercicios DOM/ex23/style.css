@@ -1,0 +1,23 @@
+#lista-cursos {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+}
+
+.item {
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.borda-azul {
+    border: 2px solid blue !important;
+    background-color: #e3f2fd;
+}
+
+.borda-vermelha {
+    border: 2px solid red !important;
+    background-color: #ffebee;
+}

@@ -1,0 +1,23 @@
+.card {
+    border: 2px solid #333;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.selecionado {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+}
+
+.btn-fechar {
+    display: block;
+    margin-top: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}

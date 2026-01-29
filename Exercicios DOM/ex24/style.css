@@ -1,0 +1,30 @@
+.faq {
+    width: 350px;
+    margin-top: 20px;
+}
+
+.pergunta {
+    background-color: #eee;
+    padding: 15px;
+    margin: 5px 0 0 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.resposta {
+    display: none; /* Começa escondido */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+}
+
+/* Classe para mostrar a resposta */
+.mostrar {
+    display: block !important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}

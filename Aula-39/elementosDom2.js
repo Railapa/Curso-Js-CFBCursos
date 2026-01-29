@@ -1,7 +1,7 @@
 const caixa1 = document.querySelector('#caixa1')
 const cursos = [...document.querySelectorAll('.curso')]
 
-console.log(caixa1.hasChildNodes()) // Verifica se o elemento possui filhos
+console.log(cursos[0].hasChildNodes()) // Verifica se o elemento possui filhos
 
 
 console.log(cursos[0].children.length > 0 ? 'Possui filhos' : 'Não possui filhos') // Forma mais eficiente para verificar se um elemnto possui filhos
