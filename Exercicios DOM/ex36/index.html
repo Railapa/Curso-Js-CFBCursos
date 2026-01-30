@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #vitrine {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .card-produto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            width: 300px;
+        }
+
+        .btn-lixeira {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="vitrine">
+        <div class="card-produto">
+            <span>Produto: Monitor Gamer</span>
+            <button class="btn-lixeira">Excluir</button>
+        </div>
+        <div class="card-produto">
+            <span>Produto: Teclado Mecânico</span>
+            <button class="btn-lixeira">Excluir</button>
+        </div>
+        <div class="card-produto">
+            <span>Produto: Mouse Sem Fio</span>
+            <button class="btn-lixeira">Excluir</button>
+        </div>
+    </div>
+    <script src="ex36.js"></script>
+</body>
+
+</html>
