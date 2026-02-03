@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arquivo {
+            padding: 15px;
+            margin: 5px;
+            background-color: #eee;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        /* Permitiremos selecionar vários agora */
+        .selecionado {
+            background-color: #ffcccc;
+            border-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controles">
+        <button id="btn-remover-selecionados">Remover Selecionados</button>
+    </div>
+
+    <div id="container-arquivos">
+        <div class="arquivo">Documento 1</div>
+        <div class="arquivo">Foto_Viagem.png</div>
+        <div class="arquivo">Planilha_Gastos</div>
+        <div class="arquivo">Trabalho_Unifacs</div>
+    </div>
+    <script src="ex45.js"></script>
+</body>
+
+</html>

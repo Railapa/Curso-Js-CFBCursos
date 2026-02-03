@@ -23,15 +23,46 @@ tecnologias.map((el, chave) => {
     
 })
 
-btnCursoSelecionado.addEventListener('click', (evt) => {
-    const todosRadio = [...document.querySelectorAll('input[type=radio]')]
-    let radioSelecionado = todosRadio.filter((ele,ind,arr) => {
-        return ele.checked 
+btnCursoSelecionado.addEventListener('click', () => {
+    const todosRadios = [...document.querySelectorAll('input[type=radio]')]
+    const radioSelecionado = todosRadios.filter((el) => {
+        return el.checked
     })
-    radioSelecionado = radioSelecionado[0]
-    const cursosSelecionados = radioSelecionado.parentNode.previousSibling.textContent
-    alert(`Curso selecionado ${cursosSelecionados}` )
-    console.log(todosRadio)
+    const cursoSelecionado = radioSelecionado[0].parentNode.previousSibling.textContent
+    alert(`Você selecionou o curso de ${cursoSelecionado}`)
+    console.log(todosRadios)
     console.log(radioSelecionado)
-    console.log(cursosSelecionados)
-})
+    console.log(cursoSelecionado)
+}) 
+
+/*
+1. Aplicando Filtro em Elementos do HTML
+O professor utiliza o filter() não apenas em números ou strings, mas em uma coleção de elementos (divs) que representam cursos.
+
+Ele captura todos os elementos com uma classe específica.
+
+Usa o filter() para encontrar apenas o elemento que possui a classe "selecionado".
+
+2. O Desafio da Seleção Única
+O professor mostra como criar uma lógica para que apenas um curso seja selecionado por vez.
+
+Ao clicar em um curso, o script remove a classe "selecionado" de todos os outros e a adiciona apenas ao clicado.
+
+Isso prepara o terreno para que o método filter() saiba exatamente qual objeto processar.
+
+3. Integração: Filter + DOM
+O ponto alto da aula é o botão "Curso Selecionado".
+
+Quando clicado, ele executa um filter() em todos os cursos.
+
+A condição do filtro é: retornar apenas o elemento que contém a classe "selecionado".
+
+Como o filter() sempre retorna um array, o professor acessa a posição [0] para obter o elemento exato e exibir seu texto em um alert().
+
+4. Vantagens desta Técnica
+Código Limpo: Em vez de usar loops for manuais com variáveis de controle, o filter() resolve a busca em poucas linhas.
+
+Escalabilidade: Funciona da mesma forma se você tiver 5 ou 500 cursos na tela.
+
+Dica do Professor Bruno: Lembre-se que o filter() retorna um novo array. Mesmo que apenas um item seja encontrado, ele virá dentro de "colchetes". Por isso usamos resultado[0] para manipular o elemento diretamente.
+*/
