@@ -25,15 +25,16 @@ tecnologias.map((el, chave) => {
 
 btnCursoSelecionado.addEventListener('click', () => {
     const todosRadios = [...document.querySelectorAll('input[type=radio]')]
-    const radioSelecionado = todosRadios.filter((el) => {
-        return el.checked
+    let radioSelecionado = todosRadios.filter((val) => {
+        return val.checked
     })
-    const cursoSelecionado = radioSelecionado[0].parentNode.previousSibling.textContent
+
+    const cursoSelecionado = radioSelecionado[0].parentElement.previousSibling.textContent
     alert(`Você selecionou o curso de ${cursoSelecionado}`)
     console.log(todosRadios)
     console.log(radioSelecionado)
     console.log(cursoSelecionado)
-}) 
+})
 
 /*
 1. Aplicando Filtro em Elementos do HTML

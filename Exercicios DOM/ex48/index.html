@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+
+        /* Classe que você vai aplicar via JS */
+        .urgente {
+            background-color: #ffda44;
+            border: 2px solid #ff8800;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lista-compras">
+        <div class="item perecivel">Leite</div>
+        <div class="item">Arroz</div>
+        <div class="item perecivel">Iogurte</div>
+        <div class="item">Feijão</div>
+        <div class="item perecivel">Carne</div>
+    </div>
+
+    <button id="btn-importante">Destacar Perecíveis</button>
+    <script src="ex48.js"></script>
+</body>
+
+</html>

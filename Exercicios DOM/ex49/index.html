@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pessoa {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .selecionado {
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controles">
+        <input type="text" id="novo-nome" placeholder="Digite um nome...">
+        <button id="btn-antes">Adicionar Antes</button>
+        <button id="btn-depois">Adicionar Depois</button>
+        <button id="btn-remover">Remover Selecionado</button>
+    </div>
+
+    <ul id="lista-fila">
+        <li class="pessoa">Raí</li>
+        <li class="pessoa">Bruno</li>
+        <li class="pessoa">Ana</li>
+    </ul>
+    <script src="ex49.js"></script>
+</body>
+
+</html>
