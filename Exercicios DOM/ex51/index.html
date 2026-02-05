@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo básico para a lista não ficar colada */
+        #lista-tarefas {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        /* Estilo de cada tarefa (os nossos "itens") */
+        .item-tarefa {
+            padding: 12px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        /* Efeito ao passar o mouse */
+        .item-tarefa:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* CLASSE PRINCIPAL: O destaque do item selecionado */
+        .selecionado {
+            background-color: #e3f2fd;
+            /* Um azul bem clarinho */
+            border-color: #2196f3;
+            /* Borda azul mais forte */
+            color: #1976d2;
+            /* Texto azul */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="controles">
+        <input type="text" id="input-tarefa" placeholder="Nova tarefa...">
+        <button id="btn-urgente">Adicionar no Topo</button>
+        <button id="btn-final">Adicionar no Final</button>
+        <button id="btn-remover">Remover Selecionada</button>
+    </div>
+
+    <ul id="lista-tarefas">
+    </ul>
+    <script src="ex51.js"></script>
+</body>
+
+</html>

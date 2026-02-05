@@ -11,10 +11,13 @@ nomes.map((el) => {
     })
 })
 
+const obterSelecionado = () => {
+    const todos = [...document.querySelectorAll('.pessoa')] 
+    return todos.filter((el) => el.classList.contains('selecionado')) 
+}
+
 btnRemover.addEventListener('click', () => {
-    const nomesSelecionados = nomes.filter((val) => {
-        return val.classList.contains('selecionado')
-    })
+    const nomesSelecionados = obterSelecionado()
     if(nomesSelecionados.length > 0){
         nomesSelecionados[0].remove()
     } else {
@@ -23,7 +26,7 @@ btnRemover.addEventListener('click', () => {
     
 })
 
-btnAntes.addEventListener('click', () => {
+btnAntes.addEventListener('click', () => {                       
     const nomesSelecionados = nomes.filter((val) => {
         return val.classList.contains('selecionado')
     })
