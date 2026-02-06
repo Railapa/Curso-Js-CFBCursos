@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .produto {
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid #333;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        /* Classe de destaque que o JS vai aplicar */
+        .encontrado {
+            background-color: #2ecc71;
+            border-color: #27ae60;
+            color: white;
+            transform: scale(1.1);
+            /* Dá um leve aumento no tamanho */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controles">
+        <input type="text" id="input-busca" placeholder="Digite o item (ex: Monitor)">
+        <button id="btn-localizar">Localizar na Estante</button>
+    </div>
+
+    <div id="estante">
+        <div class="produto">Monitor</div>
+        <div class="produto">Teclado</div>
+        <div class="produto">Mouse</div>
+        <div class="produto">Gabinete</div>
+    </div>
+    <script src="ex53.js"></script>
+</body>
+
+</html>

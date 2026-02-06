@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .controles {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #resultado {
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #ecf0f1;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controles">
+        <input type="text" id="input-busca" placeholder="Digite o nome do curso...">
+        <button id="btn-buscar">Pesquisar</button>
+    </div>
+
+    <p id="resultado">Aguardando pesquisa...</p>
+    <script src="ex52.js"></script>
+</body>
+
+</html>

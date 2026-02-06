@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .painel {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        #caixa-cor {
+            margin-top: 10px;
+            transition: background-color 0.5s;
+            /* Deixa a mudança suave */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel">
+        <input type="text" id="input-cor" placeholder="Digite uma cor (ex: Azul)">
+        <button id="btn-buscar">Verificar Cor</button>
+    </div>
+
+    <div id="caixa-cor" style="width: 100px; height: 100px; border: 1px solid #000;">
+    </div>
+    <p id="mensagem">Aguardando busca...</p>
+    <script src="ex54.js"></script>
+</body>
+
+</html>
