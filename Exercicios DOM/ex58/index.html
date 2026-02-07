@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+
+        .carrinho-container {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        button {
+            background-color: #6200ee;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #msg-validacao {
+            margin-top: 15px;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .erro {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .sucesso {
+            background-color: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carrinho-container">
+        <h3>Validação de Preços</h3>
+        <p id="lista-precos">Produtos: R$ 25.00, R$ 10.00, R$ 0.00, R$ 50.00</p>
+        <button id="btn-validar">Finalizar Compra</button>
+    </div>
+
+    <p id="msg-validacao">Aguardando validação...</p>
+    <script src="ex58.js"></script>
+</body>
+
+</html>
