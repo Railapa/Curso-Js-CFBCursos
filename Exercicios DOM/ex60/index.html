@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .monitor {
+            margin-bottom: 20px;
+        }
+
+        #area-sensores {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sensor {
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Classe que seu JS deve aplicar */
+        .destaque {
+            border-color: #e74c3c;
+            background-color: #ffedeb;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="monitor">
+        <input type="number" id="id-busca" placeholder="ID do Sensor (1 a 4)">
+        <button id="btn-buscar">Localizar Sensor</button>
+    </div>
+
+    <div id="area-sensores">
+        <div class="sensor" data-id="1">S-01</div>
+        <div class="sensor" data-id="2">S-02</div>
+        <div class="sensor" data-id="3">S-03</div>
+        <div class="sensor" data-id="4">S-04</div>
+    </div>
+    <p id="feedback">Digite o ID para buscar.</p>
+    <script src="ex60.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .alerta-chat {
+            background-color: #ffdada;
+            color: #cc0000;
+            padding: 10px;
+            border: 1px solid #cc0000;
+            font-weight: bold;
+        }
+
+        .aprovado-chat {
+            color: #008800;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <h3>Postar Comentário</h3>
+        <textarea id="texto-comentario" placeholder="Escreva seu comentário aqui..."></textarea>
+        <button id="btn-postar">Postar</button>
+    </div>
+
+    <p id="status-comentario">Aguardando envio...</p>
+    <script src="ex62.js"></script>
+</body>
+
+</html>

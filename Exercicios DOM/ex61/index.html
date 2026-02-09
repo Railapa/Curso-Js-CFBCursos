@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .campo-senha {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .sucesso {
+            color: green;
+            font-weight: bold;
+        }
+
+        .erro {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel">
+        <h3>Criar Senha</h3>
+        <p>A senha deve ter pelo menos 6 caracteres em todos os campos.</p>
+        <input type="password" class="campo-senha" placeholder="Senha">
+        <input type="password" class="campo-senha" placeholder="Repita a Senha">
+        <button id="btn-validar">Validar Senhas</button>
+    </div>
+    <p id="feedback-senha">Aguardando...</p>
+    <script src="ex61.js"></script>
+</body>
+
+</html>
