@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .painel-iterador {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #display-info {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .finalizado {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel-iterador">
+        <p id="info-array">Array: [5, 15, 25]</p>
+        <button id="btn-proximo">Chamar Próximo Elemento</button>
+    </div>
+    <div id="display-info">
+        <p>Valor: <span id="valor-atual">---</span></p>
+        <p>Terminou? <span id="status-don">Não</span></p>
+    </div>
+    <script src="ex68.js"></script>
+</body>
+
+</html>
