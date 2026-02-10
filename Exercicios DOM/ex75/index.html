@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .apresentacao {
+            width: 400px;
+            height: 200px;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #btn-proximo-slide {
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background: #ecf0f1;
+            font-weight: bold;
+        }
+
+        #contador-status {
+            margin-top: 15px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="apresentacao">
+        <div id="caixa-texto">
+            <h2 id="texto-slide">Bem-vindo à Aula!</h2>
+        </div>
+        <button id="btn-proximo-slide">Próximo Slide ➡️</button>
+    </div>
+    <p id="contador-status">Slide 1 de 3</p>
+    <script src="ex75.js"></script>
+</body>
+
+</html>

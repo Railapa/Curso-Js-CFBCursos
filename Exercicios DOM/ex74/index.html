@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .checkout {
+            border: 2px dashed #2ecc71;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f9fffb;
+        }
+
+        #total-pedido {
+            color: #27ae60;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="checkout">
+        <h3>Carrinho de Compras</h3>
+        <p>Itens: R$ 12.00, R$ 25.00, R$ 10.00</p>
+        <p>Taxa de Entrega fixa: R$ 5.00</p>
+        <button id="btn-fechar-pedido">Calcular Total</button>
+    </div>
+    <h2 id="total-pedido">Total: R$ 0.00</h2>
+    <script src="ex74.js"></script>
+</body>
+
+</html>

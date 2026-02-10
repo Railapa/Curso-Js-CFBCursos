@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .checklist-box {
+            background: #eee;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .sucesso-epi {
+            color: green;
+            font-weight: bold;
+        }
+
+        .perigo-epi {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="checklist-box">
+        <h3>Checklist de Segurança</h3>
+        <div class="item">
+            <label>Capacete:</label>
+            <select class="status-epi">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+        </div>
+        <div class="item">
+            <label>Luvas:</label>
+            <select class="status-epi">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+        </div>
+        <button id="btn-validar-epi">Verificar EPIs</button>
+    </div>
+    <p id="feedback-epi">Status: Aguardando...</p>
+    <script src="ex72.js"></script>
+</body>
+
+</html>

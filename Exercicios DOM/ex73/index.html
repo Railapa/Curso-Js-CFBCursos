@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .painel-sensores {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        #alerta-maquina {
+            margin-top: 15px;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .perigo {
+            background: #ffcccc;
+            color: #cc0000;
+        }
+
+        .seguro {
+            background: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel-sensores">
+        <h3>Monitoramento de Máquinas</h3>
+        <p>Temperaturas: <span id="lista-temp">25, 32, 45, 28</span></p>
+        <button id="btn-checar-maquina">Checar Segurança</button>
+    </div>
+    <div id="alerta-maquina">Sistema Operando</div>
+    <script src="ex73.js"></script>
+</body>
+
+</html>
