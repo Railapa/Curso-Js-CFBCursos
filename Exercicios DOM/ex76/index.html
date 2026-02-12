@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .biblioteca {
+            background: #fdfdfd;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .controles {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biblioteca">
+        <h3>Meus Livros</h3>
+        <p id="lista-livros">Livros: </p>
+        <div class="controles">
+            <button id="btn-add">Adicionar "Node.js" no Fim</button>
+            <button id="btn-rem">Remover Primeiro Livro</button>
+        </div>
+    </div>
+    <p id="status-biblioteca">Total de livros: 0</p>
+    <script src="ex76.js"></script>
+</body>
+
+</html>

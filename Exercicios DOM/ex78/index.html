@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            background: #0b0d17;
+            color: #00ff41;
+        }
+
+        .painel-nave {
+            border: 2px solid #00ff41;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #btn-diagnostico {
+            background: #00ff41;
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel-nave">
+        <h3>Status dos Sistemas</h3>
+        <p>Linha 1: Motores | Linha 2: Escudos | Linha 3: Oxigênio</p>
+        <div id="display-sistema">Aguardando Diagnóstico...</div>
+        <button id="btn-diagnostico">Verificar Escudo Traseiro</button>
+    </div>
+    <script src="ex78.js"></script>
+</body>
+
+</html>
