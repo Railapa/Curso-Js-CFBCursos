@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .container-presenca {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .controles {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #1a73e8;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1557b0;
+        }
+
+        #lista-alunos {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            min-height: 100px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .nome-aluno {
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        #total-alunos {
+            font-size: 0.9em;
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 159 - Lista de Presença</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container-presenca">
+            <h3>Lista de Presença Única</h3>
+            <div class="controles">
+                <input type="text" id="input-nome" placeholder="Nome do aluno...">
+                <button id="btn-registrar">Confirmar Presença</button>
+            </div>
+
+            <div id="lista-alunos">
+            </div>
+
+            <p id="total-alunos">Total de alunos confirmados: 0</p>
+        </div>
+
+        <script src="ex87.js"></script>
+    </body>
+
+    </html>
+    <script src="ex87.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background: #f4f7f6;
+        }
+
+        .hardware-box {
+            background: #2c3e50;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        #btn-buscar {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #res-hardware {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hardware-box">
+        <h3>Consultar Componente</h3>
+        <input type="text" id="input-peca" placeholder="Ex: Processador">
+        <button id="btn-buscar">Ver Especificação</button>
+    </div>
+    <p id="res-hardware">Digite um componente para consultar...</p>
+    <p id="total-pecas"></p>
+    <script src="ex86.js"></script>
+</body>
+
+</html>

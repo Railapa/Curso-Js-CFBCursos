@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+
+        .todo-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 93%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .botoes-topo,
+        .botoes-baixo {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            flex: 1;
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+
+        #lista-visual {
+            background: #eee;
+            padding: 10px;
+            min-height: 50px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h3>Minhas Tarefas</h3>
+        <input type="text" id="input-tarefa" placeholder="Digite a tarefa...">
+
+        <div class="botoes-topo">
+            <button id="btn-comum">Add Comum (Final)</button>
+            <button id="btn-urgente">Add Urgente (Início)</button>
+        </div>
+
+        <div id="lista-visual">Sua lista está vazia</div>
+
+        <div class="botoes-baixo">
+            <button id="btn-rem-primeiro">Remover Primeira</button>
+            <button id="btn-rem-ultimo">Remover Última</button>
+        </div>
+    </div>
+    <script src="ex85.js"></script>
+</body>
+
+</html>
