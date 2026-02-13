@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        .loja {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #btn-consultar {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #res-loja {
+            font-size: 1.2em;
+            color: #0056b3;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loja">
+        <h3>Consulta de Preços</h3>
+        <p>Produtos: 101 (Teclado), 102 (Mouse), 103 (Monitor)</p>
+        <input type="number" id="input-id" placeholder="ID do Produto">
+        <button id="btn-consultar">Consultar Preço</button>
+    </div>
+    <p id="res-loja">Aguardando consulta...</p>
+    <p id="total-itens"></p>
+    <script src="ex81.js"></script>
+</body>
+
+</html>

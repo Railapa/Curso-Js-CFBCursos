@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .hashtag-box {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background: #e74c3c;
+        }
+
+        /* Dica: clicar na tag pode ser o desafio extra para remover */
+    </style>
+</head>
+
+<body>
+    <div class="hashtag-box">
+        <h3>Gerador de Tags</h3>
+        <input type="text" id="input-tag" placeholder="#javascript">
+        <button id="btn-add">Adicionar</button>
+        <button id="btn-limpar">Limpar Tudo</button>
+    </div>
+    <div id="display-tags" style="margin-top: 15px;">
+        
+    </div>
+    <p id="info-tags">Tags únicas: 0</p>
+    <script src="ex83.js"></script>
+</body>
+
+</html>
