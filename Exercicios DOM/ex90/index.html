@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2f3;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .container-map {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .busca-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        flex: 2;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 1em;
+        transition: border-color 0.3s;
+    }
+
+    input:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+
+    button {
+        flex: 1;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    #box-resultado {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 5px solid #3498db;
+    }
+
+    #res-traducao {
+        margin: 0;
+        font-weight: bold;
+        color: #34495e;
+        word-break: break-all;
+    }
+</style>
+
+<body>
+    <div class="painel">
+        <h3>Tradutor de Cores</h3>
+        <input type="text" id="input-cor" placeholder="Ex: vermelho">
+        <button id="btn-traduzir">Traduzir</button>
+    </div>
+    <p id="res-traducao"></p>
+    <script src="ex90.js"></script>
+</body>
+
+</html>
