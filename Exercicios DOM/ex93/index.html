@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f2f5;
+            padding: 40px;
+        }
+
+        .loja-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .busca-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Estilo do Cartão que será injetado pela Template String */
+        .card-produto {
+            background: white;
+            border-top: 5px solid #27ae60;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+
+        .erro {
+            color: #e74c3c;
+            font-weight: bold;
+            background: #fdeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loja-container">
+        <h3>Busca de Inventário</h3>
+        <input type="text" id="input-busca" placeholder="Ex: monitor">
+        <button id="btn-gerar">Gerar Cartão</button>
+    </div>
+    <div id="display-resultado"></div>
+    <script src="ex93.js"></script>
+</body>
+
+</html>
