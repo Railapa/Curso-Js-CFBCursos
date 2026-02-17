@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .biblioteca-container {
+            background: #fff;
+            width: 450px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            font-family: sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .form-livro {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #6c5ce7;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .card-livro {
+            background: #f9f9f9;
+            padding: 15px;
+            border-bottom: 3px solid #6c5ce7;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .card-livro h4 {
+            margin: 0;
+            color: #2d3436;
+        }
+
+        .card-livro p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #636e72;
+        }
+
+        .tempo-leitura {
+            color: #00b894;
+            font-weight: bold;
+            font-size: 0.8em;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biblioteca-container">
+        <h3>Minha Estante Digital</h3>
+        <div class="form-livro">
+            <input type="text" id="input_titulo" placeholder="Título do Livro">
+            <input type="text" id="input_autor" placeholder="Autor">
+            <input type="number" id="input_paginas" placeholder="Nº de Páginas">
+            <button id="btn_adicionar_livro">Adicionar à Estante</button>
+        </div>
+
+        <div id="estante_visual">
+        </div>
+    </div>
+    <script src="ex105.js"></script>
+</body>
+
+</html>
