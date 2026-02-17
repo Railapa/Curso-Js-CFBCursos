@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .contatos-container {
+            background: white;
+            width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #1c1e21;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-contato {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #1877f2;
+            outline: none;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #166fe5;
+        }
+
+        /* Estilo para cada "instância" visual do contato */
+        .card-contato {
+            background: #f7f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #1877f2;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .card-contato strong {
+            display: block;
+            color: #1c1e21;
+            font-size: 16px;
+        }
+
+        .card-contato span {
+            color: #606770;
+            font-size: 14px;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contatos-box">
+        <input type="text" id="input-nome" placeholder="Nome">
+        <input type="text" id="input-fone" placeholder="Telefone">
+        <button id="btn-salvar">Salvar Contato</button>
+    </div>
+    <div id="lista-contatos"></div>
+    <script src="ex103.js"></script>
+</body>
+
+</html>

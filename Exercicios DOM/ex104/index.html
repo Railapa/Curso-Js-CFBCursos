@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .estoque-container {
+            background: #fff;
+            width: 450px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-estoque {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        .card-veiculo {
+            background: #ecf0f1;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 6px solid #2980b9;
+        }
+
+        .card-veiculo h4 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .card-veiculo p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="estoque-container">
+        <h3>Cadastro de Veículos</h3>
+        <div class="form-estoque">
+            <input type="text" id="input_marca" placeholder="Marca (ex: Honda)">
+            <input type="text" id="inpu_modelo" placeholder="Modelo (ex: Civic)">
+            <input type="number" id="input_ano" placeholder="Ano">
+            <button id="btn_cadastrar">Adicionar ao Estoque</button>
+        </div>
+
+        <div id="lista_veiculos">
+        </div>
+    </div>
+    <script src="ex104.js"></script>
+</body>
+
+</html>
