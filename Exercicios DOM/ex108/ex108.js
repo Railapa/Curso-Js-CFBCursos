@@ -2,32 +2,32 @@ const arCondicionado = {
     temperatura: 22,
     ligado: true,
 
-    power: function(){
-        if(this.ligado == false){
-            this.ligado = true
-        } else if (this.ligado == true){
-            this.ligado = false
-        }
-    },
-    
-    ajustarTemp: function(valor){
-        const novoValor = this.temperatura += valor
-        if(novoValor >= 16 && novoValor <= 28){
-            this.temperatura = `${novoValor}°C`
-        } else {
-            this.temperatura = 'Temperatura indisponivel'
+    power: function () {
+        if (this.ligado == false) {
+            this.ligado = 'desligado'
+        } else if (this.ligado == true) {
+            this.ligado = 'ligado'
         }
     },
 
-    exibirStatus: function(){
-        console.log(`Ligado: ${this.ligado}, Temperatura: ${this.temperatura}`)
+    ajustarTemp: function (valor) {
+        const novoValor = this.temperatura += valor
+        if (novoValor >= 16 && novoValor <= 28) {
+            this.temperatura = `${novoValor}°C`
+        } else {
+            this.temperatura = 'O ar condicionado não permite esse nivel de temperatura'
+        }
+    },
+
+    exibirStatus: function () {
+        console.log(` O ar condicionado está ${this.ligado} \n Temperatura: ${this.temperatura}`)
     }
 }
 
-const arCondicionado1 = arCondicionado
-const arCondicionado2 = arCondicionado
-const arCondicionado3 = arCondicionado
+const arcondicionado1 = arCondicionado
+const arcondicionado2 = arCondicionado
+const arcondicionado3 = arCondicionado
 
-arCondicionado1.power()
-arCondicionado2.ajustarTemp(1)
-arCondicionado3.exibirStatus()
+arcondicionado3.power()
+arcondicionado1.ajustarTemp(10)
+arcondicionado2.exibirStatus()

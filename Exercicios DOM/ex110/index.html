@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dadada;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .form-box {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .card-perfil {
+            background: #252525;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #00ff00;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h3>Editar Perfil</h3>
+            <input type="text" id="in_nome" placeholder="Digite o nome">
+            <input type="number" id="in_idade" placeholder="Digite a idade">
+            <button id="btn_atualizar">Atualizar Sistema</button>
+        </div>
+
+        <div class="card-perfil" id="visual_perfil">
+            <h2 id="display_nome">Nome: ---</h2>
+            <p id="display_idade">Idade: ---</p>
+            <span class="status">Objeto Literal Ativo</span>
+        </div>
+    </div>
+    <script src="ex110.js"></script>
+</body>
+
+</html>
