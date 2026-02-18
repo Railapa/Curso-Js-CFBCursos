@@ -1,19 +1,17 @@
-class Veiculo{
-    constructor(pmarca,pmodelo,pano){
-        this.marca = pmarca
-        this.modelo = pmodelo
-        this.ano = pano
-    }
+function Veiculo(pmarca, pmodelo, pano) {
+    this.marca = pmarca
+    this.modelo = pmodelo
+    this.ano = pano
 
-    obterMarca(){
+    this.obterMarca = function () {
         return this.marca
     }
 
-    obterModelo(){
+    this.obterModelo = function () {
         return this.modelo
     }
 
-    obterAno(){
+    this.obterAno = function () {
         return this.ano
     }
 }

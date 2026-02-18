@@ -1,14 +1,13 @@
-class Contato{
-    constructor(pnome, pcontato){
-        this.nome = pnome
-        this.contato = pcontato
-    }
+function Contato(pnome, pcontato) {
 
-    obterNome(){
+    this.nome = pnome
+    this.contato = pcontato
+
+    this.obterNome = function () {
         return this.nome
     }
 
-    obterContato(){
+    this.obterContato = function () {
         return this.contato
     }
 }
@@ -31,7 +30,7 @@ const addContato = () => {
 }
 
 btn.addEventListener('click', () => {
-    const novoContato = new Contato(input_nome.value, input_fone.value) 
+    const novoContato = new Contato(input_nome.value, input_fone.value)
     contatos.push(novoContato)
     addContato()
     input_nome.value = ''

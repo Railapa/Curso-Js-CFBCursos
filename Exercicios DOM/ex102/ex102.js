@@ -1,27 +1,26 @@
-class Smartwatch{
-    constructor(marca){
-        this.marca = marca
-        this.passos = 0
-        this.calorias = 0
-        this.monitorando = false
-    }
+function Smartwatch(marca) {
 
-    botaoTreino(){
-        if(this.monitorando == false){
+    this.marca = marca
+    this.passos = 0
+    this.calorias = 0
+    this.monitorando = false
+
+    this.botaoTreino = function(){
+        if (this.monitorando == false) {
             this.monitorando = true
-        } else{
+        } else {
             this.monitorando = false
         }
     }
 
-    caminhar(qtdPassos){
-        if(this.monitorando == true){
+    this.caminhar = function(qtdPassos){
+        if (this.monitorando == true) {
             this.passos += qtdPassos
             return this.calorias += (qtdPassos * 0.04)
         }
     }
 
-    exibirResumo(){
+    this.exibirResumo = function(){
         return console.log(`Marca: ${this.marca}, Total de passos: ${this.passos}, Calorias queimadas: ${this.calorias}`)
     }
 }

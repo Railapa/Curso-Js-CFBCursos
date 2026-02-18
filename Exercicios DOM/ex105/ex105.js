@@ -4,26 +4,24 @@ const input_paginas = document.querySelector('#input_paginas')
 const btn_adicionar_livro = document.querySelector('#btn_adicionar_livro')
 const estante_visual = document.querySelector('#estante_visual')
 
-class Livro{
-    constructor(pnome,pautor,ppaginas){
-        this.nome = pnome
-        this.autor = pautor
-        this.paginas = ppaginas
-    }
+function Livro(pnome, pautor, ppaginas) {
+    this.nome = pnome
+    this.autor = pautor
+    this.paginas = ppaginas
 
-    obterNome(){
+    this.obterNome = function(){
         return this.nome
     }
 
-    obterAutor(){
+    this.obterAutor = function(){
         return this.autor
     }
 
-    obterPaginas(){
+    this.obterPaginas = function(){
         return this.paginas
     }
 
-    tempoEstimado(){
+    this.tempoEstimado = function(){
         return this.paginas * 2
     }
 }
