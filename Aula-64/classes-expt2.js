@@ -11,6 +11,12 @@ const carro = document.querySelector('.carro')
 
 let a_carros = []
 
+const removerCarro = (quem) => {
+    a_carros=a_carros.filter((el) => {
+        return el.nome != quem
+    })
+}
+
 f_tipoMilitar.addEventListener('click', () => {
     f_blindagem.removeAttribute('disabled')
     f_municao.removeAttribute('disabled')
@@ -27,16 +33,21 @@ const gerenciarExibicaoCarros = () => {
     carros.innerHTML = ''
     a_carros.map((c) => {
         const div = document.createElement('div')
+        const btn = document.createElement('button')
+        btn.innerHTML = 'Remover'
+        btn.addEventListener('click', (evt) => {
+            const quemRemover = evt.target.parentNode.dataset.nome
+            removerCarro(quemRemover)
+            gerenciarExibicaoCarros()
+        })  
         div.setAttribute('class', 'carro')
+        div.setAttribute('data-nome', c.nome)
         div.innerHTML = `Nome: ${c.nome}`
         div.innerHTML += `<br/> Portas: ${c.portas}`
         div.innerHTML += `<br/> Blindagem: ${c.blindagem}`
         div.innerHTML += `<br/> Munição: ${c.municao}`
         carros.appendChild(div)
-
-        div.addEventListener('click', () => {
-            div.classList.toggle('selecionado')
-        })
+        div.appendChild(btn)
     })
 }
 
@@ -51,21 +62,7 @@ btn_addCarro.addEventListener('click', () => {
     gerenciarExibicaoCarros()
 })
 
-btn_removerCarro.addEventListener('click', () => {
-    a_carros.map((c) => {
-        const div = document.createElement('div')
-        div.setAttribute('class', 'carro')
-        div.innerHTML = `Nome: ${c.nome}`
-        div.innerHTML += `<br/> Portas: ${c.portas}`
-        div.innerHTML += `<br/> Blindagem: ${c.blindagem}`
-        div.innerHTML += `<br/> Munição: ${c.municao}`
-        div.addEventListener('click', () => {
-            div.classList.toggle('selecionado')
-        })
-        carros.remove('selecionado')
-    })
 
-})
 class Carro {
     constructor(nome, portas) {
         this.nome = nome

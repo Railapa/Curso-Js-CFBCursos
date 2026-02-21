@@ -21,7 +21,7 @@
     border-radius: 5px;
     display: flex;
     width: 200px;
-    cursor: pointer;
+    flex-direction: column;
 }
 
 .campoForm{
@@ -47,4 +47,13 @@
 
 .selecionado{
     background-color: rgb(0, 93, 11);
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.btn:hover{
+    background-color: #d4d4d4;
 }
