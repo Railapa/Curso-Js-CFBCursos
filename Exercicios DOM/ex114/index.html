@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Frota - Aula 63</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="painel-controle">
+        <div class="campo">
+            <label>Nome do Veículo:</label>
+            <input type="text" id="f_nome">
+        </div>
+
+        <div class="campo">
+            <label>Portas:</label>
+            <input type="number" id="f_portas" value="0">
+        </div>
+
+        <div class="campo">
+            <label>Blindagem:</label>
+            <input type="number" id="f_blindagem" value="0" disabled>
+        </div>
+
+        <div class="campo">
+            <label>Munição:</label>
+            <input type="number" id="f_municao" value="0" disabled>
+        </div>
+
+        <div class="campo-radio">
+            <label>Tipo:</label>
+            <input type="radio" name="f_tipo" id="f_tipoNormal" checked> Normal
+            <input type="radio" name="f_tipo" id="f_tipoMilitar"> Militar
+        </div>
+
+        <div class="acoes">
+            <button id="btn_add">Adicionar à Frota</button>
+            <button id="btn_remover">Remover Selecionados</button>
+        </div>
+    </div>
+
+    <div id="frota" class="container-frota">
+    </div>
+
+    <script src="ex114.js"></script>
+</body>
+
+</html>

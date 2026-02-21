@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painel-controle {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label { font-weight: bold; margin-bottom: 5px; }
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:disabled { background-color: #e9ecef; cursor: not-allowed; }
+
+.campo-radio { margin: 15px 0; }
+
+.acoes { display: flex; gap: 10px; }
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn_add { background-color: #28a745; color: white; }
+#btn_remover { background-color: #dc3545; color: white; }
+button:hover { opacity: 0.8; }
+
+.container-frota {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.carro-card {
+    background: #ffffff;
+    border: 3px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Classe que será alternada via JavaScript */
+.selecionado {
+    border-color: #ffc107;
+    background-color: #fff9db;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
