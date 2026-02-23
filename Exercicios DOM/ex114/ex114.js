@@ -9,29 +9,30 @@ const btn_remover = document.querySelector('#btn_remover')
 const container_frota = document.querySelector('.container-frota')
 
 f_tipoMilitar.addEventListener('click', () => {
-    f_blindagem.removeAttribute('disabled')
-    f_municao.removeAttribute('disabled')
+    if (f_tipoMilitar.checked) {
+        f_blindagem.removeAttribute('disabled', 'disabled')
+        f_municao.removeAttribute('disabled', 'disabled')
+    }
 })
 
 f_tipoNormal.addEventListener('click', () => {
+    f_municao.setAttribute('disabled', 'disabled')
+    f_blindagem.setAttribute('disabled', 'disabled')
     f_blindagem.value = '0'
     f_municao.value = '0'
-    f_blindagem.setAttribute('disabled', 'disabled')
-    f_municao.setAttribute('disabled', 'disabled')
 })
-
-class Normal {
+class CarroNormal {
     constructor(nome, portas) {
         this.nome = nome
         this.portas = portas
     }
 }
 
-class Militar extends Normal {
+class CarroMilitar extends CarroNormal {
     constructor(nome, portas, blindagem, municao) {
         super(nome, portas)
-        this.municao = municao
         this.blindagem = blindagem
+        this.municao = municao
     }
 }
 
@@ -47,22 +48,22 @@ const addCarro = () => {
         div.innerHTML += `<br/> Blindagem: ${el.blindagem || ''}`
         div.innerHTML += `<br/> Munição: ${el.municao || ''}`
         container_frota.appendChild(div)
+        f_nome.value = ''
+        f_portas.value = '0'
+        f_blindagem.value = '0'
+        f_municao.value = '0'
     })
-
-    f_nome.value = ''
-    f_portas.value = '0'
-    f_blindagem.value = '0'
-    f_municao.value = '0'
 }
 
 btn_add.addEventListener('click', () => {
     if (f_tipoNormal.checked) {
-        const novoCarroNormal = new Normal(f_nome.value, f_portas.value)
-        carros.push(novoCarroNormal)
+        const novoCarro = new CarroNormal(f_nome.value, f_portas.value)
+        carros.push(novoCarro)
         addCarro()
     } else if (f_tipoMilitar.checked) {
-        const novoCarroMilitar = new Militar(f_nome.value, f_portas.value, f_blindagem.value, f_municao.value)
-        carros.push(novoCarroMilitar)
+        const novoCarro = new CarroMilitar(f_nome.value, f_portas.value, f_blindagem.value, f_municao.value)
+        carros.push(novoCarro)
         addCarro()
     }
+
 })
