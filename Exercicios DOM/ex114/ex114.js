@@ -42,17 +42,26 @@ const addCarro = () => {
     container_frota.innerHTML = ''
     carros.map((el) => {
         const div = document.createElement('div')
+        const btnRemover = document.createElement('button')
+        btnRemover.innerHTML = 'remover carro'
         div.setAttribute('class', 'carro-card')
+        btnRemover.addEventListener('click', () => {
+            carros = carros.filter((c) => {
+                return c !== el
+            })
+            addCarro()
+        })
         div.innerHTML = `Nome: ${el.nome}`
         div.innerHTML += `<br/> Portas: ${el.portas}`
         div.innerHTML += `<br/> Blindagem: ${el.blindagem || ''}`
         div.innerHTML += `<br/> Munição: ${el.municao || ''}`
         container_frota.appendChild(div)
-        f_nome.value = ''
-        f_portas.value = '0'
-        f_blindagem.value = '0'
-        f_municao.value = '0'
+        div.appendChild(btnRemover)
     })
+    f_nome.value = ''
+    f_portas.value = '0'
+    f_blindagem.value = '0'
+    f_municao.value = '0'
 }
 
 btn_add.addEventListener('click', () => {

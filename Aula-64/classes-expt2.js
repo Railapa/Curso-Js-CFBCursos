@@ -39,13 +39,13 @@ const gerenciarExibicaoCarros = () => {
             const quemRemover = evt.target.parentNode.dataset.nome
             removerCarro(quemRemover)
             gerenciarExibicaoCarros()
-        })  
+        })
         div.setAttribute('class', 'carro')
         div.setAttribute('data-nome', c.nome)
         div.innerHTML = `Nome: ${c.nome}`
         div.innerHTML += `<br/> Portas: ${c.portas}`
-        div.innerHTML += `<br/> Blindagem: ${c.blindagem}`
-        div.innerHTML += `<br/> Munição: ${c.municao}`
+        div.innerHTML += `<br/> Blindagem: ${c.blindagem || ''}`
+        div.innerHTML += `<br/> Munição: ${c.municao || ''}`
         carros.appendChild(div)
         div.appendChild(btn)
     })
