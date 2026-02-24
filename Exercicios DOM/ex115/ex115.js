@@ -3,6 +3,7 @@ class Usuario{
     constructor(nome){
         this.nome = nome
         Usuario.totalUsuarios++
+        console.log(`Usuario ${this.nome} criado!`)
     }
 }
 

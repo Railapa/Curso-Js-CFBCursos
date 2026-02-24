@@ -17,7 +17,7 @@ const btn = document.querySelector('#btn_add')
 const input_nome = document.querySelector('#f_nome')
 const input_idade = document.querySelector('#f_idade')
 const res = document.querySelector('.res')
-
+ 
 
 const addPessoa = () => {
     res.innerHTML = ''

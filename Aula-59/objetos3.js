@@ -6,7 +6,7 @@ class Pessoa {
 
     obterNome() {
         return this.nome
-    }
+    } 
 
     obterIdade() {
         return this.idade
@@ -14,7 +14,7 @@ class Pessoa {
 }
 
 let pessoas = []
-
+                          
 const btn = document.querySelector('#btn_add')
 const input_nome = document.querySelector('#f_nome')
 const input_idade = document.querySelector('#f_idade')
