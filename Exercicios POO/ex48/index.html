@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager Class</title>
+    <style>
+        .tarefa {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .btn-excluir {
+            color: #000;
+            cursor: pointer;
+            border: 1px solid #000;
+            background: none;
+            background-color: #f00;
+            padding: 2px 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minhas Tarefas</h1>
+    <input type="text" id="input_tarefa" placeholder="Nova tarefa...">
+    <button id="btn_adicionar">Adicionar</button>
+
+    <div id="lista_tarefas">
+    </div>
+
+    <script src="ex48.js"></script>
+</body>
+
+</html>

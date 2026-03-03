@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor de Sensores</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sensor-card {
+            border: 2px solid #333;
+            padding: 15px;
+            width: 150px;
+            text-align: center;
+            border-radius: 8px;
+            font-family: sans-serif;
+        }
+
+        .normal {
+            background-color: #90ee90;
+        }
+
+        /* Verde */
+        .alerta {
+            background-color: #ff4500;
+            color: white;
+        }
+        /* Vermelho */
+    </style>
+</head>
+
+<body>
+    <h1>Painel de Controle de Temperatura</h1>
+    <div id="painel_sensores" class="container"></div>
+
+    <script src="ex50.js"></script>
+</body>
+
+</html>
