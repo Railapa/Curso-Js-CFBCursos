@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Tarefas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #btn_add {
+            padding: 10px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            background: #eee;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-apagar {
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Lista de Tarefas</h3>
+        <input type="text" id="input_tarefa" placeholder="Nova tarefa...">
+        <button id="btn_add">Adicionar</button>
+
+        <ul id="lista_tarefas"></ul>
+    </div>
+
+    <script src="ex100.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+📝 Resumo Detalhado da Aula
+O professor Bruno mostra que, sem a Promise, o JavaScript não espera o tempo de um setTimeout. Ele executa o código, vê que tem uma espera, ignora e segue para a próxima linha. Quando a resposta finalmente chega, o código que deveria usá-la já passou.
+
+A Promise tem dois estados principais de retorno:
+
+Resolve (Resolvida): Quando tudo deu certo. [10:08]
+
+Reject (Rejeitada): Quando algo falhou ou o resultado não foi o esperado. [10:08]
+
+Para "ouvir" essa promessa, usamos:
+
+.then(): Executa se a promessa for resolvida. [12:33]
+
+.catch(): Executa se a promessa for rejeitada. [12:33]
+
+O que acontece na execução:
+O JavaScript lê a criação da Promise e inicia o cronômetro do setTimeout em segundo plano.
+
+Imediatamente, ele pula para a última linha e escreve "Processando..." na tela. Ele NÃO espera os 3 segundos. [16:00]
+
+Após 3 segundos, a Promise "acorda".
+
+Se resultado for true, ela chama o resolve. Isso dispara o .then(), que apaga o "Processando..." e escreve "Deu tudo certo!". [16:12]
+
+🔍 Por que isso é importante para você?
+Nos seus exercícios anteriores de Classes, você estava criando elementos que apareciam na hora. Imagine que agora, ao clicar em "Adicionar Membro", o sistema tivesse que salvar isso num servidor na nuvem.
+
+Você usaria uma Promise:
+
+O botão ficaria com um ícone de "carregando".
+
+A Promise tentaria salvar os dados.
+
+.then(): O card aparece na tela com sucesso.
+
+.catch(): Você mostra um alerta de "Erro ao conectar com o servidor".

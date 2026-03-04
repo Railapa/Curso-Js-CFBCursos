@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acesso Biométrico - Área Restrita</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0b0e14;
+            color: #00ff41;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .scanner-container {
+            background: #1a1f29;
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #00ff41;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+        }
+
+        .digital-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 5px #00ff41);
+        }
+
+        input {
+            background: #0b0e14;
+            border: 1px solid #00ff41;
+            color: #00ff41;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        button {
+            background: #00ff41;
+            color: #0b0e14;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        button:disabled {
+            background: #004411;
+            color: #008822;
+            cursor: not-allowed;
+        }
+
+        #status_visor {
+            margin-top: 25px;
+            font-family: 'Courier New', monospace;
+            min-height: 50px;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        .acesso-permitido {
+            color: #00ff41;
+        }
+
+        .acesso-negado {
+            color: #ff3131;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scanner-container">
+        <div class="digital-icon">🖐️</div>
+        <h3>SCANNER BIOMÉTRICO</h3>
+        <input type="text" id="id_usuario" placeholder="INSIRA SEU ID">
+        <button id="btn_scan">INICIAR ESCANEAMENTO</button>
+        <div id="status_visor"></div>
+    </div>
+
+    <script src="ex98.js"></script>
+</body>
+
+</html>

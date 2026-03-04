@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Tech - Verificador de Estoque</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #2a2a2a;
+        }
+
+        .produto-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+            min-height: 24px;
+        }
+
+        .sucesso {
+            color: #28a745;
+        }
+
+        .erro {
+            color: #dc3545;
+        }
+
+        .processando {
+            color: #0088ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="produto-card">
+        <h2>Smartphone XYZ</h2>
+        <p>Preço: R$ 1.500,00</p>
+        <button id="btn_comprar">Comprar Agora</button>
+        <div id="status"></div>
+    </div>
+
+    <script src="ex96.js"></script>
+</body>
+
+</html>

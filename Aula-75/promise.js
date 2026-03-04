@@ -18,6 +18,7 @@ promise.then((retorno) => {
     numero.classList.remove('erro')
     numero.classList.add('ok')
 })
+
 promise.catch((retorno) => {
     numero.innerHTML = retorno
     numero.classList.add('erro')

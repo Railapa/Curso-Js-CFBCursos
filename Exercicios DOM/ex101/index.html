@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho de Compras</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .shop {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        .inputs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .total-box {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-top: 2px solid #333;
+            padding-top: 10px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shop">
+        <h3>🛒 Meu Carrinho</h3>
+        <div class="inputs">
+            <input type="text" id="prod_nome" placeholder="Produto">
+            <input type="number" id="prod_preco" placeholder="R$">
+            <button id="btn_add">Add</button>
+        </div>
+
+        <ul id="lista_carrinho"></ul>
+        <div class="total-box">Total: R$ <span id="valor_total">0.00</span></div>
+    </div>
+
+    <script src="ex101.js"></script>
+</body>
+
+</html>
