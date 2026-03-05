@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>O que fazer hoje?</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f7f9fc;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 5px solid #3498db;
+        }
+
+        #status_dia {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #34495e;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>Planeador Semanal</h3>
+        <button id="btn_verificar">Verificar Dia</button>
+        <div id="status_dia">Que dia é hoje?</div>
+    </div>
+
+    <script src="ex3.js"></script>
+</body>
+
+</html>
