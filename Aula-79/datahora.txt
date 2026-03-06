@@ -1,0 +1,8 @@
+📑 Resumo da Aula: Criando um Relógio em Tempo Real
+A Função do Relógio: O professor cria uma função específica para encapsular a lógica de capturar a hora atual e formatá-la.
+
+Tratamento de Dois Dígitos: É reforçada a necessidade de usar o operador ternário para garantir que horas, minutos e segundos menores que 10 exibam um zero à esquerda (ex: 09 em vez de 9).
+
+A Função setInterval: Este é o ponto chave da aula. O professor introduz o setInterval(funcao, tempo), que permite executar um bloco de código repetidamente em um intervalo definido (neste caso, a cada 1000 milissegundos ou 1 segundo).
+
+Atualização do DOM: A cada execução da função pelo intervalo, o innerHTML da div do relógio é substituído pela nova string de tempo capturada do sistema operacional.

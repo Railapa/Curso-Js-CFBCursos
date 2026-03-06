@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Identificador de Turno</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+
+        .painel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #circulo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+            background-color: #bbb;
+            transition: 0.5s;
+        }
+
+        .manha {
+            background-color: #f1c40f !important;
+        }
+
+        /* Amarelo Sol */
+        .tarde {
+            background-color: #e67e22 !important;
+        }
+
+        /* Laranja Pôr do Sol */
+        .noite {
+            background-color: #2c3e50 !important;
+        }
+
+        /* Azul Escuro */
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <h3>Turno Atual</h3>
+        <div id="circulo"></div>
+        <p id="msg">Clique para identificar o turno</p>
+        <button id="btn_checar">Verificar Agora</button>
+    </div>
+
+    <script src="ex7.js"></script>
+</body>
+
+</html>

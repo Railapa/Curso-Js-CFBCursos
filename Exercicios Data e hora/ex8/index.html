@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clima do Mês</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .banner {
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            width: 400px;
+            font-size: 1.5rem;
+            transition: 0.5s;
+            background-color: #95a5a6;
+        }
+
+        /* Cores para o exercício */
+        .verao {
+            background-color: #f39c12;
+        }
+
+        .inverno {
+            background-color: #3498db;
+        }
+
+        .padrao {
+            background-color: #2ecc71;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="banner_estacao" class="banner">
+        Como está o tempo hoje?
+    </div>
+    <button id="btn_verificar">Verificar Temporada</button>
+
+    <script src="ex8.js"></script>
+</body>
+
+</html>

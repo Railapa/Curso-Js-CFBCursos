@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro de Estudo</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            color: #00ff00;
+        }
+
+        .monitor {
+            border: 2px solid #333;
+            padding: 40px;
+            border-radius: 10px;
+            background: #1a1a1a;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+        }
+
+        #tempo_sessao {
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="monitor">
+        <p>Tempo de Sessão</p>
+        <div id="tempo_sessao">00:00:00</div>
+    </div>
+
+    <script src="ex5.js"></script>
+</body>
+
+</html>
