@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Segundos Atuais</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #e8f4f8;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #visor_segundos {
+            font-size: 3.5rem;
+            color: #2980b9;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Segundos do Sistema:</h3>
+        <div id="visor_segundos">--</div>
+        <button id="btn_capturar">Capturar Agora</button>
+    </div>
+
+    <script src="ex11.js"></script>
+</body>
+
+</html>
