@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Simplificada</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f0f4f8;
+        }
+
+        .painel {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #exibicao_data {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-curto {
+            background-color: #3498db;
+        }
+
+        .btn-longo {
+            background-color: #2ecc71;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <div id="exibicao_data">-- / --</div>
+        <div class="botoes">
+            <button id="btn_curto" class="btn-curto">Data Curta</button>
+            <button id="btn_longo" class="btn-longo">Data Completa</button>
+        </div>
+    </div>
+
+    <script src="ex13.js"></script>
+</body>
+
+</html>

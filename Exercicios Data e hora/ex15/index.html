@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Status do Sistema</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        #msg_status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .pico {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .normal {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        button {
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            background: #34495e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🚦 Verificador de Tráfego</h3>
+        <p>Clique para ver a situação do servidor:</p>
+        <button id="btn_checar">Checar Status</button>
+        <div id="msg_status">Aguardando...</div>
+    </div>
+
+    <script src="ex15.js"></script>
+</body>
+
+</html>

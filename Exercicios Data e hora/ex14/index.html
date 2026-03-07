@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Madrugada</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #18232e;
+            color: white;
+        }
+
+        .caixa {
+            background: #34495e;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        #status {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .alerta {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .tranquilo {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #ecf0f1;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caixa">
+        <h3>Controlo de Horário</h3>
+        <button id="btn_verificar">Verificar Agora</button>
+        <div id="status">Clique para checar</div>
+    </div>
+
+    <script src="ex14.js"></script>
+</body>
+
+</html>
