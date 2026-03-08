@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor de Temperatura</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f0f2f5;
+        }
+
+        .painel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        #lista_completa {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        #lista_critica {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <h3>🌡️ Sensor Térmico</h3>
+        <p>Temperaturas lidas:</p>
+        <div id="lista_completa"></div>
+        <hr>
+        <p>⚠️ Alerta Crítico (> 50°C):</p>
+        <div id="lista_critica">Nenhum alerta</div>
+        <br>
+        <button id="btn_filtrar">Filtrar Críticos</button>
+    </div>
+
+    <script src="ex102.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filtro de Convidados</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #fdf6e3;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        #lista_original {
+            color: #93a1a1;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        #resultado_filtro {
+            color: #268bd2;
+            font-weight: bold;
+            font-size: 1.1rem;
+            min-height: 1.5em;
+        }
+
+        .controles {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-curtos {
+            background-color: #2aa198;
+        }
+
+        .btn-letra {
+            background-color: #cb4b16;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>👥 Lista de Convidados</h3>
+        <div id="lista_original"></div>
+        <hr>
+        <div id="resultado_filtro">Aguardando filtro...</div>
+
+        <div class="controles">
+            <button id="btn_curtos" class="btn-curtos">Nomes Curtos (até 4 letras)</button>
+            <button id="btn_letra" class="btn-letra">Nomes que começam com 'A'</button>
+        </div>
+    </div>
+
+    <script src="ex103.js"></script>
+</body>
+
+</html>
