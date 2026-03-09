@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #f0f2f5;
+}
+
+.vitrine {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.filtro-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+.produto-item {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto-item:last-child {
+    border-bottom: none;
+}
+
+.controles-gerais {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn_filtrar_preco {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-promo {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-limpar {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}

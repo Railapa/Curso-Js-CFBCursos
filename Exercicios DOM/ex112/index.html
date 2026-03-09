@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Cupons</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f1f2f6;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 85%;
+            border: 2px solid #2f3542;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        button {
+            padding: 10px;
+            background: #2f3542;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #msg_cupom {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 40px;
+            font-weight: bold;
+        }
+
+        .valido {
+            background: #e3f9e5;
+            color: #1b8a24;
+        }
+
+        .invalido {
+            background: #ffebee;
+            color: #c62828;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>🎟️ Aplicar Cupom</h3>
+        <p>Tente: DESC10, PROMO50 ou EXPIROU</p>
+        <input type="text" id="input_cupom" placeholder="Digite o código">
+        <button id="btn_aplicar">Validar Cupom</button>
+
+        <div id="msg_cupom">Aguardando código...</div>
+    </div>
+
+    <script src="ex112.js"></script>
+</body>
+
+</html>

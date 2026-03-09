@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Tech - Filtros</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f8f9fa;
+        }
+
+        .vitrine {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 450px;
+        }
+
+        .produto-item {
+            border-bottom: 1px solid #eee;
+            padding: 8px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .categoria {
+            font-size: 0.8rem;
+            color: #6c757d;
+            border: 1px solid #ccc;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .controles {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .btn-promo {
+            background-color: #e74c3c;
+        }
+
+        .btn-limpar {
+            background-color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vitrine">
+        <h3>🛒 Nossos Produtos</h3>
+        <div id="lista_produtos">
+        </div>
+
+        <div class="controles">
+            <button id="btn_promo" class="btn-promo">Apenas Promoções</button>
+            <button id="btn_limpar" class="btn-limpar">Mostrar Tudo</button>
+        </div>
+    </div>
+
+    <script src="ex104.js"></script>
+</body>
+
+</html>

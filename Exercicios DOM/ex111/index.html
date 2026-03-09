@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emergência 24h</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #fce4ec;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+            border-top: 8px solid #d81b60;
+        }
+
+        input {
+            padding: 10px;
+            width: 85%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #resultado_busca {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fff3f3;
+            color: #880e4f;
+            font-size: 1.2rem;
+            min-height: 40px;
+        }
+
+        .numero {
+            font-size: 2rem;
+            display: block;
+            color: #c2185b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>🆘 Linhas de Ajuda</h3>
+        <p>Polícia, Bombeiros, Ambulância</p>
+        <input type="text" id="input_servico" placeholder="Qual serviço precisa?">
+        <button id="btn_ligar">Obter Número</button>
+
+        <div id="resultado_busca">---</div>
+    </div>
+
+    <script src="ex111.js"></script>
+</body>
+
+</html>

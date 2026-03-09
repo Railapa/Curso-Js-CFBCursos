@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de RH - Busca</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #e8f4f8;
+            min-height: 40px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>🔍 Busca de Crachá</h3>
+        <input type="number" id="input_id" placeholder="Digite o ID (1, 2 ou 3)">
+        <button id="btn_buscar">Buscar Funcionário</button>
+
+        <div id="resultado">Digite um ID para pesquisar...</div>
+    </div>
+
+    <script src="ex106.js"></script>
+</body>
+
+</html>
