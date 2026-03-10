@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aeroporto - Segurança</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f5f6fa;
+        }
+
+        .painel {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        .lista-bagagem {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        button {
+            padding: 12px;
+            background: #2f3640;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #status_seguranca {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .perigo {
+            background: #fab1a0;
+            color: #d63031;
+            border: 1px solid #d63031;
+        }
+
+        .limpo {
+            background: #55efc4;
+            color: #00b894;
+            border: 1px solid #00b894;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <h3>✈️ Check-in de Segurança</h3>
+        <p>Itens na mala:</p>
+        <div class="lista-bagagem">Telemóvel, Faca, Casaco, Livro</div>
+
+        <button id="btn_verificar">Escanear Mala</button>
+
+        <div id="status_seguranca">Aguardando scan...</div>
+    </div>
+
+    <script src="ex114.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Missão</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #0a3d62;
+            color: white;
+        }
+
+        .painel {
+            background: #3c6382;
+            padding: 25px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            border: 2px solid #60a3bc;
+        }
+
+        .cilindros {
+            background: #072d47;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+
+        button {
+            padding: 12px;
+            background: #38ada9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #status_missao {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            min-height: 40px;
+        }
+
+        .autorizado {
+            background: #009432;
+            color: white;
+        }
+
+        .abortado {
+            background: #eb2f06;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <h3>🤿 Status dos Cilindros</h3>
+        <p>Cargas atuais (%):</p>
+        <div class="cilindros">80, 95, 60, 45</div>
+
+        <button id="btn_checar">Checar Segurança</button>
+
+        <div id="status_missao">Aguardando leitura...</div>
+    </div>
+
+    <script src="ex119.js"></script>
+</body>
+
+</html>

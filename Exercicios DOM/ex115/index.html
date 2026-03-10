@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante Seguro</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #fffbe6;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        .ingredientes {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 12px;
+            background: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #aviso_alergia {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            min-height: 40px;
+        }
+
+        .contem-gluten {
+            background: #ffeded;
+            color: #d63031;
+            border: 1px solid #d63031;
+        }
+
+        .seguro {
+            background: #e3f9e5;
+            color: #1b8a24;
+            border: 1px solid #1b8a24;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🍲 Prato: Macarrão ao Pesto</h3>
+        <p class="ingredientes">Ingredientes: Macarrão, Manjericão, Azeite, Queijo.</p>
+
+        <button id="btn_analisar">Verificar Glúten</button>
+
+        <div id="aviso_alergia">Clique para analisar...</div>
+    </div>
+
+    <script src="ex115.js"></script>
+</body>
+
+</html>

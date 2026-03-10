@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventário de Loja</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding-top: 50px; background-color: #f8f9fa; }
+        .estoque-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 320px; text-align: center; }
+        .lista-estoque { text-align: left; font-size: 0.9rem; margin: 15px 0; padding: 10px; border-left: 4px solid #f1c40f; background: #fffde7; }
+        button { padding: 12px; background: #f1c40f; color: #2c3e50; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-weight: bold; }
+        #valor_total { margin-top: 15px; font-size: 1.4rem; font-weight: bold; color: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="estoque-card">
+        <h3>📦 Valor em Estoque</h3>
+        <div class="lista-estoque">
+            - Teclados: 10 un (R$ 150/un)<br>
+            - Mouses: 20 un (R$ 80/un)<br>
+            - Monitores: 5 un (R$ 900/un)
+        </div>
+        <button id="btn_estoque">Calcular Investimento</button>
+        <div id="valor_total">R$ 0,00</div>
+    </div>
+    <script src="ex129.js"></script>
+</body>
+</html>

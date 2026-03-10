@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de Senha</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f7f6;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        input {
+            padding: 12px;
+            width: 85%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #feedback_senha {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .forte {
+            background: #dff9fb;
+            color: #0097e6;
+        }
+
+        .fraca {
+            background: #ffeaa7;
+            color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🔐 Segurança da Senha</h3>
+        <input type="password" id="input_senha" placeholder="Digite sua senha">
+        <button id="btn_validar">Verificar Força</button>
+        <div id="feedback_senha">Digite uma senha...</div>
+    </div>
+
+    <script src="ex120.js"></script>
+</body>
+
+</html>

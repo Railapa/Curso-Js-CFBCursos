@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Média</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #ecf0f1;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        #display_media {
+            font-size: 2rem;
+            color: #2980b9;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>📊 Média do Aluno</h3>
+        <p>Notas: 7, 8, 10, 5</p>
+        <button id="btn_media">Calcular Média Final</button>
+        <div id="display_media">0.0</div>
+    </div>
+    <script src="ex128.js"></script>
+</body>
+
+</html>

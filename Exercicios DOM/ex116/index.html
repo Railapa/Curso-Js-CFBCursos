@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #2f3542;
+            /* Um fundo mais escuro, estilo cinema */
+            color: white;
+        }
+
+        .box {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+            color: #2f3542;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #ff4757;
+            /* Cor de destaque para cinema */
+        }
+
+        .status-sala {
+            background: #f1f2f6;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin: 15px 0;
+            border-left: 5px solid #747d8c;
+        }
+
+        button {
+            padding: 15px;
+            background: #ff4757;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ff6b81;
+        }
+
+        #msg_cinema {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            min-height: 20px;
+            transition: all 0.3s;
+        }
+
+        /* Classes que o JS vai alternar */
+        .disponivel {
+            background: #e1f5fe;
+            color: #0288d1;
+            border: 1px solid #0288d1;
+        }
+
+        .lotado {
+            background: #ffebee;
+            color: #c62828;
+            border: 1px solid #c62828;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>🎟️ Cine Digital</h3>
+        <p>Status das poltronas: [Ocupada, Ocupada, Livre, Ocupada]</p>
+        <button id="btn_verificar">Tem lugar?</button>
+        <div id="msg_cinema">---</div>
+        <script src="ex116.js"></script>
+    </div>
+</body>
+
+</html>

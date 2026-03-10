@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Qualidade</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f4f9;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        button {
+            padding: 12px;
+            background: #2d3436;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #resultado_teste {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .lote-aprovado {
+            background: #55efc4;
+            color: #00b894;
+        }
+
+        .lote-reprovado {
+            background: #fab1a0;
+            color: #d63031;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🏭 Controle de Qualidade</h3>
+        <p>Analisando apenas peças <strong>sem defeito visual</strong>.</p>
+
+        <button id="btn_analisar">Analisar Resistência</button>
+
+        <div id="resultado_teste">Aguardando análise...</div>
+    </div>
+
+    <script src="ex123.js"></script>
+</body>
+
+</html>

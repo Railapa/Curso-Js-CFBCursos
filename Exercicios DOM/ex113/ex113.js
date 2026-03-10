@@ -16,7 +16,7 @@ btn_localizar.addEventListener('click', () => {
     })
 
     if(livros_encontrados){
-        resultado_busca.innerHTML = `Titulo: ${livros_encontrados.titulo} <br/> Categoria: ${livros_encontrados.categoria} <br/> Corredor: ${livros_encontrados.corredor}`
+        resultado_busca.innerHTML = `Titulo: ${livros_encontrados.titulo} <br/> Categoria: ${livros_encontrados.categoria} <br/> Corredor: ${livros_encontrados.corredor}` 
     } else {
         resultado_busca.innerHTML = 'Livro não encontrado'
     }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Termos de Uso</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f0f2f5;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        .item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .bloqueado {
+            background: #dfe6e9;
+            color: #b2bec3;
+            cursor: not-allowed;
+        }
+
+        .liberado {
+            background: #00b894;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>📝 Aceite os Termos</h3>
+        <div class="item"><input type="checkbox" class="termo"> Aceito os Termos de Uso</div>
+        <div class="item"><input type="checkbox" class="termo"> Aceito a Política de Privacidade</div>
+        <div class="item"><input type="checkbox" class="termo"> Aceito o uso de Cookies</div>
+
+        <button id="btn_prosseguir" class="bloqueado">Prosseguir</button>
+    </div>
+
+    <script src="ex121.js"></script>
+</body>
+
+</html>
