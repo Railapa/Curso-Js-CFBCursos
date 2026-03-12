@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farmácia Popular</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f1f2f6;
+        }
+
+        .vitrine {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        #lista_promocao {
+            text-align: left;
+            margin: 15px 0;
+            min-height: 50px;
+            padding: 10px;
+            border: 1px dashed #7f8c8d;
+        }
+
+        button {
+            padding: 12px;
+            background: #e84118;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vitrine">
+        <h3>💊 Vitrine de Ofertas</h3>
+        <p>Clique para filtrar apenas as promoções:</p>
+        <div id="lista_promocao">Aguardando filtro...</div>
+        <button id="btn_filter">Filtrar Promoções</button>
+    </div>
+    <script src="ex130.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estacionamento Seguro</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #dfe6e9;
+        }
+
+        .painel {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 2px solid #b2bec3;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+
+        button {
+            padding: 12px;
+            background: #00b894;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #resultado_busca {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            min-height: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel">
+        <h3>🚗 Busca por Placa</h3>
+        <input type="text" id="input_placa" placeholder="Digite a placa (ex: ABC-123)">
+        <button id="btn_find">Localizar Veículo</button>
+        <div id="resultado_busca">Digite uma placa para iniciar...</div>
+    </div>
+    <script src="ex131.js"></script>
+</body>
+
+</html>

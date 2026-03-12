@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Checkout</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding-top: 50px; background-color: #f8f9fa; }
+        .pedido-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 320px; text-align: center; }
+        .detalhes { text-align: left; margin: 15px 0; font-size: 0.9rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .total-container { margin-top: 20px; font-size: 1.2rem; color: #2d3436; }
+        #valor_final { font-size: 1.8rem; font-weight: bold; color: #e67e22; display: block; }
+        button { padding: 15px; background: #e67e22; color: white; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-weight: bold; font-size: 1rem; }
+        button:hover { background: #d35400; }
+    </style>
+</head>
+<body>
+    <div class="pedido-card">
+        <h3>🍔 Resumo do Pedido</h3>
+        <div class="detalhes">
+            - 2x Hambúrguer (R$ 25,00/un)<br>
+            - 1x Batata Frita (R$ 15,00/un)<br>
+            - 1x Refrigerante (R$ 8,00/un)<br>
+            <strong>+ Frete Fixo: R$ 10,00</strong>
+        </div>
+        <button id="btn_reduce">Finalizar e Calcular</button>
+        <div class="total-container">
+            Total a Pagar:
+            <span id="valor_final">R$ 0,00</span>
+        </div>
+    </div>
+    <script src="ex134.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Evento</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f7f6;
+        }
+
+        .painel {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .stats {
+            margin-top: 20px;
+            text-align: left;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .destaque {
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painel">
+        <h3>🎟️ Registro de Entrada</h3>
+        <input type="text" id="input_nome" placeholder="Nome do participante">
+        <button id="btn_registrar">Registrar Entrada</button>
+
+        <div class="stats">
+            Tentativas de entrada: <span id="total_tentativas">0</span> <br>
+            Pessoas únicas no evento: <span id="total_unicos" class="destaque">0</span>
+        </div>
+    </div>
+    <script src="ex136.js"></script>
+</body>
+
+</html>
