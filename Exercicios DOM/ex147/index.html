@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima - Promise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h3>☁️ Consulta de Meteorologia</h3>
+        
+        <input type="text" id="in_cidade" placeholder="Digite a cidade (ex: Lisboa)">
+        <button id="btn_consultar">Consultar Clima</button>
+        
+        <div id="resultado_clima">
+            <p id="msg_status"></p>
+            
+            <div id="dados_cidade">
+                <p><strong>Temperatura:</strong> <span id="temp_valor">--</span>°C</p>
+                <p><strong>Condição:</strong> <span id="cond_valor">--</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="ex147.js"></script>
+</body>
+</html>

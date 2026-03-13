@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Status de Entrega</title>
+    <style>
+        /* Estilos para o Exercício 300 - Paleta de Cores */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+
+        .painel {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            width: 100%;
+            background: #34495e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2c3e50;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #total_cores {
+            font-weight: bold;
+            color: #2ecc71;
+            font-size: 18px;
+        }
+
+        /* Container onde as cores vão aparecer */
+        .paleta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+            justify-content: center;
+            min-height: 60px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            border-radius: 10px;
+        }
+
+        /* Classe que você usa no JavaScript para criar os círculos */
+        .cor-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .cor-box:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🎮 Perfil do Jogador</h3>
+        <button id="btn_carregar">Carregar Perfil</button>
+
+        <div id="dados_jogador" style="display:block; margin-top:20px;">
+            <p><strong>Nome:</strong> <span id="nome_player"></span></p>
+            <p><strong>Pontos:</strong> <span id="pontos_player"></span></p>
+        </div>
+    </div>
+    <script src="ex146.js"></script>
+</body>
+
+</html>

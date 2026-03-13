@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria Assíncrona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h3>🍕 Pedir Pizza</h3>
+        <input type="text" id="in_sabor" placeholder="Qual o sabor? (Calabresa)">
+        <button id="btn_pedir">Fazer Pedido</button>
+
+        <p id="status_pedido">Aguardando pedido...</p>
+
+        <div id="ficha_pedido"
+            style="display: none; background: #fff3e0; padding: 15px; border-radius: 8px; text-align: left; border-left: 5px solid #e67e22;">
+            <p><strong>Pedido:</strong> <span id="res_sabor"></span></p>
+            <p><strong>Tempo Estimado:</strong> <span id="res_tempo"></span></p>
+            <p><strong>Valor:</strong> R$ <span id="res_valor"></span></p>
+        </div>
+    </div>
+    <script src="ex148.js"></script>
+</body>
+
+</html>

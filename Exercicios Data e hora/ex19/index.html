@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculador de Garantia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background-color: #f4f7f6;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        span {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🛡️ Seguro Garantia</h3>
+        <p>Clique abaixo para registrar a compra e calcular o vencimento.</p>
+
+        <button id="btn_gerar">Gerar Certificado</button>
+
+        <div id="painel_info" style="display:block; margin-top:20px; border-top: 2px dashed #ccc; padding-top: 15px;">
+            <p><strong>Data da Compra:</strong> <span id="data_compra"></span></p>
+            <p><strong>Vencimento (30 dias):</strong> <span id="data_vencimento"></span></p>
+            <p style="color: #e67e22; font-weight: bold;">Status: Protegido ✅</p>
+        </div>
+    </div>
+    <script src="ex19.js"></script>
+</body>
+
+</html>

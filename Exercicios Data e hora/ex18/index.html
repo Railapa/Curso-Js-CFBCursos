@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Ponto</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #e8ecef;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #34495e;
+        }
+
+        span {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>⏱️ Registro de Ponto</h3>
+        <button id="btn_registrar">Registrar Agora</button>
+
+        <div id="painel_ponto" style="margin-top: 20px; text-align: left;">
+            <p><strong>Data:</strong> <span id="res_data">--/--/----</span></p>
+            <p><strong>Hora:</strong> <span id="res_hora">--:--:--</span></p>
+        </div>
+    </div>
+    <script src="ex18.js"></script>
+</body>
+
+</html>
