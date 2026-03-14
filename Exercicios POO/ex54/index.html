@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fábrica de Heróis</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #2c3e50;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🛡️ Gerador de Heróis</h3>
+        <input type="text" id="in_nome" placeholder="Nome do Herói">
+        <input type="text" id="in_poder" placeholder="Poder Principal">
+        <button id="btn_criar">Criar Herói</button>
+
+        <div id="painel_heroi" style="display:none; margin-top:20px; border-top: 2px solid #eee; padding-top: 15px;">
+            <p id="res_frase"></p>
+        </div>
+    </div>
+    <script src="ex54.js"></script>
+</body>
+
+</html>
