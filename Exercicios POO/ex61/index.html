@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Elevador</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f0f2f5;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🏢 Elevador</h3>
+        <p>Andar Atual: <strong id="res_andar" style="font-size: 24px;">0</strong></p>
+
+        <button id="btn_subir" style="background: #27ae60;">Subir ⬆️</button>
+        <button id="btn_descer" style="background: #e67e22; margin-top: 10px;">Descer ⬇️</button>
+
+        <p id="msg_elevador" style="margin-top: 15px; color: #7f8c8d;"></p>
+    </div>
+    <script src="ex61.js"></script>
+</body>
+
+</html>

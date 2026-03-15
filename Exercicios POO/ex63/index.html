@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho Class</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            background: #f8f9fa;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            margin: 15px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🛒 Meu Carrinho</h3>
+        <p>Total: R$ <strong id="res_total">0.00</strong></p>
+
+        <input type="number" id="in_preco" placeholder="Preço do produto">
+        <button id="btn_add">Adicionar Produto</button>
+
+        <hr>
+
+        <input type="text" id="in_cupom" placeholder="Cupom de desconto">
+        <button id="btn_cupom">Aplicar Cupom</button>
+
+        <button id="btn_limpar" style="background: #95a5a6; margin-top: 10px;">Limpar Carrinho</button>
+
+        <p id="msg_carrinho" style="margin-top: 15px; font-size: 14px;"></p>
+    </div>
+    <script src="ex63.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Estoque Class</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f4f7f6;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 5px;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>📦 Produto: Smartphone</h3>
+        <p>Estoque Atual: <strong id="res_quantidade">10</strong></p>
+
+        <input type="number" id="in_qtd" placeholder="Quantidade">
+        <div class="botoes">
+            <button id="btn_comprar" style="background: #27ae60;">Comprar (Repor)</button>
+            <button id="btn_vender" style="background: #e74c3c;">Vender (Saída)</button>
+        </div>
+
+        <p id="msg_estoque" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+    <script src="ex62.js"></script>
+</body>
+
+</html>
