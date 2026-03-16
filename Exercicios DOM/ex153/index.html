@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f3f4f6;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #4b5563;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #res_set {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: left;
+            color: #1f2937;
+        }
+
+        .btn-add {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .btn-limpar {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🎟️ Check-in de Convidados</h3>
+        <input type="text" id="in_nome" placeholder="Nome do convidado">
+        <br>
+        <button id="btn_adicionar" class="btn-add">Adicionar</button>
+        <button id="btn_limpar" class="btn-limpar">Limpar Lista</button>
+
+        <div id="res_set">Nenhum convidado na lista.</div>
+        <p id="total_convidados">Total único: 0</p>
+    </div>
+    <script src="ex153.js"></script>
+</body>
+
+</html>

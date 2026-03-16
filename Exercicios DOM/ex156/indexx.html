@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f8fafc;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #msg_login {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background: #f1f5f9;
+            min-height: 20px;
+        }
+
+        button {
+            background: #0f172a;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🔐 Login no Sistema</h3>
+        <p>Usuário: <strong> <input placeholder="Digite o usuario" id="in_usuario" type="text"> </strong></p>
+        <div id="msg_login">Aguardando...</div>
+        <button id="btn_login">Entrar no Painel</button>
+    </div>
+    <script src="ex156.js"></script>
+</body>
+
+</html>

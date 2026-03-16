@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #fdf2f8;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #831843;
+        }
+
+        #res_find {
+            background: #fce7f3;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            min-height: 40px;
+            font-family: monospace;
+            color: #9d174d;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ec4899;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #be185d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🔍 Busca de Usuário</h3>
+        <p>Digite o ID para encontrar o nome (Tente 102):</p>
+
+        <input type="number" id="in_id" placeholder="ID do usuário"
+            style="width: 80%; padding: 8px; margin-bottom: 10px;">
+
+        <div id="res_find">Aguardando busca...</div>
+
+        <button id="btn_find">Localizar Usuário</button>
+    </div>
+
+    <script src="ex150.js"></script>
+</body>
+
+</html>

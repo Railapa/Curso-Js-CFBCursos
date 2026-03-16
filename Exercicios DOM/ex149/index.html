@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f1f5f9;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+
+        #res_filter {
+            background: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            min-height: 40px;
+            font-family: monospace;
+            color: #1e40af;
+            text-align: left;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>🛒 Filtro de Ofertas</h3>
+        <p>Clique para ver produtos abaixo de <strong>50€</strong></p>
+
+        <div id="res_filter">Aguardando...</div>
+
+        <button id="btn_filter">Filtrar Produtos</button>
+    </div>
+
+    <script src="ex149.js"></script>
+</body>
+
+</html>
