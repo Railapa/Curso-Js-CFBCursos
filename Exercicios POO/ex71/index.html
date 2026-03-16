@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas de Dispositivos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #34495e;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>📱 Gestor de Dispositivo</h3>
+
+        <div id="tela_status"
+            style="background: #222; color: #0f0; padding: 20px; border-radius: 10px; font-family: monospace; margin-bottom: 15px;">
+            > Sistema Offline
+        </div>
+
+        <input type="text" id="in_marca" placeholder="Marca do Smartphone">
+        <input type="number" id="in_ram" placeholder="Memória RAM (GB)">
+
+        <div style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+            <button id="btn_ligar" style="background: #27ae60;">Ligar</button>
+            <button id="btn_info" style="background: #2980b9;">Ver Info</button>
+        </div>
+    </div>
+    <script src="ex71.js"></script>
+</body>
+
+</html>

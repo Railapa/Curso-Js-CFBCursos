@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas de Contas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #ecf0f1;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🏦 Gestão de Contas</h3>
+
+        <input type="text" id="in_titular" placeholder="Nome do Titular">
+        <input type="number" id="in_saldo" placeholder="Saldo Inicial">
+
+        <div style="margin: 10px 0;">
+            <button id="btn_corrente" style="background: #34495e;">Criar C. Corrente</button>
+            <button id="btn_poupanca" style="background: #27ae60;">Criar C. Poupança</button>
+        </div>
+
+        <div id="painel_banco"
+            style="display:none; margin-top:20px; border: 2px solid #ddd; padding: 15px; border-radius: 10px;">
+            <p id="res_banco"></p>
+        </div>
+    </div>
+    <script src="ex103.js"></script>
+</body>
+
+</html>

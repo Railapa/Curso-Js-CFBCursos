@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Herança Básica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background-color: #e5ddd5;
+            /* Cor de fundo estilo WhatsApp */
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #075e54;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #25d366;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #128c7e;
+        }
+
+        #painel_envio {
+            background-color: #dcf8c6;
+            padding: 15px;
+            border-radius: 10px;
+            color: #303030;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>📩 Enviar SMS</h3>
+
+        <input type="text" id="in_num" placeholder="Número (ex: 9999)">
+        <input type="text" id="in_msg" placeholder="Mensagem">
+
+        <button id="btn_enviar">Enviar Agora</button>
+
+        <div id="painel_envio" style="display:none; margin-top:20px; border-top: 1px solid #ccc; padding-top: 10px;">
+            <p id="res_log"></p>
+        </div>
+    </div>
+    <script src="ex67.js"></script>
+</body>
+
+</html>

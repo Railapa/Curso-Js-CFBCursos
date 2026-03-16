@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager Class</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f0f2f5;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>📋 Gestor de Tarefa</h3>
+
+        <div id="painel_tarefa"
+            style="border: 2px dashed #ccc; padding: 15px; margin-bottom: 20px; border-radius: 10px;">
+            <h4 id="res_nome_tarefa">Nenhuma tarefa definida</h4>
+            <p>Prioridade: <span id="res_prioridade">---</span></p>
+        </div>
+
+        <input type="text" id="in_tarefa" placeholder="Nome da tarefa">
+
+        <div class="botoes" style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px;">
+            <button id="btn_baixa" style="background: #2ecc71;">Baixa</button>
+            <button id="btn_media" style="background: #f1c40f;">Média</button>
+            <button id="btn_alta" style="background: #e74c3c;">Alta</button>
+        </div>
+    </div>
+    <script src="ex66.js"></script>
+</body>
+
+</html>

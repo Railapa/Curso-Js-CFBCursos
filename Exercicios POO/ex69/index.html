@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Herança com Métodos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            background: #2c3e50;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>💻 Cadastro de Programador</h3>
+
+        <input type="text" id="in_nome" placeholder="Nome do dev">
+        <input type="number" id="in_salario" placeholder="Salário Base">
+        <input type="text" id="in_linguagem" placeholder="Linguagem (ex: JavaScript)">
+
+        <button id="btn_contratar">Contratar e Calcular</button>
+
+        <div id="painel_rh"
+            style="display:none; margin-top:20px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+            <p id="res_rh"></p>
+        </div>
+    </div>
+    <script src="ex69.js"></script>
+</body>
+
+</html>

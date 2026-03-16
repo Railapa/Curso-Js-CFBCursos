@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post Class</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            background: #fdfdfd;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 90%;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div id="post_view" style="border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 id="res_titulo">Título da Postagem</h2>
+            <p id="res_conteudo">O conteúdo aparecerá aqui...</p>
+            <p>Status: <span id="res_status" style="font-weight: bold; color: orange;">Rascunho</span></p>
+            <p>👍 <span id="res_likes">0</span> Likes</p>
+        </div>
+
+        <input type="text" id="in_titulo" placeholder="Digite o título">
+        <textarea id="in_texto" placeholder="Digite o conteúdo" style="width: 90%; margin: 10px 0;"></textarea>
+
+        <button id="btn_publicar">Publicar Post</button>
+        <button id="btn_like" style="background: #3498db; margin-top: 5px;">Dar Like</button>
+    </div>
+    <script src="ex65.js"></script>
+</body>
+
+</html>
