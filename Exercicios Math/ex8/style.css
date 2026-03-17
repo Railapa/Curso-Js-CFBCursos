@@ -1,0 +1,29 @@
+body { 
+    font-family: sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    padding-top: 100px; 
+    transition: background 0.5s; /* Deixa a mudança de cor suave */
+}
+.card { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    text-align: center; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+}
+#res_rgb { 
+    font-weight: bold; 
+    font-family: monospace; 
+    margin: 20px 0; 
+    font-size: 1.2rem; 
+}
+button { 
+    padding: 12px 25px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    border: none; 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}

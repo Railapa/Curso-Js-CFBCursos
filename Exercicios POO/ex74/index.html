@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Bancário POO</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .info {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+            border: 1px solid #cbd5e1;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #msg {
+            color: #059669;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🏦 Meu Banco JS</h3>
+        <div class="info">
+            <p><strong>Titular:</strong> <span id="txt_titular">---</span></p>
+            <p><strong>Saldo:</strong> <span id="txt_saldo">0.00</span>R$</p>
+        </div>
+
+        <input type="number" id="in_valor" placeholder="Valor para depósito">
+        <button id="btn_depositar">Efetuar Depósito</button>
+        <div id="msg"></div>
+    </div>
+    <script src="ex74.js"></script>
+</body>
+
+</html>

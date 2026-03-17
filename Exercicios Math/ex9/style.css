@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    background: #2e1065;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#res_oraculo {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f3e8ff;
+    color: #6b21a8;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #7e22ce;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #9333ea;
+}
