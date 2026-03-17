@@ -1,0 +1,54 @@
+Esta aula apresenta a biblioteca Math do JavaScript, que é uma interface (ou biblioteca de classes estáticas) que oferece uma vasta gama de propriedades e métodos para realizar cálculos matemáticos complexos de forma simples. Diferente de outras classes, a Math não precisa ser instanciada (não se usa o comando new).
+
+Abaixo, apresento um resumo dos principais métodos e propriedades abordados, explicando o que cada um faz:
+
+📏 Propriedades (Constantes)
+As propriedades da biblioteca Math fornecem valores constantes que são fundamentais para diversos cálculos.
+
+Math.PI: Retorna o valor da constante Pi (aproximadamente 3,14159), essencial para cálculos envolvendo círculos e rotações.
+
+Math.E: Retorna a constante de Euler (base dos logaritmos naturais), aproximadamente 2,718.
+
+Math.LN10: Retorna o valor do logaritmo natural de 10.
+
+🔢 Métodos de Arredondamento e Manipulação
+Estes métodos ajudam a controlar como os números decimais são exibidos ou convertidos em inteiros.
+
+Math.floor(x): Arredonda o número para baixo, retornando o maior número inteiro menor ou igual ao valor passado. É útil para descartar a parte decimal.
+
+Math.ceil(): Arredonda o numero para cima
+
+Math.round(x): Arredonda o número para o inteiro mais próximo. Se a parte decimal for 0,5 ou superior, arredonda para cima; caso contrário, para baixo.
+
+Math.trunc(x): Remove a parte decimal de um número, mantendo apenas a parte inteira (truncamento).
+
+Math.abs(): gera o valor positivo 
+
+🎲 Geração de Números Aleatórios
+Um dos usos mais comuns da biblioteca em aplicações e jogos.
+
+Math.random(): Gera um número decimal aleatório (pseudo-aleatório) entre 0 (inclusive) e 1 (exclusive).
+
+Para gerar entre 0 e 10: Multiplica-se o resultado por 10 (Math.random() * 10).
+
+Para gerar apenas inteiros entre 1 e 10: Combina-se o floor com o random e soma-se 1: Math.floor(Math.random() * 10) + 1.
+
+⚡ Funções de Cálculo Potente
+Métodos para operações que exigiriam algoritmos complexos se fossem feitas manualmente.
+
+Math.sqrt(x): Retorna a raiz quadrada do número passado.
+
+Math.pow(base, expoente): Realiza o cálculo de potência, elevando a base ao expoente indicado (ex: Math.pow(10, 3) resulta em 1000).
+
+Math.abs(x): Retorna o valor absoluto (sempre positivo) de um número.
+
+Math.max(a, b, c...) e Math.min(a, b, c...): Retornam, respectivamente, o maior e o menor valor de uma lista de números fornecidos.
+
+🔄 Funções Trigonométricas
+Essenciais para animações, rotações e cálculos de posição em interfaces gráficas.
+
+Math.sin(x), Math.cos(x), Math.tan(x): Calculam, respectivamente, o seno, cosseno e tangente de um ângulo (em radianos).
+
+Math.hypot(x, y): Calcula a hipotenusa de um triângulo retângulo com base nos catetos fornecidos.
+
+Dica Prática: A biblioteca Math é acessada diretamente pelo nome da classe em letras maiúsculas: Math.metodo(). Ela é uma ferramenta indispensável sempre que o seu script precisar lidar com qualquer lógica numérica além das operações básicas de adição ou subtração.

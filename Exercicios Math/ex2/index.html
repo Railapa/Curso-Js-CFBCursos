@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 10px;
+        }
+
+        .teste {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a73e8;
+            transition: transform 0.2s;
+        }
+
+        .teste:hover {
+            transform: scale(1.02);
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            font-size: 0.95rem;
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #1557b0;
+        }
+
+        /* Onde os resultados aparecem */
+        [id^="res_"] {
+            margin-top: 12px;
+            padding: 10px;
+            background: #e8f0fe;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #1557b0;
+            min-height: 20px;
+            /* Começa escondido ou vazio */
+        }
+
+        strong {
+            color: #d93025;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>🧪 Laboratório Math</h3>
+
+        <div class="teste">
+            <p>1. Arredondar <strong>4.7</strong></p>
+            <button onclick="testeRound()">Testar Round/Floor/Ceil</button>
+            <div id="res_1"></div>
+        </div>
+
+        <div class="teste">
+            <p>2. Calcular <strong>8²</strong> e <strong>√64</strong></p>
+            <button onclick="testeRaiz()">Calcular</button>
+            <div id="res_2"></div>
+        </div>
+
+        <div class="teste">
+            <p>3. Qual o maior entre: <strong>5, 12, 8, 20, 2</strong></p>
+            <button onclick="testeMinMax()">Achar Maior</button>
+            <div id="res_3"></div>
+        </div>
+
+        <div class="teste">
+            <p>4. Valor de <strong>PI</strong> e <strong>Euler (E)</strong></p>
+            <button onclick="testeConst()">Ver Constantes</button>
+            <div id="res_4"></div>
+        </div>
+    </div>
+    <script src="ex2.js"></script>
+</body>
+
+</html>
