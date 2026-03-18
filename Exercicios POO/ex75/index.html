@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Condução - POO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h3>🚗 Simulador de Condução</h3>
+        
+        <div class="painel">
+            <p>Modelo: <span id="txt_modelo">---</span></p>
+            <div class="display-velocidade">
+                <span id="txt_velocidade">0</span>
+                <small>km/h</small>
+            </div>
+        </div>
+        
+        <div class="controles">
+            <button id="btn_acelerar" class="btn-acelerar">Acelerar (+10)</button>
+            <button id="btn_travar" class="btn-travar">Travar (-10)</button>
+        </div>
+        
+        <div id="msg_alerta"></div>
+    </div>
+
+    <script src="ex75.js"></script>
+</body>
+</html>

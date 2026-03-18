@@ -20,6 +20,4 @@ txt_titular.innerHTML = c1.nome
 
 btn_depositar.addEventListener('click', () => {
     txt_saldo.innerHTML = c1.depositar(Number(in_valor.value))
-
-
 })
