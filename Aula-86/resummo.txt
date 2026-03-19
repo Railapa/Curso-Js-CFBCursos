@@ -1,0 +1,12 @@
+Esta última aula do Professor Bruno (Aula 86) finaliza o projeto das bolinhas, focando na física do movimento e no reaproveitamento de código. É aqui que as bolinhas ganham vida e começam a "quicar" nas bordas do navegador.
+
+Abaixo está o resumo simplificado e o código final comentado linha por linha.
+
+📝 Resumo da Aula (O Grand Finale)
+Movimentação Dinâmica (controlar): O professor cria a lógica que soma a velocidade à posição atual (PX += dirX * velX). Isso é o que faz a bola se deslocar 10 milissegundos por vez. [02:27]
+
+Lógica de Rebote (controleBordas): Ele explica como detectar se a bola bateu nas paredes. Se a posição X somada ao tamanho da bola ultrapassar a largura do palco, a direção inverte para -1. Se bater na esquerda (X < 0), inverte para 1. O mesmo vale para o topo e o fundo. [08:28]
+
+Auto-Remoção: Se você redimensionar a janela e a bola ficar "fora" do novo tamanho do palco, o método controlar percebe isso e chama o remover(), limpando a memória. [05:13]
+
+Poder das Classes: O grande destaque é que, após programar a classe uma única vez, você pode instanciar 500 bolinhas de uma vez só com um simples loop, e cada uma funcionará de forma independente. [17:21]

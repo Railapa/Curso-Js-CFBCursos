@@ -1,0 +1,12 @@
+Esta aula do Professor Bruno (Aula 84) é onde a "mágica" do movimento começa a ser preparada. Depois de definir cor e tamanho, ele foca em como a bolinha vai se comportar: para onde ela vai, qual a velocidade e como o sistema vai identificar cada uma individualmente.
+
+Aqui está o resumo simplificado e o código comentado:
+
+📝 Resumo da Aula (O que foi aprendido)
+Velocidade e Direção: Ele define velocidades diferentes para os eixos X (horizontal) e Y (vertical). Além disso, usa um operador ternário com Math.random() para decidir se a bola começa indo para a esquerda (-1) ou para a direita (1). [01:53]
+
+Identificação Única (ID): Como teremos muitas bolinhas, cada uma precisa de um "nome" (ID) único no HTML. Ele usa o tempo atual (Date.now()) somado a um número aleatório gigante para garantir que nenhum ID seja igual ao outro. [04:43]
+
+Conectando o Objeto ao HTML: Ele explica que a classe (na memória do JS) precisa saber onde ela está desenhada no navegador (o DOM). Para isso, ele cria a propriedade this.eu, que guarda a referência do elemento HTML daquela bolinha específica. [10:50]
+
+O "Coração" do Movimento: Ele introduz o setInterval. É um temporizador que vai rodar a cada 10 milissegundos, chamando uma função para atualizar a posição da bola, criando a animação de movimento. [10:05]

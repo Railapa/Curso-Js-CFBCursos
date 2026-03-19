@@ -1,0 +1,16 @@
+Resumo da Aula (O que foi construído)
+Localizando no Array (minhaPos): Ele cria um método para a bola saber em qual posição do Array bolas ela está. Isso é essencial para quando precisarmos manipular uma bola específica. [01:26]
+
+Remoção Completa (remover): O professor explica que apagar uma bola não é só "esconder". É preciso:
+
+Parar o temporizador (clearInterval). [03:08]
+
+Filtrar o Array para tirar o objeto da memória. [04:47]
+
+Remover a div do HTML (remove()). [06:41]
+
+Atualizar o contador de bolas na tela. [07:06]
+
+Desenhando no HTML (desenhar): Este é o método que usa document.createElement('div') para criar a bola. Ele aplica o ID único, a classe CSS e usa Template Strings para injetar o estilo (cor RGB, posição e tamanho) direto no atributo style. [08:08]
+
+Injeção no Palco: Por fim, a bolinha criada é adicionada como "filha" da div palco usando palco.appendChild(div). [12:11]

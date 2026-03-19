@@ -1,0 +1,18 @@
+Essa aula do Professor Bruno (CFBCursos) é uma continuação prática sobre Classes. O objetivo principal é começar a estruturar a lógica de um sistema que gera bolinhas coloridas na tela que se movem e colidem.
+
+Abaixo, apresento o resumo simplificado e o código detalhado.
+
+📝 Resumo da Aula (Em termos simples)
+Nesta etapa, o professor foca em três pilares:
+
+Redimensionamento (Resize): Ele explica que, se o usuário aumentar ou diminuir a janela do navegador, o "palco" (a área onde as bolas ficam) muda de tamanho. Por isso, ele cria um "ouvinte" que avisa o JavaScript para atualizar a largura e altura toda vez que a janela mudar. [00:26]
+
+Eventos de Botão: Ele prepara os botões para "Adicionar" e "Remover" as bolinhas. O botão de adicionar usa um laço for para criar a quantidade de bolas que o usuário digitou no campo de texto. [05:07]
+
+A Classe Bola (O Molde): O coração da aula. Ele começa a construir o "DNA" da bolinha. Cada vez que uma bola nasce, ela precisa de características aleatórias para não ficarem todas iguais. Ele usa o Math.random() (que você já praticou!) para definir:
+
+Tamanho: Entre 10 e 25 pixels. [10:02]
+
+Cor: Gera valores de 0 a 255 para R, G e B. [11:11]
+
+Posição: Garante que a bola nasça dentro dos limites do palco, subtraindo o tamanho da bola da largura total para ela não nascer "cortada" na borda. [13:11]
