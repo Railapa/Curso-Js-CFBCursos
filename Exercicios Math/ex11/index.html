@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .container {
+            background: #333;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .dado {
+            font-size: 5rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ff4757;
+            background: white;
+            border-radius: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #2ed573;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #7bed9f;
+        }
+
+        .estatisticas {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ced4da;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🎲 Dado da Sorte</h2>
+
+        <div id="resultado_dado" class="dado">-</div>
+
+        <button id="btn_lanzar">Lanzar Dado</button>
+
+        <div class="estatisticas">
+            <p>Maior número tirado nesta sesión: <span id="maior_valor">0</span></p>
+        </div>
+    </div>
+    <script src="ex11.js"></script>
+</body>
+
+</html>

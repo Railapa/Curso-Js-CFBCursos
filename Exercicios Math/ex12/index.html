@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Configurações de Reset e Corpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            color: #334155;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            margin: 0;
+        }
+
+        /* Card Principal */
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            width: 350px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        h2 {
+            color: #059669;
+            /* Verde Esmeralda */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* Painel de Resultado */
+        #painel_oferta {
+            background: #fffbeb;
+            /* Fundo Amarelo Claro */
+            border: 2px dashed #f59e0b;
+            /* Borda tracejada tipo cupom */
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        #txt_desconto {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d97706;
+        }
+
+        #preco_final {
+            font-size: 2rem;
+            color: #059669;
+        }
+
+        /* Botão */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #059669;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #047857;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(5, 150, 105, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🏷️ Gerador de Oferta</h2>
+        <p>Preço Original: R$ 149,90</p>
+        <div id="painel_oferta">
+            <p>Desconto: <span id="txt_desconto">0</span>%</p>
+            <p>Preço Final: <strong>R$ <span id="preco_final">---</span></strong></p>
+        </div>
+        <button id="btn_gerar">Gerar Desconto do Dia</button>
+    </div>
+    <script src="ex12.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            text-align: center;
+        }
+
+        #status_lote {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .grid-produtos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .item-lote {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            background: #fff;
+        }
+
+        /* Cores de alerta */
+        .perigo {
+            color: #dc2626;
+            background: #fee2e2;
+        }
+
+        .sucesso {
+            color: #16a34a;
+            background: #dcfce7;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0f172a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🧪 Verificador de Lote</h2>
+        <p>Status do Lote: <span id="status_lote">Aguardando análise...</span></p>
+
+        <div id="lista_produtos" class="grid-produtos">
+        </div>
+
+        <button id="btn_verificar">Analisar Segurança do Lote</button>
+    </div>
+    <script src="ex159.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #020617;
+            /* Espaço profundo */
+            color: #94a3b8;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid #334155;
+            width: 480px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #f8fafc;
+            text-transform: uppercase;
+        }
+
+        .lista-sistemas {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .sistema-item {
+            background: #0f172a;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-left: 4px solid #64748b;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Status dinâmicos */
+        .ok {
+            border-left-color: #22c55e;
+            color: #22c55e;
+        }
+
+        .critico {
+            border-left-color: #ef4444;
+            color: #ef4444;
+        }
+
+        #status_missao {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🚀 Controle de Lançamento</h2>
+        <div id="painel_missao" class="painel">
+            <p>Status da Missão: <span id="status_missao">Aguardando Varredura...</span></p>
+        </div>
+
+        <div id="lista_sistemas" class="lista-sistemas">
+        </div>
+
+        <button id="btn_lancar">Iniciar Sequência de Lançamento</button>
+    </div>
+    <script src="ex160.js"></script>
+</body>
+
+</html>
