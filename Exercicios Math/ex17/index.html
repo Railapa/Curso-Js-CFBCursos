@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Oráculo de Math</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background: #020617;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .container {
+            background: #1e1b4b;
+            padding: 30px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: center;
+            border: 2px solid #4338ca;
+            box-shadow: 0 0 20px rgba(67, 56, 202, 0.5);
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        button {
+            width: 96%;
+            padding: 15px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover { background: #818cf8; }
+        
+        #res_oraculo {
+            margin-top: 30px;
+            font-size: 1.4rem;
+            min-height: 50px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        /* Classes para cores das respostas */
+        .positivo { color: #4ade80; }
+        .negativo { color: #f87171; }
+        .raro { color: #fbbf24; text-shadow: 0 0 10px #fbbf24; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🔮 O Oráculo de Math</h2>
+        <p>Faça uma pergunta sobre o seu futuro:</p>
+        <input type="text" id="in_pergunta" placeholder="Ex: Vou passar na prova?">
+        
+        <button id="btn_perguntar">Consultar Destino</button>
+
+        <div id="res_oraculo">...</div>
+    </div>
+    <script src="ex17.js"></script>
+</body>
+</html>
