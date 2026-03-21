@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #1a1c2c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: #292d3e;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            border: 2px solid #44475a;
+        }
+
+        .display-poder {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #bd93f9;
+        }
+
+        #poder_final {
+            font-size: 2rem;
+            color: #ff79c6;
+            display: block;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #6272a4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #50fa7b;
+            color: #282a36;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>⚔️ Forja de Armas</h2>
+        <div id="status_arma">Clique para forjar!</div>
+
+        <div class="display-poder">
+            Poder Gerado: <span id="txt_poder">0</span>
+        </div>
+
+        <div class="stats">
+            <p>Poder Final (com Bônus): <strong id="poder_final">---</strong></p>
+        </div>
+
+        <button id="btn_forjar">Abrir Baú</button>
+        <script src="ex14.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Configurações Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            width: 320px;
+            border-top: 6px solid #3b82f6;
+            /* Detalhe azul no topo */
+        }
+
+        h2 {
+            color: #1e293b;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            color: #64748b;
+            margin: 10px 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 20px 0;
+        }
+
+        /* Área do Total */
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            color: #0f172a;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        #total_compra {
+            color: #2563eb;
+            /* Azul para o preço final */
+        }
+
+        #valor_frete {
+            font-weight: bold;
+            color: #334155;
+        }
+
+        /* Botão de Cálculo */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🚚 Finalizar Compra</h2>
+        <p>Produtos: R$ 250,00</p>
+        <p>Frete Sorteado: R$ <span id="valor_frete">0.00</span></p>
+        <hr>
+        <h3>Total: R$ <span id="total_compra">---</span></h3>
+        <button id="btn_calcular">Calcular Total</button>
+        <script src="ex13.js"></script>
+    </div>
+</body>
+
+</html>
