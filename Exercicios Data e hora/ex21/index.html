@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ponto Eletrônico | CFB Cursos</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        #relogio {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #38bdf8;
+            font-family: monospace;
+            margin: 20px 0;
+        }
+
+        .info-ponto {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #10b981;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #059669;
+        }
+
+        .destaque {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>🕒 Relógio de Ponto</h2>
+        <div id="relogio">00:00:00</div>
+
+        <button id="btn_ponto">Registrar Entrada</button>
+
+        <div class="info-ponto">
+            <p>Entrada: <span id="res_entrada" class="destaque">--:--:--</span></p>
+            <p>Previsão de Saída (8h): <span id="res_saida" class="destaque">--:--:--</span></p>
+            <p>Data: <span id="res_data">--/--/----</span></p>
+        </div>
+    </div>
+
+    <script src="ex21.js"></script>
+</body>
+
+</html>
