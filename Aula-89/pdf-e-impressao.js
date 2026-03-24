@@ -6,7 +6,7 @@ btn_imp.addEventListener("click", (evt) => {
 
     // 2. Cria uma string com o CSS para a tabela ficar bonita no papel
     let estilo = "<style>";
-    estilo += "table {width: 100%; font: 20px Calibri;}";
+    estilo += "table {width: 100%; font: 20px Calibri;}"
     estilo += "table, th, td {border: solid 2px #888; border-collapse: collapse;";
     estilo += "padding: 4px 8px; text-align: center;}";
     estilo += "</style>";
