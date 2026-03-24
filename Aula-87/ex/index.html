@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Navegação | Aula 87</title>
+    <style>
+        body {
+            background: #121212;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .browser-box {
+            background: #222;
+            padding: 25px;
+            border-radius: 10px;
+            width: 450px;
+            border: 2px solid #333;
+        }
+
+        .address-bar {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background: #000;
+            color: #0f0;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-go {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-replace {
+            background: #7c3aed;
+            color: white;
+        }
+
+        .btn-hist {
+            background: #4b5563;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .info {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #333;
+            pt: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="browser-box">
+        <h3>🌐 My Mini Browser</h3>
+        <div class="address-bar">
+            <input type="text" id="url_digitada" placeholder="https://google.com">
+            <button class="btn-go" id="btn_ir">IR (Assign)</button>
+        </div>
+
+        <div class="controls">
+            <button class="btn-replace" id="btn_substituir">Substituir (Replace)</button>
+            <button class="btn-hist" id="btn_recarregar">Recarregar</button>
+            <button class="btn-hist" id="btn_voltar">Voltar</button>
+            <button class="btn-hist" id="btn_avancar">Avançar</button>
+        </div>
+
+        <div class="info">
+            Páginas no histórico: <span id="num_historico">0</span>
+        </div>
+    </div>
+    <script src="ex164.js"></script>
+</body>
+
+</html>

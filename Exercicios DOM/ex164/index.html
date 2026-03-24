@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecionamento Automático | Aula 87</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #334155;
+            width: 400px;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        #contador {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #fbbf24;
+        }
+
+        .msg {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Página em Mudança</h1>
+        <p class="msg">Você será redirecionado em:</p>
+        <div id="contador">5</div>
+        <p>Caso não queira esperar, <a href="#" id="link_direto" style="color: #38bdf8;">clique aqui</a>.</p>
+        <br>
+        <button id="btn_parar">Cancelar Redirecionamento</button>
+    </div>
+    <script src="ex164.js"></script>
+</body>
+
+</html>

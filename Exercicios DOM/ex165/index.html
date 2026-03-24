@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navegação por Histórico | Aula 87</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: #2d2d2d;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        .controles {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-nav {
+            background: #ffa500;
+            color: black;
+        }
+
+        .btn-url {
+            background: #008cba;
+            color: white;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #info-historico {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🖼️ Galeria de Páginas</h2>
+        <p>Use os botões para navegar no histórico.</p>
+
+        <div class="controles">
+            <button class="btn-nav" id="btn_voltar">← Voltar</button>
+            <button class="btn-nav" id="btn_avancar">Avançar →</button>
+        </div>
+
+        <button class="btn-url" id="btn_google">Ir para o Google (Replace)</button>
+        <button class="btn-url" id="btn_reload">Recarregar Página</button>
+
+        <div id="info-historico">
+            Tamanho do histórico atual: <span id="num_hist">0</span>
+        </div>
+    </div>
+    <script src="ex165.js"></script>
+</body>
+
+</html>

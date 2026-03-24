@@ -1,0 +1,16 @@
+📝 Resumo da Aula
+window.print(): É o comando básico. Se usado sozinho, ele abre a caixa de impressão de toda a página atual. [03:03]
+
+O Problema: Geralmente queremos imprimir apenas um relatório ou uma tabela, e não o botão "Imprimir" ou o design do site. [03:43]
+
+A Solução Profissional:
+
+Pegar o conteúdo (HTML) de uma div ou table específica. [05:25]
+
+Abrir uma nova janela em branco com window.open(). [07:32]
+
+Escrever o conteúdo e um CSS exclusivo para impressão nessa nova janela usando document.write(). [09:33]
+
+Chamar o .print() a partir dessa nova janela. [12:13]
+
+Fechar a janela logo após com .close(). [14:00]

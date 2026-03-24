@@ -1,0 +1,24 @@
+Nesta aula (Aula 87) do canal CFB Cursos, o professor Bruno explica como o JavaScript pode controlar para onde o usuário vai e como ele navega pelo histórico do navegador.
+
+Aqui está o resumo e o código detalhado para você salvar e estudar:
+
+📝 Resumo da Aula (O que você precisa saber)
+O JavaScript possui dois objetos principais para lidar com navegação:
+
+window.location: Serve para redirecionar o usuário para outra página ou recarregar a atual.
+
+assign(url): Leva o usuário para uma nova página e mantém a página atual no histórico (o botão "voltar" funciona). [06:56]
+
+replace(url): Substitui a página atual pela nova no histórico. O usuário não consegue voltar para a página anterior. [05:46]
+
+reload(): Recarrega a página atual. [08:13]
+
+window.history: Serve para navegar no histórico de abas que já foram abertas.
+
+back(): Volta para a página anterior (igual ao botão voltar do navegador). [10:09]
+
+forward(): Vai para a próxima página no histórico. [10:35]
+
+go(n): Pula n páginas para frente (positivo) ou para trás (negativo). Ex: go(-2) volta duas páginas. [12:15]
+
+length: Propriedade que diz quantas páginas existem no histórico daquela aba. [11:03]
