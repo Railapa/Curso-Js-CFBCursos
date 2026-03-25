@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 392 - Aula 91</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .controles {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .display {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #333;
+            border: 2px solid #555;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            background: #069;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #0cf;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎮 Character Factory</h1>
+    <div class="controles">
+        <button id="btn_clonar">Gerar Clone (Assign)</button>
+        <button id="btn_herdar">Gerar Variante (Create)</button>
+    </div>
+    <div id="vitrine" class="display"></div>
+
+    <script src="ex.js"></script>
+</body>
+
+</html>

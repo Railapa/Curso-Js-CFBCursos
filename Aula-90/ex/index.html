@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 388 - Inventário de Frutas</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #48bb78;
+            margin-bottom: 20px;
+        }
+
+        .vitrine {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Estilo de cada "Objeto" na tela */
+        .fruta-card {
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            width: 180px;
+            transition: transform 0.2s;
+        }
+
+        .fruta-card:hover {
+            transform: scale(1.05);
+            border-color: #48bb78;
+        }
+
+        .fruta-nome {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f6e05e;
+            margin-bottom: 5px;
+        }
+
+        .fruta-info {
+            font-size: 0.9rem;
+            color: #cbd5e0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>🍎 Inventário de Frutas</h1>
+        <p>Dados extraídos de Objetos Literais:</p>
+
+        <div id="display-frutas" class="vitrine"></div>
+    </main>
+
+    <script src="ex.js"></script>
+</body>
+
+</html>

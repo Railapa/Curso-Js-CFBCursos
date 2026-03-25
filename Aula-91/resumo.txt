@@ -1,0 +1,12 @@
+📝 Resumo da Aula
+Object.assign():
+
+Clonagem: Permite criar uma cópia de um objeto existente. Ex: const c1 = Object.assign({}, computador). [01:02]
+
+Mesclagem (Merge): Permite juntar vários objetos num só. Se tiveres obj1, obj2 e obj3, podes uni-los todos num obj4. [02:33]
+
+delete: Este comando é usado para remover uma propriedade específica de um objeto. Uma vez deletada, a propriedade passa a ser undefined. [04:31]
+
+Object.create(): Permite criar um novo objeto usando um objeto existente como "protótipo" (base). É uma forma de "instanciar" um objeto literal sem usar classes. [06:57]
+
+Diferença entre instanciar e copiar: Com o Object.create(), crias uma nova estrutura baseada na original, permitindo definir valores específicos para essa nova "instância". [07:36]

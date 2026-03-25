@@ -1,0 +1,14 @@
+📝 Resumo da Aula
+O que é um Objeto Literal?: É uma forma de definir um objeto diretamente usando chavetas {}. Ao contrário das classes, não precisas de "instanciar" (usar o new), podes usá-lo diretamente. [01:50]
+
+Propriedades: Podes adicionar características ao objeto usando o formato chave: valor.
+
+Exemplo: cpu: "i9", ram: "64GB". [03:34]
+
+Métodos: Podes criar funções dentro do objeto para realizar ações.
+
+Exemplo: Um método info() que imprime os detalhes do computador. [07:45]
+
+Manipulação Dinâmica: Podes adicionar novas propriedades ao objeto mesmo depois de ele ter sido criado, usando a notação de ponto (objeto.propriedade = valor) ou de parênteses retos (objeto["propriedade"] = valor). [14:38]
+
+Arrays de Objetos: É muito comum guardar vários objetos literais dentro de um Array e percorrê-los (usando map ou forEach) para exibir os dados no HTML (DOM). [06:08]
