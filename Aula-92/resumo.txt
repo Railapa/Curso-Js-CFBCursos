@@ -1,0 +1,14 @@
+📝 Resumo da Aula
+O que é um Módulo?: É uma forma de concentrar pedaços de código (funções, variáveis, classes) num ficheiro separado para serem reutilizados em diferentes partes da aplicação. [00:34]
+
+Configuração Necessária:
+
+Servidor Web: Módulos não funcionam abrindo o ficheiro HTML diretamente no browser. Deves usar um servidor como o Live Server (extensão do VS Code) ou o Wamp/Xamp. [02:05]
+
+Tipo de Script: No HTML, deves definir o type="module" na tag <script>. [05:04]
+
+Exportação (export): Para que algo num ficheiro JS seja acessível por outro, deves usar a palavra-chave export. Podes exportar múltiplos elementos entre chavetas {}. [09:22]
+
+Importação (import): No ficheiro principal, usas import { item } from './ficheiro.js' para trazer o que foi exportado. [10:03]
+
+Vantagens: Organização extrema do código e facilidade de manutenção, já que cada ficheiro tem uma responsabilidade única. [01:06]

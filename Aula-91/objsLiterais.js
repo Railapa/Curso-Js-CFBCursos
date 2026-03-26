@@ -2,40 +2,27 @@ const computador = {
     cpu: "",
     ram: "",
     hd: "",
-
     info: function() {
         console.log(`CPU: ${this.cpu} - RAM: ${this.ram} - HD: ${this.hd}`);
     }
 };
 
-computador.placaVideo = "RTX"; 
-computador["monitor"] = "22 polegadas"; 
+// 1. Clonando e modificando
+const c1 = Object.assign({}, computador);
+c1.cpu = "i7";
 
- const c1 = Object.assign({}, computador)
+// 2. Mesclando objetos (Merge) [00:03:22]
+const o1 = { obj1: "Valor 1" };
+const o2 = { obj2: "Valor 2" };
+const o3 = Object.assign(o1, o2); // o3 agora tem as duas propriedades
 
- const o1 = {obj1: '1'}
- const o2 = {obj2: '2'}
- const o3 = {obj3: '3'}
- const o4 = Object.assign(o1, o2, o3)
+// 3. Deletando uma propriedade [00:04:50]
+delete computador.hd; 
+// Se chamares computador.info(), o HD aparecerá como 'undefined'
 
- delete(computador.hd)
-
- const c2 = Object.create(computador)
- c2.cpu = 'i8'
- c2.ram = '32g'
- c2.hd = '2tb'
-
-const computadores = [
-    { cpu: "i9", ram: "64GB", hd: "2TB" },
-    { cpu: "i7", ram: "32GB", hd: "2TB" },
-    { cpu: "i5", ram: "16GB", hd: "1TB" }
-];
-
-const objetosDiv = document.querySelector("#objetos");
-
-computadores.forEach((c) => {
-    const div = document.createElement("div");
-    div.setAttribute("class", "computador"); 
-    div.innerHTML = `CPU: ${c.cpu}<br>RAM: ${c.ram}<br>HD: ${c.hd}`;
-    objetosDiv.appendChild(div);
-});
+// 4. Criando um objeto com base em outro (Prototipagem) [00:07:17]
+const c2 = Object.create(computador);
+c2.cpu = "i9";
+c2.ram = "32GB";
+c2.hd = "2TB";
+c2.info(); // Exibe os dados do c2

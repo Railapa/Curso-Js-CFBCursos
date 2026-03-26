@@ -1,0 +1,18 @@
+📝 Resumo da Aula
+Renomear na Importação (as):
+
+Podes dar um "apelido" a um item específico que estás a importar. Ex: import { cursos as c } from './cursos.js'. A partir daí, passas a usar c em vez de cursos. [01:42]
+
+Importar Tudo (import * as):
+
+Esta é uma das formas mais organizadas de trabalhar. Em vez de listar item por item, importas tudo o que o módulo exporta para dentro de um único objeto. [03:22]
+
+Sintaxe: import * as m_cursos from './cursos.js'.
+
+Aceder aos Itens do Módulo:
+
+Quando usas o asterisco (*), acedes às funções e variáveis através do objeto criado: m_cursos.cursos, m_cursos.getCurso(). [04:42]
+
+Para aceder ao que foi exportado como default, usas a palavra-chave .default. [06:29]
+
+Segurança e Encapsulamento: O asterisco só importa o que foi explicitamente marcado com export. Se algo estiver no ficheiro mas não for exportado, ele permanece privado ao módulo. [07:43]

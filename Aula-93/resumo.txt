@@ -1,0 +1,18 @@
+📝 Resumo da Aula
+export default:
+
+É usado para definir o elemento principal ou "padrão" que um módulo exporta. [02:35]
+
+Regra de Ouro: Você só pode ter um export default por arquivo. [05:54]
+
+Ao importar um item default, você não usa chaves {}. Itens não-padrão continuam precisando das chaves. [03:11]
+
+Sintaxe de Exportação:
+
+Pode ser feita na mesma linha da criação: export default function nome() { ... }. [05:05]
+
+Ou no final do arquivo: export default nomeDaFuncao. [02:44]
+
+Múltiplos Itens: Você pode exportar uma função como default e outras funções ou variáveis como exportações nomeadas (dentro de {}). [06:18]
+
+Importação Combinada: É possível importar o item padrão e os nomeados na mesma linha: import padrão, { nomeado1, nomeado2 } from './arquivo.js'. [03:45]
