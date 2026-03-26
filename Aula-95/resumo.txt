@@ -1,0 +1,8 @@
+📝 Resumo da Aula
+Classes como Módulos: É possível exportar uma classe inteira como um módulo, permitindo organizar métodos e propriedades relacionadas em um único lugar. [00:44]
+
+Membros Estáticos (static): Ao definir métodos e propriedades como static, você pode acessá-los diretamente pela classe sem precisar instanciar um objeto (usar o new). [01:17]
+
+Exportação Default de Classe: Ao usar export default em uma classe, você ganha a flexibilidade de importá-la com qualquer nome no arquivo de destino, sem o uso de chaves {}. [03:51]
+
+Vantagem Organizacional: Agrupar funções (como adicionar, apagar ou listar cursos) dentro de uma classe estática em um módulo torna o código mais limpo e semântico. [06:30]
