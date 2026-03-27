@@ -31,6 +31,14 @@ let contato = {
             const p_email = document.createElement('p')
             p_email.innerHTML = c.email
 
+            const btn_remover = document.createElement('button')
+            btn_remover.innerHTML = 'Remover Contato'
+            
+
+            btn_remover.addEventListener('click', (evt) => {
+               
+            })
+
             div.appendChild(p_nome)
             div.appendChild(p_telefone)
             div.appendChild(p_email)

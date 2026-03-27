@@ -1,0 +1,13 @@
+O que é um Symbol?: É uma função que retorna um valor do tipo symbol. Cada vez que chamas Symbol(), ele gera um valor único e imutável, que nunca se repete, mesmo que a descrição seja a mesma. [00:21]
+
+Identificadores Únicos: A principal utilidade é criar chaves de propriedades em objetos que não correm o risco de entrar em conflito com outras chaves (evita sobreposição de dados). [00:44]
+
+Comparação: Se criares dois símbolos S1 = Symbol() e S2 = Symbol(), a comparação S1 == S2 será sempre false. [03:29]
+
+Registro Global (Symbol.for):
+
+Permite criar ou recuperar um símbolo de um registro global baseado numa chave (string). [05:01]
+
+Se usares Symbol.for("bruno") em dois lugares diferentes, eles apontarão para o mesmo símbolo (neste caso, a comparação será true). [05:51]
+
+Recuperar Chave (Symbol.keyFor): Serve para recuperar a string de um símbolo que foi criado no registro global. Se o símbolo foi criado apenas com Symbol(), ele retorna undefined. [06:30]
