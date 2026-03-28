@@ -1,0 +1,12 @@
+Este vídeo da CFBCursos é a aula 99 do curso de JavaScript e foca em uma aplicação prática do tipo primitivo Symbol para criar identificadores únicos em coleções de objetos.
+
+Aqui está um resumo do que foi abordado e um exercício baseado no conteúdo, respeitando sua preferência de não receber o código completo:
+
+Principais Conceitos da Aula
+Identificadores Únicos: O Symbol é usado para criar a propriedade id dentro de uma classe Jogador. Como cada Symbol() é único, mesmo que dois jogadores tenham o mesmo nome, seus IDs serão diferentes [01:55].
+
+Diferença de Strings: Ao contrário de IDs baseados em strings ou números que podem se repetir acidentalmente, o Symbol garante que não haverá colisão de propriedades [02:02].
+
+Manipulação de Arrays: O professor demonstra como usar o método .filter() para remover um jogador específico do array comparando o seu Symbol único, em vez de comparar pelo nome (que poderia remover múltiplos jogadores indesejadamente) [03:25].
+
+Extração de Propriedades: É mostrado como usar o método .map() para criar um novo array contendo apenas os símbolos de determinados objetos que atendem a um critério (como jogadores com o mesmo nome) [09:53].
