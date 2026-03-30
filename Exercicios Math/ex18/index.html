@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 413 - Math e Sorteios</title>
+    <style>
+        body {
+            background-color: #434343;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        h1 {
+            color: #facc15;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #60a5fa;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #3b82f6;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        .primary {
+            background-color: #ef4444;
+            width: 100%;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4ade80;
+        }
+
+        .dado-area {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        #dado_valor {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>🎲 Laboratório Math</h1>
+
+        <div class="card">
+            <h3>Arredondamentos</h3>
+            <p>Valor Original: <span id="val_orig">9.81</span></p>
+            <button id="btn_floor" class="btn">Arredondar para Baixo (Floor)</button>
+            <button id="btn_ceil" class="btn">Arredondar para Cima (Ceil)</button>
+            <div id="res_math" class="resultado">-</div>
+        </div>
+
+        <div class="card">
+            <h3>Sorteador de Dado</h3>
+            <div class="dado-area">
+                <div id="dado_valor">?</div>
+            </div>
+            <button id="btn_sortear" class="btn primary">Lançar Dado (1 a 6)</button>
+        </div>
+    </main>
+
+    <script src="ex18.js"></script>
+</body>
+
+</html>

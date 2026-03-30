@@ -10,4 +10,4 @@ console.log(s3 === s4); // true (são o mesmo identificador global)
 
 // Recuperando a chave global [00:07:30]
 console.log(Symbol.keyFor(s3)); // "CFB"
-console.log(Symbol.keyFor(s1)); // undefined (não está no registro global)
+console.log(Symbol.keyFor(s1)); // undefined (não está no registro global) 
