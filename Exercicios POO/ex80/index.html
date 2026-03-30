@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 419 - Inventário Dinâmico</title>
+    <style>
+        body { background: #0c0a09; color: #e7e5e4; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .mochila { background: #1c1917; border: 2px solid #44403c; padding: 25px; border-radius: 12px; width: 320px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        h2 { color: #f59e0b; margin-top: 0; text-align: center; text-transform: uppercase; border-bottom: 1px solid #44403c; padding-bottom: 10px; }
+        .item-list { margin: 20px 0; font-family: monospace; font-size: 1.1rem; }
+        .peso-total { background: #292524; padding: 10px; border-radius: 6px; text-align: center; color: #10b981; font-weight: bold; border: 1px solid #10b981; }
+        button { background: #78350f; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 15px; transition: 0.2s; }
+        button:hover { background: #92400e; }
+    </style>
+</head>
+<body>
+
+    <div class="mochila">
+        <h2>🎒 Inventário</h2>
+        <div id="itens" class="item-list">
+        </div>
+        <div id="peso_display" class="peso-total">Peso: 0kg</div>
+        <button id="btn_atualizar">Atualizar Inventário</button>
+    </div>
+
+    <script src="ex80.js"></script>
+</body>
+</html>

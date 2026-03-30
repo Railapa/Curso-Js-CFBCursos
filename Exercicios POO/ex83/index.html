@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 422 - Task Manager Objeto Literal</title>
+    <style>
+        body { background: #09090b; color: #f4f4f5; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px; }
+        
+        .painel-input { background: #18181b; padding: 20px; border-radius: 12px; border: 1px solid #27272a; width: 350px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+        
+        input, select { padding: 10px; border-radius: 6px; border: 1px solid #3f3f46; background: #09090b; color: white; outline: none; }
+        
+        button#btn_add { background: #22c55e; color: #052e16; font-weight: bold; border: none; padding: 12px; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+        button#btn_add:hover { background: #16a34a; }
+
+        #container_missoes { width: 350px; display: flex; flex-direction: column; gap: 10px; }
+
+        /* Estilo dinâmico dos cards */
+        .card-missao { background: #18181b; padding: 15px; border-radius: 8px; border-left: 5px solid #52525b; display: flex; justify-content: space-between; align-items: center; animation: surge 0.3s ease; }
+        
+        .prioridade-alta { border-left-color: #ef4444; }
+        .prioridade-baixa { border-left-color: #3b82f6; }
+
+        .btn-concluir { background: #3f3f46; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+        .btn-concluir:hover { background: #27272a; color: #22c55e; }
+
+        @keyframes surge { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div class="painel-input">
+        <input type="text" id="titulo_missao" placeholder="Título da missão...">
+        <select id="select_prioridade">
+            <option value="baixa">Prioridade Baixa</option>
+            <option value="alta">Prioridade Alta</option>
+        </select>
+        <button id="btn_add">ADICIONAR MISSÃO</button>
+    </div>
+
+    <div id="container_missoes"></div>
+
+    <script src="ex83.js"></script>
+</body>
+</html>

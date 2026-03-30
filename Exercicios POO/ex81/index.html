@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 420 - Somador de Estoque</title>
+    <style>
+        /* Estilização moderna seguindo o padrão das aulas anteriores */
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: 'Segoe UI', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .container { 
+            background: #1e293b; 
+            padding: 30px; 
+            border-radius: 12px; 
+            border: 1px solid #334155; 
+            width: 350px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h2 { color: #38bdf8; text-align: center; margin-top: 0; }
+        
+        .painel {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+
+        .item-linha {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #1e293b;
+            padding: 5px 0;
+        }
+
+        .total-box {
+            margin-top: 25px;
+            padding: 10px;
+            background: #064e3b;
+            color: #4ade80;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 1.2rem;
+        }
+
+        button { 
+            background: #0ea5e9; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            width: 100%; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        button:hover { background: #0284c7; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>📦 Gestão de Estoque</h2>
+        
+        <div id="lista_itens" class="painel">
+            Clique em atualizar para carregar...
+        </div>
+
+        <div id="total_display" class="total-box">
+            Total: 0 unidades
+        </div>
+
+        <button id="btn_processar">PROCESSAR ESTOQUE</button>
+    </div>
+
+    <script src="ex81.js"></script>
+</body>
+</html>
