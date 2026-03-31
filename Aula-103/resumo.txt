@@ -1,0 +1,22 @@
+Nesta aula 103 do curso de JavaScript do canal CFBCursos, o professor Bruno finaliza a apresentação das funções tradicionais para manipulação de strings, focando em extração, conversão de caixa e tipos de dados.
+
+Aqui está o resumo simplificado dos novos conceitos:
+
+1. Extração de Partes do Texto (substring)
+Semelhante ao slice, o substring extrai um pedaço da string.
+
+Funcionamento: Você indica o índice de início e o índice de fim.
+
+Detalhe Importante: O caractere na posição final não é incluído no resultado. Para pegar a palavra "Bruno" (posições 0 a 4), você deve usar 0, 5.
+
+2. Conversão de Maiúsculas e Minúsculas
+toUpperCase(): Transforma todo o texto em letras maiúsculas.
+
+toLowerCase(): Transforma todo o texto em letras minúsculas.
+
+Lembrete: Assim como os outros métodos, eles não alteram a variável original automaticamente; você precisa atribuir o resultado de volta à variável se quiser salvar a mudança.
+
+3. Valor Primitivo e Conversão de Tipos
+valueOf(): Quando você trabalha com objetos do tipo String, este método retorna apenas o valor de texto puro (o "valor primitivo").
+
+toString(): Converte outros tipos de dados (como números) em strings. Útil para quando você precisa tratar um número como texto em uma operação.

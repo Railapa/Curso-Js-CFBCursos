@@ -1,0 +1,35 @@
+Neste vídeo do canal CFBCursos, o professor Bruno inicia uma sequência sobre manipulação de Strings em JavaScript, abordando métodos fundamentais para trabalhar com textos.
+
+Aqui estão os principais pontos explicados na aula:
+
+1. Formas de Criar uma String
+Existem duas maneiras principais de declarar uma string apresentadas no vídeo:
+
+Literal: Atribuindo o valor diretamente a uma variável (ex: let nome = "Bruno"). [00:52]
+
+Classe String: Criando uma instância do objeto String (ex: let nome = new String("Bruno")). [02:40]
+
+A vantagem de usar a classe no console do navegador é que ela detalha cada caractere por índice e exibe todos os métodos disponíveis. [03:04]
+
+2. Métodos de Acesso a Caracteres
+charAt(posição): Retorna o caractere que está num índice específico. [04:08]
+
+Exemplo: Se a string é "Bruno", charAt(0) retorna "B". [05:05]
+
+charCodeAt(posição): Retorna o código numérico (ASCII/Unicode) do caractere naquela posição. [05:48]
+
+Exemplo: O código para "B" maiúsculo é 66. [06:07]
+
+3. Concatenação de Strings
+concat(string2): Junta duas ou mais strings. [06:30]
+
+Atenção: Este método não altera a string original, ele apenas retorna o novo valor combinado. Para salvar a alteração, deves atribuir o resultado de volta à variável (ex: nome = nome.concat(canal)). [08:46]
+
+4. Métodos de Busca (Localização)
+indexOf("termo"): Procura um caractere ou sentença e retorna a posição da primeira ocorrência encontrada. [10:02]
+
+Se o termo pesquisado não existir na string, o método retorna -1. [11:14]
+
+lastIndexOf("termo"): Semelhante ao anterior, mas retorna a posição da última ocorrência do termo na string. [11:36]
+
+Esta aula foca-se nos métodos clássicos, e o professor menciona que as funções mais recentes (implementadas a partir do ES6) serão abordadas nas aulas seguintes.

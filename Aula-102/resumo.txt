@@ -1,0 +1,28 @@
+
+O Gemini disse
+Nesta aula 102 do curso do CFBCursos, o professor Bruno continua a exploração de métodos essenciais para manipular textos em JavaScript. Como você já está familiarizado com os conceitos básicos da aula anterior, aqui o foco sobe de nível para comparação, substituição e divisão de strings.
+
+Aqui está o resumo simplificado das funções apresentadas:
+
+1. Comparação de Strings (localeCompare)
+Diferente de variáveis simples, para comparar se dois objetos String são iguais, usamos o localeCompare.
+
+Retorno 0: As strings são exatamente iguais.
+
+Retorno -1 ou 1: As strings são diferentes (indica se uma vem antes ou depois da outra na ordem alfabética).
+
+2. Substituição (replace)
+Serve para trocar um pedaço do texto por outro.
+
+Importante: Por padrão, ele substitui apenas a primeira ocorrência que encontrar.
+
+Pode ser usado para trocar uma única letra ou palavras inteiras.
+
+3. Busca de Posição (search)
+Muito parecido com o indexOf, ele procura um termo e retorna o índice (número da posição) onde esse termo começa.
+
+4. Recorte e Extração (slice)
+Permite "cortar" um pedaço da string informando onde começa e onde termina o corte, devolvendo apenas aquela parte.
+
+5. Divisão em Array (split)
+Esta é uma das mais poderosas. Ela quebra a string em várias partes baseada em um separador (como um espaço ou uma letra) e guarda tudo dentro de um Array.
