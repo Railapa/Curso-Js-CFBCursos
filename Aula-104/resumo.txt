@@ -1,0 +1,34 @@
+
+O Gemini disse
+Nesta aula 104 do curso do CFBCursos, o professor Bruno apresenta os novos métodos de string introduzidos no ES6 (ECMAScript 2015). Esses métodos tornam as tarefas comuns de busca e repetição muito mais intuitivas e legíveis do que as versões antigas.
+
+Aqui está o resumo simplificado das novidades:
+
+1. Verificação de Início e Fim
+startsWith("texto"): Retorna true se a string começar com o texto indicado.
+
+Exemplo: "Bruno".startsWith("B") retorna true.
+
+endsWith("texto"): Retorna true se a string terminar com o texto indicado.
+
+Exemplo: "Campos".endsWith("s") retorna true.
+
+2. Busca de Conteúdo (includes)
+includes("texto"): Verifica se o texto existe em qualquer parte da string (início, meio ou fim).
+
+É muito mais prático do que usar o antigo indexOf e conferir se é diferente de -1.
+
+3. Repetição (repeat)
+repeat(n): Cria uma nova string repetindo a original o número de vezes solicitado.
+
+Útil para criar separadores visuais ou padrões de repetição no console.
+
+4. Conversão de Código para Caractere (fromCodePoint)
+Este método faz o caminho inverso do charCodeAt. Você passa o código numérico (ASCII/Unicode) e ele devolve a letra correspondente.
+
+Exemplo: String.fromCodePoint(66) retorna "B".
+
+5. Template Strings
+Uso de crases (`) e ${variavel} para montar frases.
+
+Isso facilita a criação de mensagens complexas sem precisar de infinitos sinais de +.
