@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de RegEx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🔍 Laboratório de RegEx</h1>
+        
+        <div class="sessao">
+            <h3>Texto de Teste</h3>
+            <textarea id="in_texto" rows="4">O Professor Bruno do canal CFBCursos ensina Javascript em 2023. Contato: bruno@cfbcursos.com.br ou bruno123@gmail.com</textarea>
+        </div>
+
+        <div class="sessao">
+            <h3>Funções de String</h3>
+            <div class="grid-botoes">
+                <button id="btn_search" class="btn primary">Search (i)</button>
+                <button id="btn_match" class="btn primary">Match (g)</button>
+                <button id="btn_replace" class="btn primary">Replace (g)</button>
+            </div>
+        </div>
+
+        <div class="sessao">
+            <h3>Metacaracteres e Classes</h3>
+            <div class="grid-botoes">
+                <button id="btn_digitos" class="btn secondary">Dígitos (\d)</button>
+                <button id="btn_espacos" class="btn secondary">Espaços (\s)</button>
+                <button id="btn_intervalo" class="btn secondary">Intervalo [A-C]</button>
+            </div>
+        </div>
+
+        <div class="sessao">
+            <h3>Quantificadores</h3>
+            <div class="grid-botoes">
+                <button id="btn_mais" class="btn dark">Um ou mais (+)</button>
+                <button id="btn_zero_mais" class="btn dark">Zero ou mais (*)</button>
+            </div>
+        </div>
+
+        <div id="info_resultado" class="status-bar">
+            Resultado aparecerá aqui...
+        </div>
+        <div id="info_explicacao" class="explicacao">
+            Clique em um botão para ver a explicação do comando.
+        </div>
+    </main>
+
+    <script src="ex170.js"></script>
+</body>
+</html>

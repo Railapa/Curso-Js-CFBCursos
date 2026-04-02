@@ -5,7 +5,7 @@ const registroBruto = {
     caracteresEspeciais: [67, 70, 66] 
 }
 
-console.log(registroBruto.dados.replace('_', ' '))
+console.log(registroBruto.dados.replace(/_/g, ' '))
 
 console.log(registroBruto.dados.split(' '))
 

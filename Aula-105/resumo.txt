@@ -1,0 +1,28 @@
+
+O Gemini disse
+Nesta aula 105 do curso do CFBCursos, o professor Bruno introduz o conceito de Expressões Regulares (RegEx) no JavaScript. Ele explica como essas definições de padrões facilitam a busca, substituição e comparação de textos, permitindo mudar o comportamento padrão de funções conhecidas.
+
+Aqui está o resumo simplificado da primeira parte sobre RegEx:
+
+1. O que são Expressões Regulares (RegEx)?
+São padrões de caracteres criados para realizar buscas ou manipulações complexas em strings. [00:29]
+
+Em JavaScript, um padrão RegEx é escrito entre barras: /padrão/. [02:57]
+
+2. Modificadores (Flags)
+Os modificadores são letras que você coloca após a segunda barra para alterar como o padrão é procurado: [03:42]
+
+i (Ignore Case): Faz com que a busca não diferencie maiúsculas de minúsculas. [03:05]
+
+g (Global): Faz com que a busca encontre todas as ocorrências do padrão, não apenas a primeira. [04:45]
+
+Você pode combinar modificadores, como /padrão/ig. [05:21]
+
+3. Funções que aceitam RegEx
+O professor demonstra como o RegEx turbina funções que já conhecemos: [01:24]
+
+search(): Com o modificador /i/, ele encontra a posição de uma palavra mesmo que ela esteja escrita com letras maiúsculas ou minúsculas diferentes do original. [02:49]
+
+match(): Quando usado com /g/, retorna um Array contendo todas as partes do texto que batem com o padrão, em vez de apenas a primeira. [04:02]
+
+replace(): Com /g/, permite substituir todas as letras ou palavras que seguem o padrão de uma só vez. [05:50]

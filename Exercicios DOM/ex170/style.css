@@ -1,0 +1,123 @@
+/* Reset básico para limpar margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a; /* Azul escuro do fundo */
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #1e293b; /* Fundo do painel */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 1.5rem; 
+    margin-bottom: 1.5rem; 
+    color: #38bdf8; 
+}
+
+h3 { 
+    font-size: 0.9rem; 
+    margin-bottom: 1rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    color: #cbd5e1; 
+    text-align: left;
+}
+
+.sessao {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+/* Configuração dos botões em Grid (2 colunas) */
+.grid-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilo geral dos botões */
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+/* Cores dos botões baseadas no seu exercício anterior */
+.primary { background-color: #0284c7; color: white; }
+.primary:hover { background-color: #0369a1; }
+
+.secondary { background-color: #475569; color: white; }
+.secondary:hover { background-color: #334155; }
+
+.dark { background-color: #000; color: #38bdf8; border: 1px solid #38bdf8; }
+.dark:hover { background-color: #111; opacity: 0.9; }
+
+/* Estilo do campo de texto (Textarea) */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    font-family: monospace;
+    resize: vertical; /* Permite aumentar apenas a altura */
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #38bdf8;
+}
+
+/* Áreas de status e explicação */
+.status-bar {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #0f172a;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #4ade80; /* Verde neon para o resultado */
+    font-family: monospace;
+    word-break: break-all; /* Evita que resultados longos quebrem o layout */
+}
+
+.explicacao {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #334155;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    text-align: left;
+    border-left: 4px solid #38bdf8;
+    line-height: 1.4;
+}
+
+/* Ajuste para botões que devem ocupar a linha inteira (opcional) */
+#btn_replace {
+    grid-column: span 2;
+}

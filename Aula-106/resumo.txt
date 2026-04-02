@@ -1,0 +1,30 @@
+Nesta aula 106 do CFBCursos, o professor Bruno aprofunda o estudo das Expressões Regulares (RegEx) em JavaScript, introduzindo padrões de busca mais avançados como colchetes, metacaracteres e quantificadores. Esses recursos permitem criar filtros extremamente precisos para strings complexas.
+
+1. Definição de Padrões com Colchetes []
+Os colchetes permitem definir um conjunto ou uma faixa de caracteres que você deseja encontrar:
+
+Conjunto Específico: [abc] procura qualquer uma dessas letras. No vídeo, o exemplo [oh] busca tanto a letra 'o' quanto a 'h'.
+
+Faixas de Letras: [a-z] busca qualquer letra de 'a' a 'z'. Você pode limitar a faixa, como [a-m].
+
+Faixas de Números: [0-9] busca qualquer dígito numérico.
+
+Combinação: Você pode combinar faixas, como [a-m0-9], para buscar letras e números simultaneamente.
+
+2. Metacaracteres
+São atalhos que representam grupos comuns de caracteres. É necessário usar a contrabarra \ para ativá-los:
+
+\d (Digits): Representa qualquer dígito numérico (equivalente a [0-9]).
+
+\s (Spaces): Representa espaços em branco (incluindo tabs e quebras de linha).
+
+\b (Boundary): Ajuda a encontrar caracteres alfa-numéricos em limites de palavras.
+
+3. Quantificadores
+Os quantificadores definem a quantidade de vezes que um caractere ou padrão deve aparecer:
+
++ (Mais): Corresponde a uma ou mais ocorrências consecutivas. Transforma vários "o" individuais (como em "Bruno Pinho") em grupos de "o" capturados juntos.
+
+* (Asterisco): Corresponde a zero ou mais ocorrências do padrão anterior.
+
+? (Interrogação): Corresponde a zero ou uma ocorrência (torna o caractere anterior opcional).
