@@ -1,0 +1,24 @@
+Nesta aula 107 do CFBCursos, o professor Bruno inicia o estudo sobre animações em JavaScript. Ele explica que animar nada mais é do que manipular as propriedades CSS de um elemento do DOM (como posição, tamanho ou cor) de forma contínua e interativa.
+
+Aqui estão os pilares fundamentais apresentados:
+
+1. O Conceito da Animação
+O processo básico de animação manual consiste em três passos:
+
+Capturar: Pegar o valor atual da propriedade do elemento (ex: posição left).
+
+Modificar: Incrementar ou decrementar esse valor em uma variável.
+
+Aplicar: Jogar o novo valor de volta na propriedade do elemento.
+
+2. Preparação do Elemento
+Para movimentar um objeto na tela usando as propriedades top e left, o elemento precisa ter uma definição de posicionamento no CSS:
+
+position: relative ou position: absolute. Sem isso, o navegador ignora as coordenadas de movimento.
+
+No vídeo, o professor usa o JavaScript para injetar essas propriedades no carregamento da página (window.onload).
+
+3. Funções e Métodos Utilizados
+parseInt(): Essencial para converter valores que vêm do CSS como strings (ex: "10px") em números inteiros (10), permitindo cálculos matemáticos.
+
+Template Strings (` `): Usadas para concatenar o novo valor numérico com a unidade de medida "px" antes de devolver ao CSS.

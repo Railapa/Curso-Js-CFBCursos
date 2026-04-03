@@ -1,0 +1,20 @@
+Nesta aula 108 do CFBCursos, o professor Bruno ensina como transformar a animação manual da aula anterior em uma animação automática. O objetivo é que, ao clicar uma única vez no botão, o elemento (o "carro") continue se movendo sozinho até que receba um comando para parar.
+
+Aqui estão os conceitos fundamentais para tornar a animação automática:
+
+1. O Uso do setInterval
+Para que o movimento seja contínuo, não podemos depender de cliques repetidos. Usamos o setInterval(função, tempo), que executa uma função repetidamente em um intervalo fixo de milissegundos.
+
+No vídeo, o intervalo é definido como 20ms, o que cria uma movimentação fluida aos olhos.
+
+2. Controle do Intervalo (clearInterval)
+Sempre que iniciamos um movimento automático, é necessário ter uma forma de pará-lo. O clearInterval(variável) interrompe a execução do ciclo de repetição.
+
+É uma boa prática limpar o intervalo anterior antes de iniciar um novo para evitar que as velocidades se somem ou que o objeto tente ir para duas direções ao mesmo tempo.
+
+3. Lógica de Direção Unificada
+O professor cria uma função mover(dir) que aceita um parâmetro de direção:
+
+Direção 1: Move para a direita (incrementa o valor de left).
+
+Direção -1: Move para a esquerda (decrementa o valor de left).
