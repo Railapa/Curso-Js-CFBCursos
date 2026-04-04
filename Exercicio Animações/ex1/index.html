@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset básico para garantir que o layout comece limpo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f172a;
+            /* Fundo azul marinho escuro */
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #1e293b;
+            /* Cor do painel interno */
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #38bdf8;
+            /* Azul claro para o título */
+        }
+
+        /* O "Poço" do Elevador */
+        #poca {
+            min-height: 400px;
+            border: 2px solid #334155;
+            position: relative;
+            /* Essencial para o elevador se mover dentro dele */
+            overflow: hidden;
+            background: #020617;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* A Cabine do Elevador */
+        #elevador {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Centraliza horizontalmente */
+            border-radius: 4px;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+            transition: all 0.4s ease;
+        }
+
+        /* Sessão de Botões */
+        .sessao {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo dos Botões (Baseado no seu exercício anterior) */
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.5s;
+        }
+
+        .primary {
+            background-color: #0284c7;
+            color: white;
+        }
+
+        .primary:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
+
+        .dark {
+            background-color: #ef4444;
+            /* Cor vermelha para o botão de PARAR */
+            color: white;
+        }
+
+        .dark:hover {
+            background-color: #dc2626;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>🛗 Simulador de Elevador</h1>
+
+        <div id="poca"
+            style="height: 300px; border: 2px solid #334155; position: relative; overflow: hidden; background: #0f172a;">
+            <div id="elevador"
+                style="width: 50px; height: 50px; background: #38bdf8; position: absolute; top: 0px; left: 50%; transform: translateX(-50%);">
+            </div>
+        </div>
+
+        <div class="sessao" style="margin-top: 20px;">
+            <button id="btn_subir" class="btn primary">Subir</button>
+            <button id="btn_descer" class="btn primary">Descer</button>
+            <button id="btn_13" class="btn primary">Esquerda</button>
+            <button id="btn_22" class="btn primary">Direita</button>
+            <button id="btn_parar" class="btn dark">Parar</button>
+        </div>
+    </main>
+    <script src="ex1.js"></script>
+</body>
+
+</html>
