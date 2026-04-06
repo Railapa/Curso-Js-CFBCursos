@@ -9,16 +9,15 @@ let animação;
 
 const moverEixoX = (direcao) => {
     let posicaoAtual = parseInt(elevador.style.left)
-    let novaPosicao = posicaoAtual + (5 * direcao)
+    let novaPosicao = posicaoAtual + (direcao * 5)
     elevador.style.left = `${novaPosicao}px`
 }
 
-
 const moverEixoY = (direcao) => {
-    let pos = parseInt(elevador.style.top) + (5 * direcao) + 'px'
-    elevador.style.top = pos
-}
-
+    let posicaoAtual = parseInt(elevador.style.top)
+    let novaPosicao = posicaoAtual + (direcao * 5)
+    elevador.style.top = `${novaPosicao}px`
+} 
 
 
 btn_descer.addEventListener('click', () => {

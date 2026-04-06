@@ -1,0 +1,13 @@
+Nesta aula 109 do CFBCursos, o professor Bruno explica a diferença prática entre setInterval e setTimeout no contexto de animações, introduzindo o conceito de recursividade.
+
+1. setInterval vs. setTimeout
+setInterval: Cria um ciclo automático. Uma vez chamado, ele executa a função repetidamente no intervalo de tempo definido (ex: a cada 20ms) até ser parado.
+
+setTimeout: Executa a função apenas uma vez após o tempo determinado.
+
+2. O Conceito de Recursividade
+Para fazer uma animação contínua usando setTimeout, utilizamos a recursividade: a função chama a si mesma.
+
+Dentro da função mover, após atualizar a posição do objeto, chamamos um novo setTimeout que aciona a própria função mover novamente.
+
+Isso cria um "empilhamento" de chamadas que mantém o movimento fluido, agindo de forma semelhante ao setInterval, mas com maior controle sobre cada ciclo.

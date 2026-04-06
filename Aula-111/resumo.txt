@@ -1,0 +1,20 @@
+Nesta aula 110 do CFBCursos, o professor Bruno ensina como criar limites de área para a animação. O objetivo é impedir que o objeto (o "carro") saia da tela, fazendo-o parar automaticamente ao atingir as bordas esquerda ou direita da janela do navegador.
+
+1. Capturando as Dimensões da Janela
+Para que o limite funcione em qualquer computador, precisamos saber o tamanho da tela do usuário:
+
+window.innerWidth: Retorna a largura interna da janela.
+
+Cálculo da borda direita: O limite não é apenas a largura da tela, mas sim a largura da tela - largura do objeto. Isso evita que o carro "suma" parcialmente antes de parar.
+
+2. Evento de Redimensionamento (resize)
+As janelas de navegador podem ser redimensionadas. Por isso, usamos o evento resize para recalcular o limite máximo sempre que o usuário mudar o tamanho da janela.
+
+3. Lógica de Parada na Função mover
+Dentro da função de movimento, adicionamos verificações (if/else) para checar a posição atual:
+
+Para a Direita: Se a posição left for menor que o limite máximo, ele continua andando. Se atingir o limite, o movimento para.
+
+Para a Esquerda: Se a posição left for maior que zero, ele continua. Se chegar a 0, ele para.
+
+clearTimeout: É usado para interromper o ciclo de recursividade assim que o limite é atingido, economizando processamento.
