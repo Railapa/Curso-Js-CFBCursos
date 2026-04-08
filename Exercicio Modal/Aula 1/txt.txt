@@ -1,0 +1,20 @@
+Neste vídeo, a Larissa Kich ensina a criar um modal funcional utilizando a tag nativa <dialog> do HTML5, o que simplifica drasticamente a estrutura de código em comparação com métodos antigos.
+
+1. A Tag <dialog> (O Diferencial)
+A grande vantagem de usar a tag <dialog> é que ela possui métodos nativos do JavaScript para abrir e fechar, além de oferecer suporte a um "fundo escurecido" (backdrop) sem precisar de camadas extras de CSS.
+
+2. JavaScript: Lógica Multi-Modal
+A Larissa mostra como configurar o JavaScript para que um mesmo script funcione para vários modais na mesma página.
+
+querySelectorAll: Captura todos os botões de abrir/fechar.
+
+getAttribute('data-modal'): Identifica qual modal específico deve ser aberto ou fechado ao clicar no botão.
+
+showModal(): Abre o modal e impede a interação com o conteúdo de trás.
+
+close(): Fecha o modal.
+
+3. CSS: Estilização e Backdrop
+::backdrop: Pseudo-elemento especial que permite estilizar o fundo escurecido enquanto o modal está aberto.
+
+Layout Flexbox: Utilizado para centralizar o botão de abertura na tela e organizar os elementos dentro do modal de login.
