@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="menu">
+        <div class="menu_cards">
+            <div class="menu_card" data-product="bigMac">
+                <h2>Big Mac</h2>
+                <button class="btn_ver_mais">
+                    Ver Mais 
+                </button>
+            </div>
+            <div class="menu_card" data-product="CheddarMacMelt">
+                <h2>Cheddar McMelt</h2>
+                <button class="btn_ver_mais">
+                    Ver Mais 
+                </button>
+            </div>
+            <div class="menu_card" data-product="MacFish">
+                <h2>Mac Fish</h2>
+                <button class="btn_ver_mais">
+                    Ver Mais 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <dialog class="modal">
+        <button class="btn_close_modal">X</button>
+        <p>Hamburguer: <span class="modal_nome"></span></p>
+        <p>Preço: <span class="modal_preco"></span></p>
+        <p>Ingredientes: <span class="modal_ingredientes"></span></p>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>

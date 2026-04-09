@@ -1,0 +1,18 @@
+.menu_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #bf12bf;
+    border-radius: 8px;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.7);
+}
