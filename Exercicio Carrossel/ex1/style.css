@@ -1,0 +1,53 @@
+.swiper-slide {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #f1c40f; /* Já deixei a borda amarela por padrão */
+    transition: all .4s ease;
+    
+    /* Removido: opacity e transform scale para não diminuir o card único */
+    opacity: 1; 
+    transform: scale(1);
+    
+    width: 100%; /* Garante que ele ocupe o espaço total */
+    box-sizing: border-box; /* Garante que o padding não estoure a largura */
+}
+
+/* Pode remover ou simplificar a regra do active já que só um aparece */
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.swiper {
+    width: 40%; /* Ajuste a largura do container para controlar o tamanho do card */
+    height: 600px;
+    max-width: 800px; /* Um valor menor para o card não ficar largo demais em telas grandes */
+    margin: 50px auto;
+    overflow: hidden; 
+    padding: 20px 40px 60px;
+    position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #007aff;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%) scale(0.8); /* Ajusta a escala e compensa o centro */
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+/* Move para a esquerda, fora do card */
+.swiper-button-prev {
+    left: 0px; 
+}
+
+/* Move para a direita, fora do card */
+.swiper-button-next {
+    right: 0px;
+}

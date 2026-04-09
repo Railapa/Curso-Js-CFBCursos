@@ -1,0 +1,15 @@
+.cards{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card{
+    border: 2px double #8800ff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 3px;
+}
