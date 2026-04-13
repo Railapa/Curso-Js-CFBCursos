@@ -10,36 +10,34 @@ const hideSlider = () => {
     })
 }
 
-const showSlider = () => {
+const showSlide = () => {
     slider[currentSlide].classList.add('on')
 }
 
-const nextSlider = () => {
+const nextSlide = () => {
     hideSlider()
     if(currentSlide === slider.length -1){
         currentSlide = 0
     } else {
         currentSlide++
     }
-
-    showSlider()
+    showSlide()
 }
 
-const prevSlider = () => {
+const prevSlide = () => {
     hideSlider()
     if(currentSlide === 0){
         currentSlide = slider.length -1
     } else {
         currentSlide--
     }
-
-    showSlider()
+    showSlide()
 }
 
 btnNext.addEventListener('click', () => {
-    nextSlider()
+    nextSlide()
 })
 
 btnPrev.addEventListener('click', () => {
-    prevSlider()
+    prevSlide()
 })

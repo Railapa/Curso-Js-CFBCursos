@@ -26,7 +26,7 @@
     position: absolute;
     width: 100%;
     border-radius: 8px;
-    transition: opacity .4s;
+    transition: all 0.4s ease;
     border: 2px solid #242124;
     padding: 40px 20px;
     display: flex;
