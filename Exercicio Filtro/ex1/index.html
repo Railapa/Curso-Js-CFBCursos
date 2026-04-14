@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Projetos - UNIFACS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: sans-serif;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 1rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            background: #1e293b;
+            color: white;
+            outline: none;
+        }
+
+        .cards-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            scale: 103%;
+        }
+
+        .card h2 {
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meus Projetos Front-End</h1>
+        <div class="search-box">
+            <input type="text" id="in_filtro" placeholder="Digite para filtrar (ex: Landing, Banking...)">
+        </div>
+        <div class="res" style="display: none; margin-top: 20px;">
+            <p>card nao encontrado</p>
+        </div>
+    </header>
+
+    <main>
+        <ul class="cards-list">
+            <li class="card">
+                <h2>TZ Open Banking</h2>
+                <p>Desenvolvimento de interface financeira em JavaScript.</p>
+            </li>
+            <li class="card">
+                <h2>TLP Tech Landing Page</h2>
+                <p>Página responsiva com foco em performance.</p>
+            </li>
+            <li class="card">
+                <h2>Starbucks Clone</h2>
+                <p>Estudo de UI/UX e design moderno.</p>
+            </li>
+            <li class="card">
+                <h2>Agência de Turismo</h2>
+                <p>Projeto de prática de layouts mobile-first.</p>
+            </li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
