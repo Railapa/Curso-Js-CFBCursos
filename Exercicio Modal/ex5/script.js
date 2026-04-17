@@ -1,45 +1,50 @@
+const btn_mais = document.querySelectorAll('.btn_mais')
+const btn_close = document.querySelector('.btn_close')
 const modal = document.querySelector('.modal')
-const btn_close_modal = document.querySelector('.btn_close_modal')
-const btn_ver_mais = document.querySelectorAll('.btn_ver_mais')
-
-btn_close_modal.addEventListener('click', () => {
-    modal.close()
-})
 
 const infoLutadores = {
-    "IliaTopuria": {
+    "lutador1": {
+        nome: 'Renato "Money" Moicano',
+        nacionalidade: 'Brasileiro',
+        idade: '36 anos',
+        cartel: '21//7/1'
+    },
+
+    "lutador2": {
         nome: 'Ilia "El Matador" Topuria',
-        pais: 'Espanha / Georgia',
+        nacionalidade: 'Espanhol/Georgiano',
+        idade: '29 anos',
         cartel: '18/0'
     },
 
-    "RenatoMoicano": {
-        nome: 'Renato "Money" Moicano',
-        pais: 'Brasil',
-        cartel: '21/7'
-    },
-
-    "ConnorMcGreggor": {
-        nome: 'Connor "The Notorious" McGreggor',
-        pais: 'Irlanda',
+    "lutador3": {
+        nome: 'Conor "The Notorious" McGregor',
+        nacionalidade: 'Irlandes',
+        idade: '34 anos',
         cartel: '22/6'
     }
 }
 
 const nome_modal = document.querySelector('.nome_modal')
-const pais_modal = document.querySelector('.pais_modal')
+const idade_modal = document.querySelector('.idade_modal')
+const nacionalidade_modal = document.querySelector('.nacionalidade_modal')
 const cartel_modal = document.querySelector('.cartel_modal')
 
-btn_ver_mais.forEach(btn => {
+btn_mais.forEach(btn => {
     btn.addEventListener('click', () => {
         const cardPai = btn.closest('.card')
-        const lutador = cardPai.getAttribute('data-product')
+        const lutador = cardPai.getAttribute('data-lutador')
 
         const dados = infoLutadores[lutador]
 
         nome_modal.innerHTML = dados.nome
-        pais_modal.innerHTML = dados.pais
+        idade_modal.innerHTML = dados.idade
+        nacionalidade_modal.innerHTML = dados.nacionalidade
         cartel_modal.innerHTML = dados.cartel
         modal.showModal()
     })
+})
+
+btn_close.addEventListener('click', () => {
+    modal.close()
 })

@@ -7,35 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <div class="cards">
-            <div class="card" data-product="IliaTopuria">
-                <h1>Ilia Topuria</h1>
-                <button class="btn_ver_mais">
-                    Ver Mais
-                </button>
-            </div>
-            <div class="card" data-product="RenatoMoicano">
-                <h1>Renato Moicano</h1>
-                <button class="btn_ver_mais">
-                    Ver Mais
-                </button>
-            </div>
-            <div class="card" data-product="ConnorMcGreggor">
-                <h1>Connor McGreggor</h1>
-                <button class="btn_ver_mais">
-                    Ver Mais
-                </button>
-            </div>
+    <div class="container_cards">
+        <div class="card" data-lutador="lutador1">
+            <h1>Lutador 1</h1>
+            <button class="btn_mais">Ver Mais</button>
         </div>
-    </section>
+        <div class="card" data-lutador="lutador2">
+            <h1>Lutador 2</h1>
+            <button class="btn_mais">Ver Mais</button>
+        </div>
+        <div class="card" data-lutador="lutador3">
+            <h1>Lutador 3</h1>
+            <button class="btn_mais">Ver Mais</button>
+        </div>
+    </div>
 
     <dialog class="modal">
-        <button class="btn_close_modal">
+        <button class="btn_close">
             X
         </button>
-        <p>Conhecido Como: <span class="nome_modal"></span></p>
-        <p>Nascido em: <span class="pais_modal"></span></p>
+        <p>Nome: <span class="nome_modal"></span></p>
+        <p>Idade: <span class="idade_modal"></span></p>
+        <p>Nacionalidade: <span class="nacionalidade_modal"></span></p>
         <p>Cartel no UFC: <span class="cartel_modal"></span></p>
     </dialog>
     <script src="script.js"></script>
