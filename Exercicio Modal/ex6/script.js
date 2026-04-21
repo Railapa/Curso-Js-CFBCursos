@@ -40,6 +40,6 @@ btn_ver_mais.forEach(btn => {
         modal_nome.innerHTML = dados.nome
         modal_idade.innerHTML = dados.idade
         modal_titulo.innerHTML = dados.titulo
-        modal.showModal()
+        modal.show()
     })
 })
