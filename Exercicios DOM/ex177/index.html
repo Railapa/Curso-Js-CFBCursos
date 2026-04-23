@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Exercício 3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .converter-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            padding: 12px;
+            font-size: 1.1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #00b894;
+        }
+        .label {
+            display: block;
+            margin-bottom: 10px;
+            color: #636e72;
+            font-weight: bold;
+        }
+        #res {
+            margin-top: 25px;
+            font-size: 1.5rem;
+            color: #2d3436;
+        }
+        #aviso {
+            color: #d63031;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            height: 20px; /* reserva o espaço */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="converter-box">
+        <span class="label">Valor em R$ (Real)</span>
+        <input type="number" id="reais" placeholder="0,00" step="0.01">
+        
+        <div id="res">US$ 0.00</div>
+        <div id="aviso"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

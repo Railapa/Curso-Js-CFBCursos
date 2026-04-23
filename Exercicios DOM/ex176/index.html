@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Exercício 2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .todo-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button#addBtn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f8f9fa;
+            margin-bottom: 8px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            border-left: 4px solid #007bff;
+        }
+
+        .remove-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="todo-card">
+        <h3>Minhas Tarefas</h3>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Nova tarefa...">
+            <button id="addBtn">Add</button>
+        </div>
+        <ul id="taskList">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

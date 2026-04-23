@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Exercício 6</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .counter-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        #numero {
+            font-size: 4rem;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #2d3436;
+        }
+        .controls {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+        .btn-mais { background-color: #2ecc71; color: white; }
+        .btn-menos { background-color: #e74c3c; color: white; }
+        
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="counter-container">
+        <h2>Contador de Itens</h2>
+        <div id="numero">0</div>
+        <div class="controls">
+            <button id="btnMenos" class="btn-menos">-</button>
+            <button id="btnMais" class="btn-mais">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

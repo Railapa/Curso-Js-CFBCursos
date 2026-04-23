@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Exercício 4</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --btn-bg: #1e1e1e;
+            --btn-text: #ffffff;
+        }
+
+        /* Esta classe controla o tema escuro */
+        .dark-mode {
+            --bg-color: #151515;
+            --text-color: #f0f0f0;
+            --btn-bg: #ffffff;
+            --btn-text: #1e1e1e;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 50px;
+            border: none;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Teste de Tema</h1>
+    <p>Clique no botão abaixo para mudar o visual da página.</p>
+    
+    <button id="themeBtn">Ativar Modo Escuro</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
