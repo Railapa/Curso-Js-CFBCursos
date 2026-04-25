@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática JS - Filtro de Projetos</title>
+    <title>Prática JS - Seleção de Planos</title>
     <style>
-        body {
-            font-family: sans-serif;
-            padding: 20px;
-            background: #f4f4f4;
-            text-align: center;
-        }
-
-        .container {
+        body { font-family: sans-serif; display: flex; justify-content: center; gap: 20px; padding-top: 50px; background: #f0f2f5; }
+        
+        .card {
             background: white;
             padding: 20px;
+            width: 150px;
             border-radius: 10px;
-            max-width: 400px;
-            margin: auto;
+            border: 3px solid transparent;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
         }
 
-        input {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        /* Classe que o JS vai colocar/tirar */
+        .selecionado {
+            border-color: #007bff;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.2);
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
-
-        li {
-            padding: 8px;
-            border-bottom: 1px solid #eee;
-        }
+        h4 { margin: 10px 0; }
+        p { color: #666; font-size: 0.9rem; }
     </style>
 </head>
-
 <body>
 
-    <div class="container">
-        <h3>Meus Projetos</h3>
-        <input type="text" id="campoBusca" placeholder="Busque por tecnologia (ex: JS)">
-        <ul id="listaProjetos">
-        </ul>
+    <div class="card" id="planoBásico">
+        <h4>Básico</h4>
+        <p>R$ 0,00</p>
+    </div>
+
+    <div class="card" id="planoPremium">
+        <h4>Premium</h4>
+        <p>R$ 99,00</p>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
