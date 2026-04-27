@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Termos de Uso</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 100px; background: #f4f4f9; }
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        label { cursor: pointer; display: block; margin-bottom: 20px; }
+        button { 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            background: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: all .3s ease;
+        }
+        button:disabled { 
+            background: #ccc; 
+            cursor: not-allowed; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h3>Finalizar Cadastro</h3>
+        <label>
+            <input type="checkbox" id="checkTermos"> Eu aceito os termos e condições.
+        </label>
+        
+        <button id="btnEnviar" disabled>Enviar Agora</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

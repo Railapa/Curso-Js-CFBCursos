@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Mostrar Senha</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f4f4f9; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 300px; }
+        .input-group { display: flex; gap: 5px; margin-top: 10px; }
+        input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { padding: 10px; cursor: pointer; background: #333; color: white; border: none; border-radius: 5px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <label for="senha">Sua Senha:</label>
+        <div class="input-group">
+            <input type="password" id="senha" placeholder="Digite aqui...">
+            <button id="btnOlhinho">Mostrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

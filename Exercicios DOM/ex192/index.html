@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - To-Do List</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f0f2f5;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #btnAdd {
+            background: #512da8;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f9f9f9;
+            margin-bottom: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .btnExcluir {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .concluida {
+            text-decoration: line-through;
+            color: #888;
+            opacity: 0.6;
+        }
+
+        .btnConcluida{
+            background: #1aff00;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Minhas Tarefas</h3>
+        <div class="input-group">
+            <input type="text" id="inputTarefa" placeholder="Nova tarefa...">
+            <button id="btnAdd">Add</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

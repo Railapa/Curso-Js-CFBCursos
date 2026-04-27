@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática JS - Calculadora de Gorjetas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #eef2f3;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .res-box {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+
+        p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>Calculadora de Gorjeta</h3>
+        <label>Valor da Conta:</label>
+        <input type="number" id="valorConta" placeholder="Ex: 100.00">
+
+        <label>Porcentagem:</label>
+        <select id="porcentagem">
+            <option value="0.10">10% (Bom)</option>
+            <option value="0.15">15% (Ótimo)</option>
+            <option value="0.20">20% (Incrível)</option>
+        </select>
+
+        <div class="res-box">
+            <p id="resGorjeta">Gorjeta: R$ 0.00</p>
+            <p id="resTotal">Total: R$ 0.00</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

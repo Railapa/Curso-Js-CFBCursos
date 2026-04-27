@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prática JS - Contador</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background: #f4f4f9;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
+        }
+
+        #contador {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .limite {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Sua Mensagem</h3>
+        <textarea id="mensagem" placeholder="Digite algo..."></textarea>
+        <p id="contador">Caracteres: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
