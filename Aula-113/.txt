@@ -1,0 +1,13 @@
+1. O que é a propriedade accessKey?
+A accessKey é uma propriedade da classe Element que permite definir ou obter uma tecla de atalho para um elemento HTML. Como quase todos os componentes visuais do HTML (divs, botões, links) herdam da classe Element, essa funcionalidade pode ser aplicada a praticamente qualquer parte da sua página.
+
+2. Como configurar e usar atalhos
+O professor demonstra como transformar o teclado numa ferramenta de interação rápida:
+
+Definição (Set): Para atribuir uma tecla, basta igualar a propriedade a uma string com a letra desejada (ex: elemento.accessKey = "b").
+
+Acionamento: No navegador, o atalho não funciona apenas pressionando a tecla isolada. É necessário combinar a tecla escolhida com a tecla Alt (ex: Alt + B).
+
+Efeito: Ao usar o atalho, o navegador foca no elemento e simula uma interação, permitindo, por exemplo, disparar funções de clique sem usar o rato.
+
+Leitura (Get): Você também pode usar a propriedade para verificar qual atalho já foi definido para um elemento (ex: console.log(elemento.accessKey)).

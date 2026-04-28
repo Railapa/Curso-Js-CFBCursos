@@ -1,0 +1,18 @@
+1. Desestruturação de Arrays
+A forma mais básica de desestruturar um array é associar as variáveis aos elementos na mesma ordem em que aparecem:
+
+Exemplo: [a, b, c, d] = [10, 20, 30, 40]. Aqui, a recebe 10, b recebe 20, e assim por diante.
+
+Valores Padrão: Se o array de origem tiver menos elementos do que as variáveis definidas, estas ficarão como undefined. Para evitar isso, pode-se definir valores padrão: [a=0, b=0, c=0, d=0] = [10].
+
+Troca de Variáveis: Uma aplicação prática e elegante é a troca de valores entre duas variáveis sem a necessidade de uma variável auxiliar: [a, b] = [b, a].
+
+2. Desestruturação de Objetos
+Para objetos, a regra fundamental é que o nome da variável deve ser exatamente igual ao nome da propriedade (chave) do objeto:
+
+Sintaxe: ({nome, idade} = {nome: "Bruno", idade: 22}). O uso de parênteses é necessário quando a declaração e a atribuição são feitas separadamente.
+
+3. Retorno de Funções
+A desestruturação facilita muito o tratamento do retorno de funções que devolvem múltiplos valores (através de arrays ou objetos):
+
+Se uma função retorna [10, 20, 30, 40], pode-se capturar esses valores diretamente em variáveis individuais: let [a, b, c, d] = minhaFuncao().

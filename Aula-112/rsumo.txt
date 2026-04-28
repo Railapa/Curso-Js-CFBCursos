@@ -1,0 +1,22 @@
+Nesta aula 112 do CFBCursos, o professor Bruno apresenta o método getBoundingClientRect(), uma ferramenta poderosa da classe Element no JavaScript. Ele é essencial para capturar, de forma precisa, o tamanho e a posição de um elemento em relação à área de visualização (viewport) do navegador.
+
+1. O que é o getBoundingClientRect()?
+Este método retorna um objeto do tipo DOMRect, que contém as seguintes propriedades detalhadas do elemento:
+
+x e y: Coordenadas da posição do elemento.
+
+width e height: Largura e altura do elemento.
+
+top, bottom, left, right: Distâncias das bordas do elemento em relação ao topo, base, esquerda e direita da janela.
+
+2. Prática: Captura Dinâmica de Informações
+O professor demonstra como usar esse método para exibir as informações de dois quadrados na tela:
+
+Armazenamento em Variável: Em vez de chamar o método várias vezes, é mais eficiente salvar o objeto retornado em uma variável (ex: let domRect = elemento.getBoundingClientRect()).
+
+Função Unificada: O professor cria uma função info(elemento) que recebe um objeto do DOM, extrai seus dados via getBoundingClientRect() e atualiza os campos de texto na página com as coordenadas e dimensões reais.
+
+Interatividade: Ao adicionar ouvintes de evento de clique (click) nos quadrados, o sistema identifica qual elemento foi clicado usando evt.target e exibe instantaneamente suas propriedades de posicionamento.
+
+3. Importância para Projetos Reais
+Diferente de apenas ler o style.left (que você usou nas aulas de animação), o getBoundingClientRect() fornece a posição final calculada pelo navegador, levando em conta margens, bordas e o layout da página. Isso é crucial para criar sistemas de colisão, menus flutuantes que seguem o cursor ou para verificar se um elemento está visível na tela.
