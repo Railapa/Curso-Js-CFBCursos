@@ -17,6 +17,7 @@ let [c1, c2, c3] = f_cores();
 console.log(c1, c2, c3); // Imprime: Red Green Blue
 
 let n1,n2,n3;
+n1 = 'Amarelo';
 ({n1,n2,n3} = {n1:'Verde',n2:'Preto',n3:'Branco'});
 
 console.log(n1);
@@ -24,4 +25,3 @@ console.log(n1);
 let numeros = [10,20,30]
 let [n4,n5,n6] = numeros
 console.log(n5)
-
