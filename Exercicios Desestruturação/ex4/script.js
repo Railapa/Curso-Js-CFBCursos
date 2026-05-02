@@ -4,12 +4,14 @@ const dadosCidade = {
   umid: 65
 };
 
-const{temp: tempo, umid: umidade} = dadosCidade;
-console.log(tempo, umidade)
+const {temp: temperatura, umid: umidade} = dadosCidade;
+
+console.log(umidade, temperatura)
 
 const gerarCoordenadas = () => {
-  return [-23.54, -43.12]
+  return [-23.65, -46.12]
 }
 
-const [c1, c2] = gerarCoordenadas()
-console.log(c2)
+const [c1, c2] = gerarCoordenadas();
+
+console.log(c1,c2)

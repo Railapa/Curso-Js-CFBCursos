@@ -17,11 +17,11 @@ let [c1, c2, c3] = f_cores();
 console.log(c1, c2, c3); // Imprime: Red Green Blue
 
 let n1,n2,n3;
-({n1,n2,n3} = {n1:'Verde',n2:'Preto',n3:'Branco'});
+({n1,n2,n3} = {n1: 'c1', n2: 'c2', n3: 'c3'});
 
-console.log(n1);
+console.log(n1,n2,n3);
 
-let numeros = [10,20,30]
-let [n4,n5,n6] = numeros
+let numeros = [10,20,30];
+let [n4,n5,n6] = numeros;
 console.log(n5)
 

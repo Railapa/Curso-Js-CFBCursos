@@ -1,8 +1,7 @@
 
-const notas = [5,8,7.5]
-
-const[a1,a2,a3] = notas
-console.log(a1,a2,a3)
+const notas = [5,8,6]
+const [n1,n2,n3] = notas
+console.log(n1,n2,n3)
 
 const carro = {
   marca: "Toyota",
@@ -16,6 +15,6 @@ console.log(modelo)
 let copoA = 'agua';
 let copoB = 'suco';
 
-[copoA, copoB] = [copoB, copoA];
+[copoA, copoB] = [copoB, copoA]
 
-console.log(copoA)
+console.log(copoA, copoB)

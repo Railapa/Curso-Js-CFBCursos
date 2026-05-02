@@ -5,7 +5,6 @@ const dev = {
     tecnologia: 'JavaScript'
 };
 
-const {nome, idade, tecnologia,} = dev
+const {nome, idade, cargo, tecnologia} = dev;
 
-const msg = `O desenvolvedor ${nome} tem ${idade} anos e domina ${tecnologia}.`
-document.body.innerHTML = `<h1>${msg}<h1>`
+console.log(`${nome}, ${idade} anos de idade, trabalha como ${cargo} e sua especialidade é o ${tecnologia}`)

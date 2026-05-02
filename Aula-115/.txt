@@ -1,18 +1,29 @@
-1. Desestruturação de Arrays
-A forma mais básica de desestruturar um array é associar as variáveis aos elementos na mesma ordem em que aparecem:
+Nesta aula 115 do CFBCursos, o professor Bruno continua a exploração sobre Desestruturação (Destructuring) em JavaScript, focando em casos mais avançados e práticos.
 
-Exemplo: [a, b, c, d] = [10, 20, 30, 40]. Aqui, a recebe 10, b recebe 20, e assim por diante.
+Aqui estão os pontos principais abordados nesta segunda parte:
 
-Valores Padrão: Se o array de origem tiver menos elementos do que as variáveis definidas, estas ficarão como undefined. Para evitar isso, pode-se definir valores padrão: [a=0, b=0, c=0, d=0] = [10].
+1. Ignorando Elementos em Arrays
+Você não precisa extrair todos os itens de um array. Ao deixar espaços vazios entre as vírgulas, o JavaScript ignora os valores nessas posições:
 
-Troca de Variáveis: Uma aplicação prática e elegante é a troca de valores entre duas variáveis sem a necessidade de uma variável auxiliar: [a, b] = [b, a].
+Sintaxe: let [a, , b] = [10, 20, 30];
 
-2. Desestruturação de Objetos
-Para objetos, a regra fundamental é que o nome da variável deve ser exatamente igual ao nome da propriedade (chave) do objeto:
+Resultado: a será 10 e b será 30. O valor 20 foi ignorado.
 
-Sintaxe: ({nome, idade} = {nome: "Bruno", idade: 22}). O uso de parênteses é necessário quando a declaração e a atribuição são feitas separadamente.
+2. Uso do Operador Rest (...)
+O operador rest é extremamente útil quando você quer capturar os primeiros elementos e agrupar o restante em um novo array:
 
-3. Retorno de Funções
-A desestruturação facilita muito o tratamento do retorno de funções que devolvem múltiplos valores (através de arrays ou objetos):
+Sintaxe: let [a, b, ...resto] = [10, 20, 30, 40, 50];
 
-Se uma função retorna [10, 20, 30, 40], pode-se capturar esses valores diretamente em variáveis individuais: let [a, b, c, d] = minhaFuncao().
+Resultado: a é 10, b é 20, e resto será o array [30, 40, 50].
+
+3. Desestruturação de Objetos com Novos Nomes de Variáveis
+Vimos que, por padrão, as variáveis devem ter o mesmo nome das chaves do objeto. Porém, você pode renomeá-las durante a extração:
+
+Sintaxe: const {cidade: local, preco: valor} = meuObjeto;
+
+Resultado: O valor da chave cidade vai para a variável local.
+
+4. Extração de Objetos Aninhados
+Se um objeto estiver dentro de outro, você pode navegar pela estrutura para pegar o dado que deseja:
+
+Exemplo: Se você tem um objeto usuario com um objeto endereco dentro, pode extrair apenas a rua assim: const { endereco: { rua } } = usuario;.
