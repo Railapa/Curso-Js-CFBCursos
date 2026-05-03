@@ -8,13 +8,14 @@ const usuario = {
   }
 };
 
-// const {nome, idade, endereco:{cidade}} = usuario;
-// console.log(nome, idade, cidade)
+const {nome, idade, endereco:{cidade}} = usuario
+console.log(nome, idade, cidade)
 
-// const numeros = [1,2,3,4]
 
-// const [n1,n2,n3,n4] = numeros;
-// console.log(n1,n2,n3,n4)
+const numeros = [1,2,3,4]
+const [n1,n2,n3,n4] = numeros;
+console.log(n1,n2,n3,n4)
 
-const {nome, idade, endereco:{cidade: cidadeUsuario, estado: estadoUsuario}} = usuario;
-console.log(nome, idade, cidadeUsuario, estadoUsuario)
+
+const {endereco:{cidade: cidadeUsuario, estado: estadoUsuario}} = usuario
+console.log(cidadeUsuario, estadoUsuario)

@@ -16,5 +16,4 @@ let copoA = 'agua';
 let copoB = 'suco';
 
 [copoA, copoB] = [copoB, copoA]
-
 console.log(copoA, copoB)

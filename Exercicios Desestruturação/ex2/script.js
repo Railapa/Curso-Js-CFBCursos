@@ -15,6 +15,7 @@ const projetos = [
     }
 ]
 
+
 projetos.map(({nome, link}) => {
     console.log(`Projeto: ${nome} | Link: ${link}`)
 })
