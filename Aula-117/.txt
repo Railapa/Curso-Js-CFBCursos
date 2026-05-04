@@ -1,0 +1,29 @@
+Nesta aula 117, o professor Bruno aborda um tema que gera muita discussão entre iniciantes e veteranos: o uso do ponto e vírgula (;) no JavaScript.
+
+Embora o JavaScript tenha o mecanismo ASI (Automatic Semicolon Insertion), que tenta adivinhar onde as instruções terminam e insere o ponto e vírgula para você, existem "armadilhas" onde a ausência dele quebrará o seu código completamente.
+
+1. A Regra do Ponto e Vírgula Obrigatório
+O caso mais crítico em que o ponto e vírgula deixa de ser opcional é quando uma instrução termina e a próxima linha começa com parênteses () ou colchetes [].
+
+O Problema: O interpretador do JavaScript não entende que a linha acabou. Ele tenta ler a linha de baixo como se fizesse parte da de cima.
+
+Exemplo de Erro (Desestruturação):
+
+JavaScript
+let canal = "CFB Cursos" // Sem ponto e vírgula aqui
+[a, b] = ["JavaScript", "Aula 117"] 
+// O JS tenta ler: "CFB Cursos"["JavaScript", "Aula 117"], o que gera erro!
+2. Ponto e Vírgula no Início da Linha?
+Uma técnica curiosa mencionada por alguns desenvolvedores (e pelo professor) para evitar esses erros é colocar o ponto e vírgula no início da linha problemática:
+
+JavaScript
+let nome = "Bruno"
+;[a, b] = ["Aula", "117"] // O ";" no início garante que a linha de cima foi encerrada
+3. Funções Imediatas (IIFE)
+Outro lugar onde o erro é comum é antes de funções que são executadas imediatamente:
+
+JavaScript
+let n = 10; // Obrigatório aqui
+(() => {
+    console.log("Olá mundo")
+})()

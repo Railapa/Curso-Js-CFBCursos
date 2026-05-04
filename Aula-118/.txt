@@ -1,0 +1,26 @@
+1. O Mecanismo ASI e a Ambiguidade
+O JavaScript tenta "adivinhar" o fim de uma instrução para inserir o ;. No entanto, o interpretador não consegue fazer essa distinção quando a instrução termina e a linha seguinte começa com parênteses () ou colchetes [].
+
+O Erro de Interpretação: O navegador tenta ler as duas linhas como uma única instrução contínua.
+
+Exemplo com Arrays:
+
+JavaScript
+let canal = "CFB Cursos" // Falta o ;
+['a', 'b'].forEach(l => console.log(l)) 
+// O JS tenta ler: "CFB Cursos"['a', 'b']... como se fosse acesso a um índice de string!
+2. Situações de Uso Obrigatório
+Para evitar que o seu código quebre, o ponto e vírgula torna-se obrigatório nos seguintes cenários:
+
+Antes de Desestruturação: Quando a linha começa com [ ou {.
+
+Antes de IIFEs (Funções Imediatas): Quando a linha começa com (.
+
+Instruções na mesma linha: Quando você deseja colocar dois comandos lado a lado (ex: let i=0; i++).
+
+3. Técnicas de Prevenção
+O professor menciona duas abordagens comuns entre desenvolvedores:
+
+Sempre usar o ;: É a recomendação para estudantes e profissionais, pois evita ambiguidades, facilita a minificação do código e torna o script mais robusto.
+
+Ponto e vírgula no início da linha: Alguns desenvolvedores que preferem não usar ; sistematicamente o colocam apenas no início de linhas que começam com [ ou (, como uma "garantia" (ex: ;[a, b] = [10, 20]).
