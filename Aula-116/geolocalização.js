@@ -8,8 +8,8 @@ if(navigator.geolocation){
 }
 
 function mostrarLocalizacao(pos){
-    long.innerHTML = `Longitude: ${pos.coords.longitude}`
     lati.innerHTML = `Latitude: ${pos.coords.latitude}`
+    long.innerHTML = `Longitude: ${pos.coords.longitude}`
 }
 
 function erroLocalizacao(pos){

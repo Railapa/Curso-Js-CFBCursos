@@ -10,8 +10,8 @@ const pacoteTuristico = {
 
 const passageiros = ["Bruno", "Alice", "Carlos", "Daniela", "Eduardo"];
 
-const [p1,,p3] = passageiros;
-console.log(p1,p3)
+const [p1,,p2] = passageiros
+console.log(p1,p2)
 
 const [lider, ...grupo] = passageiros
 console.log(lider, grupo)
