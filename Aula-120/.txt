@@ -1,0 +1,20 @@
+Este vídeo é a continuação direta da aula anterior da CFBCursos, onde o professor Bruno aprofunda o uso da Constraint Validation API do JavaScript.
+
+Nesta aula, o foco principal é a personalização detalhada das mensagens e o uso de propriedades específicas do objeto validity.
+
+Pontos Principais da Aula:
+O Objeto validity: O instrutor explica que cada elemento de input possui um objeto chamado validity, que contém várias propriedades booleanas indicando o motivo exato de uma falha na validação.
+
+Propriedades de Erro Específicas:
+
+valueMissing: true se o campo estiver vazio e for required.
+
+rangeOverflow: true se o valor for maior que o definido no atributo max.
+
+rangeUnderflow: true se o valor for menor que o definido no atributo min.
+
+typeMismatch: true se o valor não corresponder ao tipo esperado (ex: um e-mail sem "@").
+
+Método setCustomValidity(): Esta é a ferramenta chave apresentada para substituir as mensagens padrão do navegador por textos criados por você. Se você passar uma string para este método, o campo é considerado inválido; se passar uma string vazia "", o erro é limpo.
+
+Lógica de Validação Customizada: O vídeo demonstra como criar uma estrutura de if/else ou switch para verificar cada uma dessas propriedades e exibir mensagens em português mais amigáveis ou específicas para cada erro.

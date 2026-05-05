@@ -1,0 +1,39 @@
+Este vídeo da CFBCursos é a primeira parte de uma série sobre validação nativa de formulários em JavaScript, focada no uso de métodos e propriedades do DOM para verificar dados sem depender apenas do comportamento padrão do navegador.
+
+Abaixo estão os pontos principais abordados na aula:
+
+1. Elementos do Formulário
+O instrutor utiliza um formulário simples com:
+
+Um campo de nome.
+
+Um campo de nota (input type="number") com atributos de restrição:
+
+required: Campo obrigatório.
+
+min="0": Valor mínimo permitido.
+
+max="10": Valor máximo permitido.
+
+2. Métodos e Propriedades de Validação
+A aula introduz as ferramentas nativas que o JavaScript oferece para manipular a validação:
+
+checkValidity(): Um método que verifica se o elemento satisfaz todas as suas restrições (como o min, max e required mencionados acima). Ele retorna true se os dados forem válidos e false caso contrário [00:09:26].
+
+validationMessage: Uma propriedade que contém a mensagem de erro específica gerada pelo navegador baseada na falha da validação (ex: "Preencha este campo" ou "O valor deve ser maior ou igual a 0") [00:10:54].
+
+3. Implementação Prática
+O instrutor demonstra como interceptar o evento de clique do botão de validar:
+
+Usa-se o event.preventDefault() para evitar que o formulário seja enviado (submit) automaticamente antes da verificação [00:05:16].
+
+É criada uma lógica onde, se checkValidity() for falso, o script captura a validationMessage do campo de nota e a exibe em um elemento HTML (<p>) abaixo do formulário [00:11:04].
+
+Exemplos de Mensagens Capturadas [00:11:13]:
+Campo vazio: "Preencha este campo".
+
+Nota -10 (abaixo do min): "O valor deve ser maior ou igual a 0".
+
+Nota 100 (acima do max): "O valor deve ser menor ou igual a 10".
+
+Esta abordagem permite que o desenvolvedor tenha controle total sobre onde e como as mensagens de erro aparecem para o usuário, em vez de usar apenas os "balões" padrão do navegador.
