@@ -15,6 +15,10 @@ const cores = () => {
 const [,c1,c2,,c3] = cores()
 console.log(c1, c2, c3)
 
-let texto = 'Curso de Javascript'
-let [t1,t2,t3] = texto.split(' ')
-console.log(t1, t2, t3)
+const texto = 'Curso de JavaScript'
+const [t1,t2,t3] = texto.split(' ')
+console.log(t1,t2,t3)
+
+// let texto = 'Curso de Javascript'
+// let [t1,t2,t3] = texto.split(' ')
+// console.log(t1, t2, t3)

@@ -10,7 +10,7 @@ const pacoteTuristico = {
 
 const passageiros = ["Bruno", "Alice", "Carlos", "Daniela", "Eduardo"];
 
-const [p1,,p2] = passageiros
+const [,p1,,p2] = passageiros
 console.log(p1,p2)
 
 const [lider, ...grupo] = passageiros
@@ -19,8 +19,8 @@ console.log(lider, grupo)
 const {detalhes:{hotel}} = pacoteTuristico
 console.log(hotel)
 
-const {destino: localViagem} = pacoteTuristico
-console.log(localViagem)
+const {destino: local} = pacoteTuristico
+console.log(local)
 
 const resumoPacote = ({destino, precos}) => {
     const [precoBaixa] = precos

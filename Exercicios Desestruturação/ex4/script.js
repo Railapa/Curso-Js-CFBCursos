@@ -4,8 +4,8 @@ const dadosCidade = {
   umid: 65
 };
 
-const {nome, temp: temperatura, umid: umidade} = dadosCidade
-console.log(nome, temperatura, umidade)
+const {umid: umidade, temp: temperatura} = dadosCidade
+console.log(umidade, temperatura)
 
 const gerarCoordenadas = () => {
   return [-23.65, -46.12]
