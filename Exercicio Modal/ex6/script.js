@@ -33,13 +33,14 @@ const modal_titulo = document.querySelector('.modal_titulo')
 btn_ver_mais.forEach(btn => {
     btn.addEventListener('click', () => {
         const cardPai = btn.closest('.card')
+        
         const jogadores = cardPai.getAttribute('data-jogador')
-
         const dados = infoJogadores[jogadores]
 
         modal_nome.innerHTML = dados.nome
         modal_idade.innerHTML = dados.idade
         modal_titulo.innerHTML = dados.titulo
-        modal.show()
+        modal.showModal()
     })
+
 })

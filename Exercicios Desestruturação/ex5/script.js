@@ -8,8 +8,8 @@ const usuario = {
   }
 };
 
-const {nome, endereco:{cidade, estado}} = usuario
-console.log(nome, cidade, estado)
+const {nome,idade, endereco:{cidade,estado}} = usuario
+console.log(nome,`(${idade})`,cidade,estado)
 
 const numeros = [1,2,3,4]
 const [n1,n2,n3,n4] = numeros

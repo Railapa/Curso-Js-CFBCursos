@@ -8,9 +8,7 @@ btn_validar.addEventListener('click', (evt) => {
     let msg;
 
     if(!f_nota.checkValidity()){
-        msg = f_nota.validationMessage
-    }  else if (!f_nome.checkValidity()){
-        msg = f_nome.validationMessage
+        msg = f_nota.validationMessage 
     }
 
     f_msg.innerHTML = msg

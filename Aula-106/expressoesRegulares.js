@@ -37,9 +37,9 @@ console.log(nome.match(/\bP/ig))
 
 
 /* ----- QUANTIFICADORES ------ */
-
+ 
 // Agrupa caracetres iguais que aparecem em sequencia 
-// Se houver 'ooo', ele caotura como um unico item 'ooo' em vez de tres 'o'
+// Se houver 'ooo', ele caotura como um unico item 'ooo' ao invez de tres 'o'
 console.log(nome2.match(/o+/ig))
 console.log(numeros.match(/10+/ig))
 
