@@ -1,0 +1,31 @@
+1. O que é uma API (End Point)?
+Pense na API como um garçom. Você (o cliente/Front-end) faz um pedido, o garçom leva esse pedido até a cozinha (o servidor/Back-end) e traz uma resposta (os dados) para você.
+
+End Point: É o endereço (URL) para onde você envia o pedido. No seu caso, foi o [https://jsonplaceholder.typicode.com/todos/1](https://jsonplaceholder.typicode.com/todos/1).
+
+JSON: É o "idioma" que o garçom usa para te entregar a resposta. É um formato de texto que o JavaScript entende perfeitamente como se fosse um objeto.
+
+2. A função fetch()
+O fetch (que significa "buscar") é a ferramenta do JavaScript para fazer a requisição à API.
+
+Ele é uma Promise (Promessa). Isso significa que, quando você executa o fetch, o JavaScript promete que vai tentar buscar os dados, mas ele não trava o resto do site enquanto espera.
+
+Enquanto o servidor não responde, o status da Promise fica como pending (pendente). Assim que os dados chegam, o status muda para fulfilled (realizada).
+
+3. O método .then()
+Como o fetch é uma promessa, você não recebe os dados instantaneamente. O .then() (que significa "então") é usado para dizer ao código: "Espere a resposta chegar e, então, faça isso".
+
+Na aula, usamos dois .then() em sequência (encadeamento):
+
+Primeiro .then(): Recebe a resposta bruta (HTTP Response). Como ela vem como um "pacote fechado", usamos o método .json() para extrair apenas o conteúdo e convertê-lo em um objeto JavaScript.
+
+Segundo .then(): Agora que os dados estão "desembalados" e convertidos, você finalmente tem acesso ao objeto (que você chamou de dados) para exibir no console ou na tela.
+
+Resumo do Fluxo no seu código:
+Requisição: fetch(endpoint) -> "Vou buscar os dados no endereço."
+
+Tratamento: .then(res => res.json()) -> "Quando chegar, transforme esse texto em um objeto."
+
+Uso: .then(dados => { ... }) -> "Agora que é um objeto, use as informações aqui dentro."
+
+Dica do professor: O uso de variáveis para o endpoint facilita a manutenção, permitindo trocar o endereço da API em um só lugar se necessário.
