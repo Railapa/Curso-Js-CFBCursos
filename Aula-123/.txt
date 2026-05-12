@@ -1,0 +1,40 @@
+Na primeira aula, você aprendeu a "fazer o pedido" para a API. Nesta segunda aula, o foco é pegar o que chegou e mostrar na tela para o usuário, além de automatizar o processo.
+
+Aqui está o resumo simplificado dos 3 novos passos que você viu:
+
+1. Criar os "Alvos" no HTML
+Para exibir os dados, você precisa de lugares específicos no seu HTML. O professor criou três tags <p> com IDs diferentes para cada informação que o seu servidor (o Back-end que você criou no Node) envia:
+
+Um para a temperatura (id="p_temp")
+
+Um para o nível (id="p_nivel")
+
+Um para a pressão (id="p_press")
+
+2. Conectar os Dados ao HTML (innerHTML)
+Lembra que o segundo .then(dados => { ... }) é onde você recebe o objeto pronto? Agora, em vez de apenas dar um console.log, você usa o JavaScript para "escrever" dentro do HTML.
+
+A lógica é:
+
+Acha o elemento pelo ID: document.getElementById("p_temp")
+
+Muda o conteúdo dele: .innerHTML = "Temperatura: " + dados.temperatura
+
+3. Automatizar com o setInterval
+Esta é a parte mais legal! Em vez de você ter que apertar F5 toda hora para ver os novos números aleatórios, o professor usa o setInterval.
+
+O que ele faz: Ele executa uma função repetidamente em um intervalo de tempo que você definir.
+
+No código: Ele colocou todo o fetch dentro de uma função chamada obterDados() e disse para o navegador: "Execute obterDados() a cada 2000 milissegundos (2 segundos)".
+
+JavaScript
+// O navegador vai "pedir" os dados sozinho a cada 2 segundos
+setInterval(obterDados, 2000);
+O Fluxo Completo que você construiu:
+O Cronômetro (setInterval) bate 2 segundos.
+
+O Fetch faz o pedido para o seu servidor local (localhost:3000).
+
+O Servidor gera os números (Math.random()) e envia o JSON.
+
+O JavaScript recebe o JSON e atualiza o texto na tela.

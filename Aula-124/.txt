@@ -1,0 +1,54 @@
+
+Nesta aula, o professor Bruno ensina como inverter o fluxo: em vez de apenas "pedir" dados para a API (GET), você agora vai "enviar" dados para ela (POST). É assim que enviamos informações de um formulário de cadastro, por exemplo.
+
+Aqui está o resumo dos conceitos principais:
+
+1. O Método GET vs. POST
+Até agora, você usou o fetch no modo padrão, que é o GET (buscar). Para enviar dados, precisamos dizer explicitamente ao fetch que queremos usar o método POST (postar/enviar).
+
+2. O Objeto de Configuração (Cabeçalho)
+O fetch pode receber um segundo parâmetro: um objeto de configuração. É aqui que você define como o envio deve acontecer. O professor criou uma variável chamada cabecalho (ou config) com três partes essenciais:
+
+method: Definido como 'POST'.
+
+body: É o "corpo" da mensagem, onde vão os dados reais.
+
+JSON.stringify(dados): Como você está enviando um objeto JavaScript, precisa transformá-lo em uma string JSON para que a rede consiga transportá-lo [03:55].
+
+3. O Fluxo de Envio
+No código da aula, o professor:
+
+Criou um objeto dados (ex: nome, canal, curso) [01:58].
+
+Configurou o fetch para enviar esses dados usando o cabecalho.
+
+Associou essa ação ao clique de um botão.
+
+JavaScript
+const dados = { nome: "Raí", curso: "Javascript" };
+
+const cabecalho = {
+    method: "POST",
+    body: JSON.stringify(dados)
+};
+
+fetch(endpoint, cabecalho)
+    .then(res => res.json())
+    .then(retorno => {
+        console.log("Dados enviados com sucesso!");
+    });
+4. O "Lado de Lá" (Back-end)
+Um ponto muito importante que o professor destaca: para que o envio funcione, a API no servidor precisa estar programada para receber e salvar esses dados [06:40]. No exemplo da aula, ele mostra como preparar o Front-end, mas avisa que a API que criamos no Node anteriormente precisaria de ajustes para processar esse POST.
+
+Como isso se aplica ao seu dia a dia?
+Imagine que você está criando o site da TLP Tech ou da House Burguer.
+
+Quando o cliente preenche um formulário de contato e clica em "Enviar", você usará exatamente essa lógica de POST com fetch para mandar os dados do cliente para o servidor.
+
+Resumo da lógica:
+
+GET: Você é o cliente pedindo o cardápio (API -> Você).
+
+POST: Você é o cliente fazendo o pedido do hambúrguer (Você -> API).
+
+Você conseguiu entender a diferença de colocar esse "objeto de configuração" dentro do fetch? É ele que diz se estamos apenas olhando ou se estamos enviando algo novo!
