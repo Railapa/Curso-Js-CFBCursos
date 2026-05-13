@@ -33,9 +33,9 @@ const gravarDados = () => {
     const endpoint = "http://localhost:1880/gravar"
     fetch(endpoint, cabecalho) // Faz o fetch passando o endereço e as configurações de envio
     .then(res => res.json())
-    .then(dados => {
-        console.log(dados)
-    })
+    .then(ret => {
+        console.log(ret)
+    }) 
 }
 
 btn_texto.addEventListener('click', gravarDados)
