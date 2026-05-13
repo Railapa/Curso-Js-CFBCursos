@@ -5,6 +5,5 @@ const dev = {
     tecnologia: 'JavaScript'
 };
 
-const {nome, idade, cargo, tecnologia} = dev;
-
-console.log(`${nome}, ${idade} anos de idade, trabalha como ${cargo} e sua especialidade é o ${tecnologia}`)
+const {nome,idade,cargo,tecnologia} = dev
+console.log(nome,idade,cargo,tecnologia)

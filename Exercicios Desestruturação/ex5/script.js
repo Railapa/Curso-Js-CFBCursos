@@ -8,7 +8,7 @@ const usuario = {
   }
 };
 
-const {nome,idade, endereco:{cidade,estado}} = usuario
+const {nome, idade, endereco:{cidade,estado}} = usuario
 console.log(nome,`(${idade})`,cidade,estado)
 
 const numeros = [1,2,3,4]

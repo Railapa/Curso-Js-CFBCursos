@@ -1,7 +1,7 @@
 
-const notas = [5,8,6]
-const [n1,n2,n3] = notas
-console.log(n1,n2,n3)
+const numeros = [1,2,3,4]
+const [n1,n2,n3,n4] = numeros
+console.log(n1,n2,n3,n4)
 
 const carro = {
   marca: "Toyota",
