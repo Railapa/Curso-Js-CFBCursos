@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-produto {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            min-height: 50px;
+        }
+
+        .carregando {
+            color: orange;
+            font-style: italic;
+        }
+
+        .disponivel {
+            color: #2ecc71;
+            border-color: #2ecc71;
+            border-style: solid;
+        }
+
+        .indisponivel {
+            color: #e74c3c;
+            border-color: #e74c3c;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loja-container">
+        <h2>Consulta de Estoque</h2>
+        <input type="number" id="id-produto" placeholder="Digite o ID do produto (ex: 101)">
+        <button id="btn-buscar">Consultar</button>
+
+        <div id="info-produto" class="card-produto">
+            <p id="msg-padrao">Aguardando consulta...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

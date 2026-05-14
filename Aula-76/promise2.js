@@ -2,8 +2,8 @@ const numero = document.querySelector('.numero')
 const btn_promessa = document.querySelector('#btn_promessa')
 
 btn_promessa.addEventListener('click', (evt) => {
-    numero.innerHTML = 'Processando...'
     promessa()
+
 })
 
 const promessa = () => {
@@ -32,6 +32,6 @@ const promessa = () => {
         numero.classList.remove('ok')
     })
 
-    numero.innerHTML = 'Esperando...'
+    numero.innerHTML = 'Processando...'
 }
 

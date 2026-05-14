@@ -1,26 +1,26 @@
 const numero = document.querySelector('.numero')
 
-let promise = new Promise((verdadeiro, falso) => {
-    let resultado = true
+let promessa = new Promise((ok, erro) => {
     let tempo = 2000
-    setTimeout(() => {
-        if (resultado) {
-            verdadeiro('Deu certo')
-        } else {
-            falso('Deu errado')
-        }
+    let resultado = true
 
+    setTimeout(() => {
+        if(resultado){
+            ok('Deu Certo')
+        } else {
+            erro('Deu Errado')
+        }
     }, tempo)
 })
 
-promise.then((retorno) => {
-    numero.innerHTML = retorno
-    numero.classList.remove('erro')
+promessa.then((ret) => {
+    numero.innerHTML = ret
     numero.classList.add('ok')
+    numero.classList.remove('erro')
 })
 
-promise.catch((retorno) => {
-    numero.innerHTML = retorno
+promessa.catch((ret) => {
+    numero.innerHTML = ret
     numero.classList.add('erro')
     numero.classList.remove('ok')
 })
