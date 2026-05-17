@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Final: Teste de Conexão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0b0e14;
+            /* Tom escuro estilo gamer/provedor */
+            color: white;
+            margin: 0;
+        }
+
+        .teste-container {
+            background: #181d26;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 320px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #2c3545;
+            background-color: #11151d;
+            color: white;
+            border-radius: 6px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00d26a;
+            /* Verde chamativo */
+            color: #11151d;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #00b359;
+        }
+
+        .painel {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            background-color: #11151d;
+            border: 1px solid #2c3545;
+        }
+
+        /* Classes para o seu JavaScript aplicar */
+        .medindo {
+            color: #00bcd4;
+            border-color: #00bcd4;
+        }
+
+        /* Azul/Ciano */
+        .estavel {
+            color: #00d26a;
+            border-color: #00d26a;
+        }
+
+        /* Verde */
+        .queda {
+            color: #f44336;
+            border-color: #f44336;
+        }
+
+        /* Vermelho */
+    </style>
+</head>
+
+<body>
+
+    <div class="teste-container">
+        <h2>Speedtest Inteligente</h2>
+        <input type="number" id="input-velocidade" placeholder="Digite seu plano (ex: 300)">
+        <button id="btn-testar">Iniciar Teste</button>
+        <div id="status-conexao" class="painel">Aguardando início...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
