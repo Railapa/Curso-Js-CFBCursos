@@ -14,11 +14,11 @@ const promessa = () => {
     })
 }
 
-const validarCupom = async () => {
-    mensagem.classList.remove('valido')
+const cupom = async () => {
     mensagem.classList.remove('invalido')
-    mensagem.innerHTML = 'Verificando Cupom...'
+    mensagem.classList.remove('valido')
     mensagem.classList.add('validando')
+    mensagem.innerHTML = 'Verificando...'
 
     try{
         const res = await promessa()
@@ -30,4 +30,4 @@ const validarCupom = async () => {
     }
 }
 
-btnCupom.addEventListener('click', validarCupom)
+btnCupom.addEventListener('click', cupom)
