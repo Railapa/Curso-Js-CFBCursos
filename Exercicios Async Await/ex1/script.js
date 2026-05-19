@@ -3,28 +3,28 @@ const btn = document.querySelector('#btn-testar')
 const statusConexao = document.querySelector('#status-conexao')
 
 const promessa = () => {
-    return new Promise((resolve,reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if(in_vel.value >= 0){
-                resolve('Teste concluído! Sua conexão está estável.')
+            if (in_vel.value > 0) {
+                resolve('Conexão estavel!')
             } else {
-                reject('Falha no teste. Nenhum sinal detectado.')
+                reject('Falha na conexão')
             }
-        },2000)
+        }, 2000)
     })
 }
 
 const conexao = async () => {
     statusConexao.classList.remove('estavel')
     statusConexao.classList.remove('queda')
-    statusConexao.innerHTML = 'Verificando sua conexão...'
     statusConexao.classList.add('medindo')
+    statusConexao.innerHTML = 'Verificando conexao...'
 
     try{
         const res = await promessa()
         statusConexao.innerHTML = res
         statusConexao.classList.add('estavel')
-    } catch (erro){
+    } catch (erro) {
         statusConexao.innerHTML = erro
         statusConexao.classList.add('queda')
     }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício: Buscador de CEP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #252525;
+            margin: 0;
+        }
+
+        .cep-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 340px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccd0d5;
+            border-radius: 6px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .painel-cep {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* Classes para o JavaScript alternar */
+        .pesquisando {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+
+        .encontrado {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .erro-cep {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cep-container">
+        <h2>Consulta de Endereço</h2>
+        <input type="text" id="input-cep" placeholder="Digite o CEP (ex: 40000000)" maxlength="8">
+        <button id="btn-buscar">Buscar Endereço</button>
+
+        <div id="resultado-cep" class="painel-cep">
+            Aguardando consulta...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

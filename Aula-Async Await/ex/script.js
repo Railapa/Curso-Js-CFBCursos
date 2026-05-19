@@ -3,14 +3,14 @@ const btnCupom = document.querySelector('#btn-cupom')
 const mensagem = document.querySelector('#mensagem')
 
 const promessa = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if (in_cupom.value == 'COMPRA10') {
-                resolve('Cupom aplicado! 10% de desconto.')
+            if(in_cupom.value == 'COMPRA10' || in_cupom.value == 'compra10'){
+                resolve('Cupom Aplicado!')
             } else {
-                reject('Cupom inválido ou expirado.')
+                reject('Cupom invalido ou ja expirado')
             }
-        }, 3000)
+        }, 2000)
     })
 }
 
@@ -20,8 +20,7 @@ const validarCupom = async () => {
     mensagem.innerHTML = 'Verificando Cupom...'
     mensagem.classList.add('validando')
 
-
-    try {
+    try{
         const res = await promessa()
         mensagem.innerHTML = res
         mensagem.classList.add('valido')

@@ -8,11 +8,11 @@ const usuario = {
   }
 };
 
-const {nome, idade, endereco:{cidade,estado}} = usuario
+const {nome, idade, endereco:{cidade, estado}} = usuario
 console.log(nome,`(${idade})`,cidade,estado)
 
 const numeros = [1,2,3,4]
-const [n1,n2,n3,n4] = numeros
+const [n1,n2,n3,n4] = numeros 
 console.log(n1,n2,n3,n4)
 
 const {endereco:{cidade: cidadeUsuario, estado: estadoUsuario}} = usuario
