@@ -6,7 +6,7 @@ const promessa = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (in_vel.value > 0) {
-                resolve('Conexão estavel!')
+                resolve('Conexão Estavel!')
             } else {
                 reject('Falha na conexão')
             }

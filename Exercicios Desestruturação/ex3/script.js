@@ -1,6 +1,5 @@
-
-const numeros = [1,2,3,4]
-const [n1,n2,n3,n4] = numeros
+const numeros = [10,20,30,40]
+const [n1,n2,n3,n4,] = numeros
 console.log(n1,n2,n3,n4)
 
 const carro = {
