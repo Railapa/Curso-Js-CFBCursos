@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121214;
+    color: #e1e1e6;
+    margin: 0;
+}
+
+.frase-container {
+    background: #202024;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.caixa-frase {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #121214;
+    border-left: 4px solid #04d361;
+    /* Detalhe em verde */
+    border-radius: 4px;
+    font-style: italic;
+    line-height: 1.6;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #04d361;
+    color: #121214;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #00b351;
+}
+
+/* Classes de Estado para o JS */
+.carregando {
+    border-left-color: #ff9000;
+    color: #ff9000;
+}
+
+.erro {
+    border-left-color: #f84141;
+    color: #f84141;
+}

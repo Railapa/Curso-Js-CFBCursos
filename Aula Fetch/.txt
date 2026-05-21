@@ -1,0 +1,20 @@
+O que é o fetch afinal?
+Até agora, nos seus exercícios, você criava a sua própria Promise manual (new Promise) e usava o setTimeout para fingir que estava indo na internet buscar um cupom ou um endereço de CEP.
+
+O fetch() é simplesmente uma Promise que já vem pronta e embutida no JavaScript. A única diferença é que, em vez de simular com setTimeout, ele vai de verdade até um servidor na internet buscar uma informação real.
+
+As Duas Etapas do Fetch (O "Segredo" do .json())
+Nas duas aulas, os professores batem muito na tecla de que o fetch precisa de dois awaits (ou dois .then()). Lembra que no seu simulador de CEP você teve que lidar com o erro [object Object]? Com o fetch real acontece algo parecido.
+
+Quando você faz um fetch, a resposta não vem prontinha como um objeto JavaScript. Ela vem trancada dentro de um "pacote brutos de rede" (com cabeçalhos, status HTTP, etc.).
+
+Por isso, o processo sempre tem duas etapas obrigatórias:
+
+Etapa 1: Você faz o fetch(URL). O servidor responde se conseguiu achar o endereço (Status 200 OK).
+
+Etapa 2: Você pega essa resposta bruta e roda o método .json(). Esse método também é uma Promise (por isso precisa de await) e serve para "desembrulhar" o pacote e transformá-lo em um objeto JavaScript que você sabe usar!
+
+Exemplo Prático com uma API Real (Sem precisar de Node-RED)
+Em vez de criar um servidor no Node-RED, podemos usar uma API pública e gratuita da internet para testar, como o ViaCEP (mencionado pelo Gustavo).
+
+Veja como fica a estrutura idêntica à que você acabou de treinar nos exercícios anteriores, mas usando o fetch de verdade: (fetch.js)

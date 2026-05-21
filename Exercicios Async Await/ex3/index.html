@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Intermediário: Checkout Inteligente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e24;
+            color: #fff;
+            margin: 0;
+        }
+
+        .checkout-container {
+            background: #2a2a35;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 350px;
+        }
+
+        .preco-base {
+            color: #ccc;
+            font-size: 1.1em;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            background-color: #1a1a22;
+            color: white;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff9f43;
+            color: #1e1e24;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffaa54;
+        }
+
+        .painel {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            background-color: #1a1a22;
+            border: 1px solid #444;
+        }
+
+        /* Estados */
+        .passo1 {
+            color: #00d2d3;
+            border-color: #00d2d3;
+        }
+
+        /* Processando Cupom */
+        .passo2 {
+            color: #ffff66;
+            border-color: #ffff66;
+        }
+
+        /* Processando Saldo */
+        .sucesso {
+            color: #1dd1a1;
+            border-color: #1dd1a1;
+        }
+
+        /* Compra feita */
+        .falha {
+            color: #ff6b6b;
+            border-color: #ff6b6b;
+        }
+
+        /* Erro */
+    </style>
+</head>
+
+<body>
+
+    <div class="checkout-container">
+        <h2>Carrinho: Placa de Vídeo</h2>
+        <p class="preco-base">Preço original: <strong>R$ 2000,00</strong></p>
+
+        <input type="text" id="cupom-input" placeholder="Cupom (ex: DESCONTO500)">
+        <button id="btn-comprar">Finalizar Compra</button>
+
+        <div id="status-checkout" class="painel">Aguardando ação...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

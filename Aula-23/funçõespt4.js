@@ -21,14 +21,15 @@ Dica para o seu código:
 Pense no parâmetro REST como uma "sacola térmica". Não importa se você coloca 2 latas ou 12 lá dentro, a sacola (a função) continua sendo a mesma e consegue carregar tudo de uma vez.
 */
 
-function soma(...valores){
+function soma(...valores) {
    let tam = valores.length
    let res = 0
-   for(let v of valores){
-    res += v
-   }
+   
+   valores.forEach((v) => {
+      res += v
+   })
 
    return res
 }
 
-console.log(soma(10,2,8,5,15,7))
+console.log(soma(10, 2, 5, 15))

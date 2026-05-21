@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de CEP Real com Fetch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eef2f7;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6f42c1;
+            /* Roxo para diferenciar dos outros */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #5a32a3;
+        }
+
+        .painel {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* Classes de Estado */
+        .carregando {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+
+        .sucesso {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .erro {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Buscador de CEP (Real)</h2>
+        <input type="text" id="cep_input" placeholder="Digite o CEP (Ex: 40000000)" maxlength="8">
+        <button id="btn_buscar">Buscar com Fetch</button>
+
+        <div id="resultado" class="painel">
+            Aguardando busca...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
