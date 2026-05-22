@@ -3,43 +3,43 @@ const btn_rastrear = document.querySelector('#btn_rastrear')
 const status_delivery = document.querySelector('#status_delivery')
 
 const verificarNumeroPedido = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if (pedido_input.value == '456') {
+            if(pedido_input.value == '456'){
                 resolve({
                     id: 456,
                     item: "Combo House Monster + Batata"
                 })
             } else {
-                reject('Pedido não encontrado no sistema.')
+                reject('Pedido não encontrado no sistema')
             }
-        }, 2000)
+        },2000)
     })
 }
 
-const verificarMotoboy = (nomeDoItem) => {
-    return new Promise((resolve,reject) => {
+const verificarMotoboy = () => {
+    return new Promise ((resolve,reject) => {
         setTimeout(() => {
-            resolve(`✓ O motoboy Carlos acabou de sair com o seu: ${nomeDoItem}!`)
+            resolve('✓ O motoboy Carlos acabou de sair com o seu pedido!')
         },2000)
     })
 }
 
 const entrega = async () => {
     status_delivery.className = 'painel buscando'
-    status_delivery.innerHTML = 'Buscando...'
+    status_delivery.innerHTML = 'Verificando pedido...'
 
     try{
-        const resNumero = await verificarNumeroPedido()
-        status_delivery.innerHTML = resNumero.item
+        const resPedido = await verificarNumeroPedido()
+        status_delivery.innerHTML = resPedido.item
         status_delivery.className = 'painel PRODUTO-PRONTO'
 
-        const resMotoboy = await verificarMotoboy(resNumero.item)
+        const resMotoboy = await verificarMotoboy()
         status_delivery.innerHTML = resMotoboy
         status_delivery.className = 'painel saiu-entrega'
-    } catch(erro) {
-        status_delivery.innerHTML = erro
+    } catch(erro){
         status_delivery.className = 'painel erro'
+        status_delivery.innerHTML = erro
     }
 }
 

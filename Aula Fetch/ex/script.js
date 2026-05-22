@@ -5,25 +5,26 @@ const resultado = document.querySelector('#resultado')
 const buscarCep = async () => {
     const url = `https://viacep.com.br/ws/${cep_input.value}/json/`
 
-    resultado.innerHTML = 'Buscando endereço...'
+    resultado.innerHTML = 'Buscando CEP...'
     resultado.className = 'painel carregando'
 
     try {
-        const resBrutaUrl = await fetch(url)
-        const resCep = await resBrutaUrl.json()
+        const resBruta = await fetch(url)
+        const resObj = await resBruta.json()
 
-        if(resCep.erro){
+        if (resObj.erro) {
             resultado.innerHTML = 'Este CEP não existe na base de dados.'
             resultado.className = 'painel erro'
             return 
         }
 
+        resultado.innerHTML = `<strong>Rua:</strong> ${resObj.logradouro} <br/>
+            <strong>Bairro:</strong> ${resObj.bairro} <br/>
+            <strong>Cidade:</strong> ${resObj.localidade}`
+
         resultado.className = 'painel sucesso'
-        resultado.innerHTML = `Rua: ${resCep.logradouro} <br/>`
-        resultado.innerHTML += `Bairro: ${resCep.bairro} <br/>`
-        resultado.innerHTML += `Cidade: ${resCep.localidade}`
-    } catch (erro){
-        resultado.innerHTML = 'CEP não encontrado'
+    } catch(erro) {
+        resultado.innerHTML = 'CEP não encontrado.'
         resultado.className = 'painel erro'
     }
 }

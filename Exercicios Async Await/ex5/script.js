@@ -3,18 +3,18 @@ const btn_frase = document.querySelector('#btn_frase')
 
 const conselho = async () => {
     const url = `https://api.adviceslip.com/advice`
-    
-    painel_frase.innerHTML = 'Procurando conselho...'
+
     painel_frase.className = 'caixa-frase carregando'
-    
-    try{
-        const urlBruta = await fetch(url)
-        const resUrl = await urlBruta.json()
-        painel_frase.innerHTML = resUrl.slip.advice
-        painel_frase.className = 'caixa-frase'
+    painel_frase.innerHTML = 'Procurando conselho...'
+
+    try {
+        const resBruta = await fetch(url)
+        const resObj = await resBruta.json()
+        painel_frase.innerHTML = resObj.slip.advice
+
     } catch (erro) {
         painel_frase.className = 'caixa-frase erro'
-        painel_frase.innerHTML = erro
+        painel_frase.innerHTML = 'Erro no sistema'
     }
 }
 
