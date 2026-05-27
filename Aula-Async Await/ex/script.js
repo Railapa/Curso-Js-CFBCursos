@@ -5,28 +5,26 @@ const mensagem = document.querySelector('#mensagem')
 const promessa = () => {
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(in_cupom.value == 'COMPRA10' || in_cupom.value == 'compra10'){
-                resolve('Cupom Aplicado!')
+            if(in_cupom.value == 'COMPRA10'){
+                resolve('Cupom aplicado!')
             } else {
                 reject('Cupom invalido ou ja expirado')
             }
-        }, 2000)
+        },2000)
     })
-}
+} 
 
 const cupom = async () => {
-    mensagem.classList.remove('invalido')
-    mensagem.classList.remove('valido')
-    mensagem.classList.add('validando')
-    mensagem.innerHTML = 'Verificando...'
+    mensagem.className = 'painel carregando'
+    mensagem.innerHTML = 'Verificando cupom...'
 
     try{
         const res = await promessa()
+        mensagem.className = 'painel sucesso'
         mensagem.innerHTML = res
-        mensagem.classList.add('valido')
-    } catch (erro) {
+    } catch (erro){
+        mensagem.className = 'painel erro'
         mensagem.innerHTML = erro
-        mensagem.classList.add('invalido')
     }
 }
 

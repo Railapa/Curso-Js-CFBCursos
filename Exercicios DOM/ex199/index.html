@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Final: Promise Manual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121214;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background: #202024;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #29292e;
+            background: #121214;
+            color: #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #8257e5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #9466ff;
+        }
+
+        .painel {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            background: #121214;
+            border: 1px solid #29292e;
+        }
+
+        .loading {
+            color: #ff9000;
+            border-color: #ff9000;
+        }
+
+        .sucesso {
+            color: #04d361;
+            border-color: #04d361;
+        }
+
+        .erro {
+            color: #f44336;
+            border-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Área do Cliente (Promise)</h3>
+        <input type="text" id="user_input" placeholder="Digite seu usuário">
+        <button id="btn_login">Entrar no Sistema</button>
+        <div id="status_login" class="painel">Aguardando login...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

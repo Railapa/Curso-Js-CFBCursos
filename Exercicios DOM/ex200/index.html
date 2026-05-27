@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Final: Fetch Real</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border: 1px solid #334155;
+        }
+
+        h3 {
+            color: #f59e0b;
+            margin-top: 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #f59e0b;
+            color: #0f172a;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #d97706;
+        }
+
+        .painel {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            background: #0f172a;
+            border: 1px solid #334155;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carregando {
+            color: #38bdf8;
+            border-color: #38bdf8;
+        }
+
+        .sucesso {
+            color: #4ade80;
+            border-color: #4ade80;
+            font-size: 1.2em;
+        }
+
+        .erro {
+            color: #f87171;
+            border-color: #f87171;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Bitcoin Price Index (Fetch)</h3>
+        <p>Clique abaixo para buscar a cotação atualizada do BTC em Reais.</p>
+        <button id="btn_cotacao">Atualizar Cotação</button>
+        <div id="status_cotacao" class="painel">Clique para consultar...</div>
+    </div>
+
+    <script src="scriptf.js"></script>
+</body>
+
+</html>
