@@ -1,5 +1,5 @@
-const jogadores = ['Cristiano Ronaldo', 'Paul Pogba', 'Vinicius Jr', 'Neymar', 'Valverde']
+const jogadores = ['Cristiano Ronaldo', 'Paul Pogba', 'Vinicius Jr', 'Neymar Jr', 'Fede Valverde']
 
-const lutadores = ['Islam', 'Topuria', 'Alex Poatan', 'Renato Moicano', 'Jean Silva']
+const lutadores = ['Islam', 'Ilia Topuria', 'Alex Poatan', 'Renato Moicano', 'Jean Silva']
 
-export{jogadores, lutadores} // Exportando os elementos para serem usados fora
+export {jogadores, lutadores} // Exportando os elementos para serem usados fora

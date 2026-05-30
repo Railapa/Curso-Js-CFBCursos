@@ -13,4 +13,4 @@ btn_gravar.addEventListener('click', () => {
     }
 
     c.addContato(cont, listaContatos)
-})
+})              

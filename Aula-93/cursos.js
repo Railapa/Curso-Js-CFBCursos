@@ -1,11 +1,11 @@
-const lutadores = ['Islam', 'Ilia Topuria', 'Alex Poatan', 'Renato Moicano', 'Jean Silva', 'Carlos Prates', 'Charles Oliveira', 'Ian Garry', 'Chimaev']
+const lutadores = ['Islam', 'Ilia Topuria', 'Alex Poatan', 'Renato Moicano', 'Jean Silva', 'Carlos Prates', 'Charles Oliveira', 'Ian Garry', 'Valter Walker']
 
 // const getTodosLutadores = () => {
 //     return lutadores
 // }
 
-export default function  getTodosLutadores(){ // Exportação Padrão (Somente uma por arquivo)
+export default function getTodosLutadores(){
     return lutadores
 }
 
-export{lutadores} // Exportação Nomeada
+export{lutadores}

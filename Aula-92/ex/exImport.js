@@ -1,4 +1,2 @@
-import { somar } from "./ex.js"
-
-console.log(somar)
-console.log('somar')
+import { numeros } from "./ex.js";
+console.log(numeros)
