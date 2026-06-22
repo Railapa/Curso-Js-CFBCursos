@@ -5,27 +5,26 @@ const mensagem = document.querySelector('#mensagem')
 const promessa = () => {
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(in_cupom.value == 'COMPRA10'){
-                resolve('Cupom aplicado!')
+            if(in_cupom.value === 'COMPRA10' || in_cupom.value === 'compra10'){
+                resolve('Cupom aplicado com sucesso')
             } else {
                 reject('Cupom invalido ou ja expirado')
             }
-        },2000)
+        }, 3000)
     })
-} 
+}
 
-const cupom = async () => {
-    mensagem.className = 'painel carregando'
+async function cupom(){
     mensagem.innerHTML = 'Verificando cupom...'
 
     try{
-        const res = await promessa()
-        mensagem.className = 'painel sucesso'
-        mensagem.innerHTML = res
-    } catch (erro){
-        mensagem.className = 'painel erro'
-        mensagem.innerHTML = erro
+        await promessa()
+        mensagem.innerHTML = 'Cupom aplicado!'
+    } catch(err){
+        mensagem.innerHTML = err
     }
 }
 
-btnCupom.addEventListener('click', cupom)
+btnCupom.addEventListener('click', () => {
+    cupom()
+})
